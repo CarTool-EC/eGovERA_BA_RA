@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Apache Kafka</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Apache Kafka</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-ApplicationService"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-ApplicationService" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: Apache Kafka is an open-source distributed event streaming platform that is designed to handle high-throughput, fault-tolerant, and scalable real-time data streaming. It provides a publish-subscribe model where producers publish data to topics, and consumers subscribe to those topics to receive the data. Kafka stores the data in a fault-tolerant and durable manner, allowing it to be processed and consumed by multiple applications and systems.
+
+Additional information: Apache Kafka is widely used in modern data architectures as a messaging system, enabling real-time data integration, streaming analytics, and event-driven architectures. It is built to handle massive amounts of data and provides low-latency, high-throughput, and fault-tolerant data streaming capabilities. Kafka's distributed nature allows it to scale horizontally across multiple servers, ensuring high availability and reliability. It provides strong durability guarantees by persisting data to disk, making it suitable for mission-critical applications. Kafka's flexible architecture allows seamless integration with various data systems, making it a popular choice for building data pipelines and streaming applications.
+
+Example: One example of Apache Kafka's application is in a real-time analytics platform. Multiple data sources, such as web servers, mobile apps, and IoT devices, can publish events to Kafka topics. These events can then be consumed by analytics applications in real-time, allowing businesses to gain insights and make data-driven decisions instantly. Another example is its use in building scalable microservices architectures, where Kafka acts as a reliable communication layer between different microservices, ensuring data consistency and fault tolerance.
+
+Publisher: Confluent
+
+Source: https://www.confluent.io/what-is-apache-kafka/
+
+LOST view: TVA-Messaging Enablers [Motivation]
+
+Identifier: http://data.europa.eu/dr8/egovera/ApacheKafkaApplicationService
+
+EIRA traceability: eira:DigitalSolutionApplicationService
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-07-20
+
+dct:identifier: http://data.europa.eu/dr8/egovera/ApacheKafkaApplicationService
+
+dct:title: Apache Kafka Application Service
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/ApacheKafkaApplicationService</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:DigitalSolutionApplicationService</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-07-20</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/ApacheKafkaApplicationService</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Apache Kafka Application Service</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">One example of Apache Kafka's application is in a real-time analytics platform. Multiple data sources, such as web servers, mobile apps, and IoT devices, can publish events to Kafka topics. These events can then be consumed by analytics applications in real-time, allowing businesses to gain insights and make data-driven decisions instantly. Another example is its use in building scalable microservices architectures, where Kafka acts as a reliable communication layer between different microservices, ensuring data consistency and fault tolerance.</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Apache Kafka is widely used in modern data architectures as a messaging system, enabling real-time data integration, streaming analytics, and event-driven architectures. It is built to handle massive amounts of data and provides low-latency, high-throughput, and fault-tolerant data streaming capabilities. Kafka's distributed nature allows it to scale horizontally across multiple servers, ensuring high availability and reliability. It provides strong durability guarantees by persisting data to disk, making it suitable for mission-critical applications. Kafka's flexible architecture allows seamless integration with various data systems, making it a popular choice for building data pipelines and streaming applications.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Apache Kafka is an open-source distributed event streaming platform that is designed to handle high-throughput, fault-tolerant, and scalable real-time data streaming. It provides a publish-subscribe model where producers publish data to topics, and consumers subscribe to those topics to receive the data. Kafka stores the data in a fault-tolerant and durable manner, allowing it to be processed and consumed by multiple applications and systems.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Confluent</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap">https://www.confluent.io/what-is-apache-kafka/</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TVA-Messaging Enablers [Motivation]</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>LXC</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>LXC</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-ApplicationService"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-ApplicationService" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: LXC (Linux Containers) is an operating system-level virtualization method that allows multiple isolated Linux systems, known as containers, to run on a single host. Each container shares the host's kernel but operates in a separate user space, providing lightweight and efficient virtualization. LXC provides a way to create and manage these containers, offering a flexible and secure environment for deploying applications.
+
+Additional information: LXC provides a lightweight alternative to traditional virtualization technologies by leveraging the Linux kernel's cgroups and namespaces features. Containers created using LXC offer resource isolation, process-level separation, and filesystem-level isolation, allowing applications to run in an environment that closely resembles a full-fledged Linux system. LXC enables efficient utilization of hardware resources, faster startup times, and lower overhead compared to traditional virtual machines. It is widely used in various scenarios, including server consolidation, application sandboxing, development environments, and microservices architecture.
+
+Example: An example of LXC's application is in cloud computing platforms where multiple containers can be deployed on a single physical server, each running its own isolated application stack. This allows for efficient resource utilization and scalability, as containers can be easily provisioned, managed, and scaled independently. LXC also finds use in development environments, where developers can create lightweight containers to replicate production environments, ensuring consistent testing and development workflows.
+
+Publisher: Linux Containers (LXC) - Linux Containers Documentation
+
+Source: https://linuxcontainers.org/lxc/introduction/
+
+LOST view: TVA-Containerization Enablers [Motivation]
+
+Identifier: http://data.europa.eu/dr8/egovera/LXCApplicationService
+
+EIRA traceability: eira:DigitalSolutionApplicationService
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-07-20
+
+dct:identifier: http://data.europa.eu/dr8/egovera/LXCApplicationService
+
+dct:title: LXC Application Service
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/LXCApplicationService</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:DigitalSolutionApplicationService</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-07-20</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/LXCApplicationService</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">LXC Application Service</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">An example of LXC's application is in cloud computing platforms where multiple containers can be deployed on a single physical server, each running its own isolated application stack. This allows for efficient resource utilization and scalability, as containers can be easily provisioned, managed, and scaled independently. LXC also finds use in development environments, where developers can create lightweight containers to replicate production environments, ensuring consistent testing and development workflows.</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">LXC provides a lightweight alternative to traditional virtualization technologies by leveraging the Linux kernel's cgroups and namespaces features. Containers created using LXC offer resource isolation, process-level separation, and filesystem-level isolation, allowing applications to run in an environment that closely resembles a full-fledged Linux system. LXC enables efficient utilization of hardware resources, faster startup times, and lower overhead compared to traditional virtual machines. It is widely used in various scenarios, including server consolidation, application sandboxing, development environments, and microservices architecture.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">LXC (Linux Containers) is an operating system-level virtualization method that allows multiple isolated Linux systems, known as containers, to run on a single host. Each container shares the host's kernel but operates in a separate user space, providing lightweight and efficient virtualization. LXC provides a way to create and manage these containers, offering a flexible and secure environment for deploying applications.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Linux Containers (LXC) - Linux Containers Documentation</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap">https://linuxcontainers.org/lxc/introduction/</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TVA-Containerization Enablers [Motivation]</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

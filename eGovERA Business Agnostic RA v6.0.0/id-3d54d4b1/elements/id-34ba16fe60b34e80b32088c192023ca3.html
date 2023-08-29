@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>gRPC</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>gRPC</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Contract"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Contract" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: gRPC (Google Remote Procedure Call) specification is a high-performance, open-source framework developed by Google that allows different services to communicate with each other. It uses Protocol Buffers (protobuf) as its interface definition language, enabling the definition of services and message types in a simple and language-neutral format. gRPC supports several programming languages, making it an ideal choice for multi-language systems. It also supports features like authentication, load balancing, and bidirectional streaming.
+
+Additional information: gRPC (Google Remote Procedure Call) is a high-performance, open-source framework developed by Google that enables the implementation of remote procedure calls (RPCs) from one system to another. It is designed to be language-agnostic, meaning it can be used with a variety of programming languages, and platform-independent, allowing it to be used across different operating systems and environments.
+
+The gRPC specification defines a protocol for service-to-service communication, supporting both synchronous and asynchronous communication models. It uses Protocol Buffers (protobuf) as its interface definition language, which not only defines the service interface but also the structure of the payload messages. This makes it possible for gRPC to automatically generate client and server code for multiple languages, which can significantly speed up the development process.
+
+gRPC supports four types of service methods:
+
+1. Unary RPCs where the client sends a single request to the server and gets a single response back.
+2. Server streaming RPCs where the client sends a request to the server and gets a stream of responses back.
+3. Client streaming RPCs where the client sends a stream of requests to the server and gets a single response back.
+4. Bidirectional streaming RPCs where both the client and the server send a stream of messages to each other.
+
+gRPC uses HTTP/2 as its transport protocol, which provides a number of enhancements over HTTP/1.1 such as binary framing, multiplexing, server push, and header compression. This makes gRPC more efficient, more robust, and more suitable for high-performance scenarios compared to RESTful APIs over HTTP/1.1.
+
+The gRPC specification also includes features for authentication, load balancing, logging, and monitoring. It supports both Transport Layer Security (TLS) and token-based authentication for securing the communication between the client and the server. It also provides built-in support for Prometheus and OpenTracing for monitoring and tracing the performance of gRPC services.
+
+In summary, the gRPC specification provides a comprehensive framework for building efficient, high-performance, scalable, and secure service-to-service communication. It is widely used in microservices architectures and other distributed systems.
+
+Example: 1. Real-Time Communication: gRPC is used in real-time communication applications like chat apps, where the server needs to push messages to multiple clients in real-time. The bi-directional streaming feature of gRPC makes it suitable for this use case.
+
+2. Microservices Architecture: gRPC is widely used in microservices architecture due to its lightweight nature and the ability to create connections between services efficiently. It allows for easy definition of service APIs and handles the underlying networking complexities.
+
+3. IoT Devices: gRPC is used in IoT devices due to its ability to efficiently connect a large number of devices with low latency. It also supports multiple languages, making it easier to integrate with different types of devices.
+
+4. High-Performance APIs: gRPC is used to build high-performance APIs due to its support for HTTP/2 and Protocol Buffers. These technologies allow for efficient serialization and transport of data, resulting in faster APIs.
+
+5. Browser-Based Applications: gRPC-Web is a JavaScript client library for gRPC that allows browser-based apps to use gRPC. This enables efficient communication between the browser and the server, improving the performance of the application.
+
+6. Mobile Applications: gRPC is used in mobile applications to provide efficient communication between the app and the server. It supports multiple languages, including Swift and Java, making it easier to integrate with iOS and Android apps.
+
+7. Machine Learning: gRPC is used in machine learning applications to efficiently transport large amounts of data between the server and the client. The support for streaming in gRPC makes it suitable for this use case. 
+
+8. Gaming: gRPC is used in multiplayer gaming applications where real-time communication between the server and multiple clients is required. The low latency and high performance of gRPC make it ideal for this use case.
+
+Publisher: EIRA team
+
+LOST view: TV-Technical Agreements
+
+Identifier: http://data.europa.eu/dr8/egovera/GRPCContract
+
+EIRA traceability: eira:TechnicalInteroperabilityAgreementContract
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-08-03
+
+dct:identifier: http://data.europa.eu/dr8/egovera/GRPCContract
+
+dct:title: GRPC Contract
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/GRPCContract</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:TechnicalInteroperabilityAgreementContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-03</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/GRPCContract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">GRPC Contract</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">1. Real-Time Communication: gRPC is used in real-time communication applications like chat apps, where the server needs to push messages to multiple clients in real-time. The bi-directional streaming feature of gRPC makes it suitable for this use case.
+
+								2. Microservices Architecture: gRPC is widely used in microservices architecture due to its lightweight nature and the ability to create connections between services efficiently. It allows for easy definition of service APIs and handles the underlying networking complexities.
+
+								3. IoT Devices: gRPC is used in IoT devices due to its ability to efficiently connect a large number of devices with low latency. It also supports multiple languages, making it easier to integrate with different types of devices.
+
+								4. High-Performance APIs: gRPC is used to build high-performance APIs due to its support for HTTP/2 and Protocol Buffers. These technologies allow for efficient serialization and transport of data, resulting in faster APIs.
+
+								5. Browser-Based Applications: gRPC-Web is a JavaScript client library for gRPC that allows browser-based apps to use gRPC. This enables efficient communication between the browser and the server, improving the performance of the application.
+
+								6. Mobile Applications: gRPC is used in mobile applications to provide efficient communication between the app and the server. It supports multiple languages, including Swift and Java, making it easier to integrate with iOS and Android apps.
+
+								7. Machine Learning: gRPC is used in machine learning applications to efficiently transport large amounts of data between the server and the client. The support for streaming in gRPC makes it suitable for this use case. 
+
+								8. Gaming: gRPC is used in multiplayer gaming applications where real-time communication between the server and multiple clients is required. The low latency and high performance of gRPC make it ideal for this use case.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">gRPC (Google Remote Procedure Call) is a high-performance, open-source framework developed by Google that enables the implementation of remote procedure calls (RPCs) from one system to another. It is designed to be language-agnostic, meaning it can be used with a variety of programming languages, and platform-independent, allowing it to be used across different operating systems and environments.
+
+								The gRPC specification defines a protocol for service-to-service communication, supporting both synchronous and asynchronous communication models. It uses Protocol Buffers (protobuf) as its interface definition language, which not only defines the service interface but also the structure of the payload messages. This makes it possible for gRPC to automatically generate client and server code for multiple languages, which can significantly speed up the development process.
+
+								gRPC supports four types of service methods:
+
+								1. Unary RPCs where the client sends a single request to the server and gets a single response back.
+								2. Server streaming RPCs where the client sends a request to the server and gets a stream of responses back.
+								3. Client streaming RPCs where the client sends a stream of requests to the server and gets a single response back.
+								4. Bidirectional streaming RPCs where both the client and the server send a stream of messages to each other.
+
+								gRPC uses HTTP/2 as its transport protocol, which provides a number of enhancements over HTTP/1.1 such as binary framing, multiplexing, server push, and header compression. This makes gRPC more efficient, more robust, and more suitable for high-performance scenarios compared to RESTful APIs over HTTP/1.1.
+
+								The gRPC specification also includes features for authentication, load balancing, logging, and monitoring. It supports both Transport Layer Security (TLS) and token-based authentication for securing the communication between the client and the server. It also provides built-in support for Prometheus and OpenTracing for monitoring and tracing the performance of gRPC services.
+
+								In summary, the gRPC specification provides a comprehensive framework for building efficient, high-performance, scalable, and secure service-to-service communication. It is widely used in microservices architectures and other distributed systems.</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">gRPC (Google Remote Procedure Call) specification is a high-performance, open-source framework developed by Google that allows different services to communicate with each other. It uses Protocol Buffers (protobuf) as its interface definition language, enabling the definition of services and message types in a simple and language-neutral format. gRPC supports several programming languages, making it an ideal choice for multi-language systems. It also supports features like authentication, load balancing, and bidirectional streaming.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

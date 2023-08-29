@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>LV-Architecture Principles</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>LV-Architecture Principles</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-26984dea563d4b3b839bdec456cf0e31.png" alt="LV-Architecture Principles" usemap="#id-26984dea563d4b3b839bdec456cf0e31map"/>
+			   <map name="id-26984dea563d4b3b839bdec456cf0e31map">
+				  				<area shape="rect" coords="2206,2686,2495,3443" href="../elements/id-804ab3a8f837427fae7b48e4b034f801.html"  target="element">
+				  				<area shape="rect" coords="1894,2686,2183,3443" href="../elements/id-28e31d31e53b42e39950d258075a5383.html"  target="element">
+				  				<area shape="rect" coords="1589,2686,1878,3443" href="../elements/id-8ea96a1157af45578cc256ff66aa4952.html"  target="element">
+
+				  		<area shape="rect" coords="1570,2650,2519,3473" href="../elements/id-27a5e38f71c849c5852102bb91a5deec.html"  target="element">
+				  		<area shape="rect" coords="10,861,260,936" href="../elements/id-e1ace390d0154b9598a2560242f6a2bb.html"  target="element">
+				  		<area shape="rect" coords="10,671,260,746" href="../elements/id-4393277865a84f2f8ee8df243a0b788b.html"  target="element">
+				  		<area shape="rect" coords="10,550,260,625" href="../elements/id-b085be545aaa4fae85e933f9356b4cbf.html"  target="element">
+				  		<area shape="rect" coords="10,1049,260,1124" href="../elements/id-0586b12fed714134906aef22c1d48c95.html"  target="element">
+				  		<area shape="rect" coords="10,766,260,841" href="../elements/id-901229d923ec460587b00441749c4848.html"  target="element">
+				  		<area shape="rect" coords="10,954,260,1029" href="../elements/id-481e6e58c68a4f068c26f3e73d8fa0c9.html"  target="element">
+				  		<area shape="rect" coords="10,454,260,529" href="../elements/id-a218b860c9e448218393e26fc0c3a7eb.html"  target="element">
+				  				<area shape="rect" coords="2206,1829,2495,2586" href="../elements/id-07b05ce1416343e7b870c134f20a7bd5.html"  target="element">
+				  				<area shape="rect" coords="1894,1829,2183,2586" href="../elements/id-635020f406aa4df4b59e31fa12f3ffb2.html"  target="element">
+				  						<area shape="rect" coords="1613,2057,1813,2142" href="../elements/id-f6b1705ae62345f19a95572b9c8347e7.html"  target="element">
+				  						<area shape="rect" coords="1613,1961,1813,2046" href="../elements/id-da88cd41c3a148b885c733dc09fca661.html"  target="element">
+				  						<area shape="rect" coords="1613,1865,1813,1950" href="../elements/id-dbc07cb62b064a849bd72de5c86c7756.html"  target="element">
+				  						<area shape="rect" coords="1613,2153,1813,2238" href="../elements/id-7424a2fc9fe74ab5904a47e4f6be272c.html"  target="element">
+
+				  				<area shape="rect" coords="1589,1829,1878,2586" href="../elements/id-eddcca3306114cc8babeeff482bd5446.html"  target="element">
+
+				  		<area shape="rect" coords="1570,1793,2519,2616" href="../elements/id-7fb46465880c4c699c0ab620de5299f7.html"  target="element">
+				  						<area shape="rect" coords="1606,989,1806,1074" href="../elements/id-2b3c1a53a37b42e58897240fe28ab2ab.html"  target="element">
+
+				  				<area shape="rect" coords="1582,953,1834,1709" href="../elements/id-85ab5c90a5454be98d3910b246566977.html"  target="element">
+				  						<area shape="rect" coords="1858,1589,2058,1674" href="../elements/id-b206544e7382445899a46cbc1ee76c63.html"  target="element">
+				  						<area shape="rect" coords="1858,1109,2058,1194" href="../elements/id-6ac42b4c6c534ddf97eb7dda21e1377b.html"  target="element">
+				  						<area shape="rect" coords="1858,1397,2058,1482" href="../elements/id-d288d9a9758f48b192e6f8a4ce0e46db.html"  target="element">
+				  						<area shape="rect" coords="2074,1469,2274,1554" href="../elements/id-2fe161a2b165466abb598a33c2e102b1.html"  target="element">
+				  						<area shape="rect" coords="1858,1301,2058,1386" href="../elements/id-0ab374e224194459a80ae38cee35c083.html"  target="element">
+				  						<area shape="rect" coords="2074,1277,2274,1362" href="../elements/id-5ef26d7a372b4036a5685cbd74cc2ae7.html"  target="element">
+				  						<area shape="rect" coords="2074,1181,2274,1266" href="../elements/id-bbf50773f460450f8b0027299b2a1ea8.html"  target="element">
+				  						<area shape="rect" coords="2074,1565,2274,1650" href="../elements/id-e4269c27d0f549a1b7e39ccfb5830ae1.html"  target="element">
+				  						<area shape="rect" coords="2074,1085,2274,1170" href="../elements/id-bf830806bb5249de8a36237852e6aff2.html"  target="element">
+				  						<area shape="rect" coords="2074,1373,2274,1458" href="../elements/id-34fb8b0916234d0d9c3334e6b1d47333.html"  target="element">
+				  						<area shape="rect" coords="1858,1205,2058,1290" href="../elements/id-f2701bd2162849449d6d064de841cdbd.html"  target="element">
+				  						<area shape="rect" coords="2074,989,2274,1074" href="../elements/id-915151f49cce4d179818d5d95f025cd2.html"  target="element">
+				  						<area shape="rect" coords="2290,989,2490,1074" href="../elements/id-04d2e151f5504e5b9111c9f233f988d8.html"  target="element">
+				  						<area shape="rect" coords="2290,1085,2490,1170" href="../elements/id-c0c5902a22d04810b293377fc7d2094b.html"  target="element">
+				  						<area shape="rect" coords="1858,1493,2058,1578" href="../elements/id-c655ea252d764180a87a205e4ed98809.html"  target="element">
+				  						<area shape="rect" coords="1858,989,2058,1074" href="../elements/id-cd883286957a44ea985fee0727e2f966.html"  target="element">
+
+				  				<area shape="rect" coords="1846,953,2554,1709" href="../elements/id-aba98bc7232e4c3380fd22a87d8451a3.html"  target="element">
+				  						<area shape="rect" coords="2794,1181,2994,1266" href="../elements/id-6ea145ec22ac438b9bbd6ac20c397eec.html"  target="element">
+				  						<area shape="rect" coords="2578,1373,2778,1458" href="../elements/id-77ce19ac309d45188ea673039997b6d5.html"  target="element">
+				  						<area shape="rect" coords="2578,1277,2778,1362" href="../elements/id-0c19aa6a56974beda41b169365736b4e.html"  target="element">
+				  						<area shape="rect" coords="2794,1277,2994,1362" href="../elements/id-aa0c1461d2b24df2abad49c68d2c6bef.html"  target="element">
+				  						<area shape="rect" coords="2794,989,2994,1074" href="../elements/id-e73d65927833494c882c3724705f8baa.html"  target="element">
+				  						<area shape="rect" coords="2578,1181,2778,1266" href="../elements/id-f67c9ab50f4046a29401991a2c1e3631.html"  target="element">
+				  						<area shape="rect" coords="2794,1085,2994,1170" href="../elements/id-4d4aa5e6a9b8413d8bc4bcbb6ad32b3d.html"  target="element">
+				  						<area shape="rect" coords="2578,1085,2778,1170" href="../elements/id-5662ed2c74954fe5b99a75669294b475.html"  target="element">
+				  						<area shape="rect" coords="2578,989,2778,1074" href="../elements/id-47c5a46fecb442cf9859951abd149566.html"  target="element">
+
+				  				<area shape="rect" coords="2566,953,3011,1709" href="../elements/id-5e00ad9ca1274ad3904daeadf39a0a06.html"  target="element">
+
+				  		<area shape="rect" coords="1570,917,3035,1740" href="../elements/id-330a707f03f2458faae897e43da6a2b3.html"  target="element">
+				  				<area shape="rect" coords="1882,46,2171,803" href="../elements/id-94ee159c467b476085e99857b1fe3c81.html"  target="element">
+				  						<area shape="rect" coords="1606,682,1806,767" href="../elements/id-f4dda2766a34449e853654a5091df79b.html"  target="element">
+				  						<area shape="rect" coords="1606,586,1806,671" href="../elements/id-c100f0bdfcc14f158c599cee89243be2.html"  target="element">
+				  						<area shape="rect" coords="1606,490,1806,575" href="../elements/id-637a1b7e35174a19937ce9e3ad4f2d4c.html"  target="element">
+				  						<area shape="rect" coords="1606,394,1806,479" href="../elements/id-7d5a011b3a5d48afbf53dd875db40f54.html"  target="element">
+				  						<area shape="rect" coords="1606,298,1806,383" href="../elements/id-1d7197910ea64475bc6654a3e052a4d0.html"  target="element">
+				  						<area shape="rect" coords="1606,202,1806,287" href="../elements/id-8e8eb3a0292f4bbdbf738eb487d5280c.html"  target="element">
+				  						<area shape="rect" coords="1606,82,1806,191" href="../elements/id-2595c376a32a485098b69077a6105ba2.html"  target="element">
+
+				  				<area shape="rect" coords="1582,46,1871,803" href="../elements/id-c6a1d5eea92e4516b56af7f22387f64c.html"  target="element">
+				  						<area shape="rect" coords="2206,178,2406,263" href="../elements/id-16a6fa66096f44e4a20817eea1a20986.html"  target="element">
+				  						<area shape="rect" coords="2206,82,2406,167" href="../elements/id-3cd60e22267e47af9fb267757e47af7a.html"  target="element">
+
+				  				<area shape="rect" coords="2182,46,2471,803" href="../elements/id-e49f1654beff442d91adfe75c61ebcde.html"  target="element">
+
+				  		<area shape="rect" coords="1570,10,2495,833" href="../elements/id-5943f93a6c1947fea44cdfc92b8bd5e6.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Architecture principles play a vital role in shaping the overall implementation of solutions. These principles provide guidelines and best practices that inform the design decisions made by solutions architects. By considering the legal view alongside architecture principles, solutions architects can ensure that legal requirements are seamlessly integrated into the design and implementation process.
+
+When architecture principles and the legal view are aligned, several benefits arise. First, it enables solutions architects to proactively address legal compliance from the early stages of the project. By incorporating legal requirements into the architectural design, potential legal issues and risks can be identified and mitigated upfront. This proactive approach reduces the likelihood of costly redesigns or legal challenges later in the implementation process.
+
+Second, aligning the legal view with architecture principles helps maintain consistency and coherence in the overall solution. Legal acts often establish specific standards and regulations that must be followed. By integrating these legal requirements into the architectural design, solutions architects ensure that the solution remains aligned with legal obligations throughout its lifecycle. This adherence to legal standards enhances the trust and confidence of stakeholders, including clients, regulators, and end-users.
+
+Furthermore, aligning the legal view with architecture principles promotes transparency and accountability. Legal acts often emphasize data privacy, security, and ethical considerations. By incorporating these aspects into the architecture principles, solutions architects can demonstrate their commitment to protecting sensitive data, ensuring the security of the solution, and upholding ethical practices. This proactive approach enhances the reputation of the solution and the organization behind it.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-5943f93a6c1947fea44cdfc92b8bd5e6.html" target="element"> European Non-Binding Instruments </a> </td>
+											    <td> <a href="../elements/id-5943f93a6c1947fea44cdfc92b8bd5e6.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-e49f1654beff442d91adfe75c61ebcde.html" target="element"> Legislation on Governance Interoperability (ENBI) </a> </td>
+													    <td> <a href="../elements/id-e49f1654beff442d91adfe75c61ebcde.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-3cd60e22267e47af9fb267757e47af7a.html" target="element"> Commission Recommendation 87/598/EEC of 8 December 1987 </a> </td>
+															    <td> <a href="../elements/id-3cd60e22267e47af9fb267757e47af7a.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-16a6fa66096f44e4a20817eea1a20986.html" target="element"> Regulation (EU) 2021/694 of the European Parliament and of the Council of 29 April 2021 </a> </td>
+															    <td> <a href="../elements/id-16a6fa66096f44e4a20817eea1a20986.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+													
+													<tr>
+													    <td> <a href="../elements/id-c6a1d5eea92e4516b56af7f22387f64c.html" target="element"> Legislation on Structural Interoperability (ENBI) </a> </td>
+													    <td> <a href="../elements/id-c6a1d5eea92e4516b56af7f22387f64c.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-2595c376a32a485098b69077a6105ba2.html" target="element"> Commission Delegated Regulation (EU) 2018/389 of 27 November 2017 </a> </td>
+															    <td> <a href="../elements/id-2595c376a32a485098b69077a6105ba2.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-8e8eb3a0292f4bbdbf738eb487d5280c.html" target="element"> European Interoperability Framework - Implementation Strategy COM/2017/0134 final </a> </td>
+															    <td> <a href="../elements/id-8e8eb3a0292f4bbdbf738eb487d5280c.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-1d7197910ea64475bc6654a3e052a4d0.html" target="element"> Strengthened Code of Practice on Disinformation </a> </td>
+															    <td> <a href="../elements/id-1d7197910ea64475bc6654a3e052a4d0.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-7d5a011b3a5d48afbf53dd875db40f54.html" target="element"> Declaration for the Future of Internet </a> </td>
+															    <td> <a href="../elements/id-7d5a011b3a5d48afbf53dd875db40f54.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-637a1b7e35174a19937ce9e3ad4f2d4c.html" target="element"> Declaration on Digital Rights and Principles </a> </td>
+															    <td> <a href="../elements/id-637a1b7e35174a19937ce9e3ad4f2d4c.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-c100f0bdfcc14f158c599cee89243be2.html" target="element"> Recommendation on Building a Joint Cyber Unit </a> </td>
+															    <td> <a href="../elements/id-c100f0bdfcc14f158c599cee89243be2.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-f4dda2766a34449e853654a5091df79b.html" target="element"> Recommendation on a trusted and secure European e-ID </a> </td>
+															    <td> <a href="../elements/id-f4dda2766a34449e853654a5091df79b.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+													
+													<tr>
+													    <td> <a href="../elements/id-94ee159c467b476085e99857b1fe3c81.html" target="element"> Legislation on Behavioural Interoperability (ENBI) </a> </td>
+													    <td> <a href="../elements/id-94ee159c467b476085e99857b1fe3c81.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-330a707f03f2458faae897e43da6a2b3.html" target="element"> European Binding Instruments </a> </td>
+											    <td> <a href="../elements/id-330a707f03f2458faae897e43da6a2b3.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-5e00ad9ca1274ad3904daeadf39a0a06.html" target="element"> Legislation on Governance Interoperability (EBI) </a> </td>
+													    <td> <a href="../elements/id-5e00ad9ca1274ad3904daeadf39a0a06.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-47c5a46fecb442cf9859951abd149566.html" target="element"> Directive (EU) 2018/1972 of the European Parliament and of the Council of 11 December 2018 </a> </td>
+															    <td> <a href="../elements/id-47c5a46fecb442cf9859951abd149566.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-5662ed2c74954fe5b99a75669294b475.html" target="element"> Directive (EU) 2019/770 of the European Parliament and of the Council of 20 May 2019 </a> </td>
+															    <td> <a href="../elements/id-5662ed2c74954fe5b99a75669294b475.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-4d4aa5e6a9b8413d8bc4bcbb6ad32b3d.html" target="element"> Directive 2014/24/EU of the European Parliament and of the Council of 26 February 2014 </a> </td>
+															    <td> <a href="../elements/id-4d4aa5e6a9b8413d8bc4bcbb6ad32b3d.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-f67c9ab50f4046a29401991a2c1e3631.html" target="element"> Directive (EU) 2016/97 of the European Parliament and of the Council of 20 January 2016 </a> </td>
+															    <td> <a href="../elements/id-f67c9ab50f4046a29401991a2c1e3631.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-e73d65927833494c882c3724705f8baa.html" target="element"> Directive (EU) 2015/2366 of the European Parliament and of the Council of 25 November 2015 </a> </td>
+															    <td> <a href="../elements/id-e73d65927833494c882c3724705f8baa.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-aa0c1461d2b24df2abad49c68d2c6bef.html" target="element"> Regulation (EU) 2018/644 of the European Parliament and of the Council of 18 April 2018 </a> </td>
+															    <td> <a href="../elements/id-aa0c1461d2b24df2abad49c68d2c6bef.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-0c19aa6a56974beda41b169365736b4e.html" target="element"> Regulation (EU) 2021/1230 of the European Parliament and of the Council of 14 July 2021 </a> </td>
+															    <td> <a href="../elements/id-0c19aa6a56974beda41b169365736b4e.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-77ce19ac309d45188ea673039997b6d5.html" target="element"> Regulation (EU) 2018/302 of the European Parliament and of the Council of 28 February 2018 </a> </td>
+															    <td> <a href="../elements/id-77ce19ac309d45188ea673039997b6d5.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-6ea145ec22ac438b9bbd6ac20c397eec.html" target="element"> Directive 2000/31/EC of the European Parliament and of the Council of 8 June 2000 </a> </td>
+															    <td> <a href="../elements/id-6ea145ec22ac438b9bbd6ac20c397eec.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+													
+													<tr>
+													    <td> <a href="../elements/id-aba98bc7232e4c3380fd22a87d8451a3.html" target="element"> Legislation on Behavioural Interoperability (EBI) </a> </td>
+													    <td> <a href="../elements/id-aba98bc7232e4c3380fd22a87d8451a3.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-cd883286957a44ea985fee0727e2f966.html" target="element"> Open Data Directive </a> </td>
+															    <td> <a href="../elements/id-cd883286957a44ea985fee0727e2f966.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-c655ea252d764180a87a205e4ed98809.html" target="element"> Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 </a> </td>
+															    <td> <a href="../elements/id-c655ea252d764180a87a205e4ed98809.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-c0c5902a22d04810b293377fc7d2094b.html" target="element"> Regulation (EU) 2018/1807 of the European Parliament and of the Council of 14 November 2018 </a> </td>
+															    <td> <a href="../elements/id-c0c5902a22d04810b293377fc7d2094b.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-04d2e151f5504e5b9111c9f233f988d8.html" target="element"> Regulation (EU) 2018/1724 of the European Parliament and of the Council of 2 October 2018 </a> </td>
+															    <td> <a href="../elements/id-04d2e151f5504e5b9111c9f233f988d8.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-915151f49cce4d179818d5d95f025cd2.html" target="element"> Directive (EU) 2016/2102 of the European Parliament and of the Council of 26 October 2016 </a> </td>
+															    <td> <a href="../elements/id-915151f49cce4d179818d5d95f025cd2.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-f2701bd2162849449d6d064de841cdbd.html" target="element"> Directive 2014/55/EU of the European Parliament and of the Council of 16 April 2014 </a> </td>
+															    <td> <a href="../elements/id-f2701bd2162849449d6d064de841cdbd.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-34fb8b0916234d0d9c3334e6b1d47333.html" target="element"> Cyber Solidarity Act Proposal </a> </td>
+															    <td> <a href="../elements/id-34fb8b0916234d0d9c3334e6b1d47333.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-bf830806bb5249de8a36237852e6aff2.html" target="element"> Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 </a> </td>
+															    <td> <a href="../elements/id-bf830806bb5249de8a36237852e6aff2.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-e4269c27d0f549a1b7e39ccfb5830ae1.html" target="element"> Data Act Proposal </a> </td>
+															    <td> <a href="../elements/id-e4269c27d0f549a1b7e39ccfb5830ae1.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-bbf50773f460450f8b0027299b2a1ea8.html" target="element"> Interoperable Europe Act Proposal </a> </td>
+															    <td> <a href="../elements/id-bbf50773f460450f8b0027299b2a1ea8.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-5ef26d7a372b4036a5685cbd74cc2ae7.html" target="element"> Artificial Intelligence Act Proposal </a> </td>
+															    <td> <a href="../elements/id-5ef26d7a372b4036a5685cbd74cc2ae7.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-0ab374e224194459a80ae38cee35c083.html" target="element"> Regulation (EU) 2022/2065 of the European Parliament and of the Council of 19 October 2022 </a> </td>
+															    <td> <a href="../elements/id-0ab374e224194459a80ae38cee35c083.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-2fe161a2b165466abb598a33c2e102b1.html" target="element"> Cyber Resilience Act Proposal </a> </td>
+															    <td> <a href="../elements/id-2fe161a2b165466abb598a33c2e102b1.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-d288d9a9758f48b192e6f8a4ce0e46db.html" target="element"> Data Governance Act </a> </td>
+															    <td> <a href="../elements/id-d288d9a9758f48b192e6f8a4ce0e46db.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-6ac42b4c6c534ddf97eb7dda21e1377b.html" target="element"> Implementing Act on High-Value Datasets </a> </td>
+															    <td> <a href="../elements/id-6ac42b4c6c534ddf97eb7dda21e1377b.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-b206544e7382445899a46cbc1ee76c63.html" target="element"> Digital Markets Act </a> </td>
+															    <td> <a href="../elements/id-b206544e7382445899a46cbc1ee76c63.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+													
+													<tr>
+													    <td> <a href="../elements/id-85ab5c90a5454be98d3910b246566977.html" target="element"> Legislation on Structural Interoperability (EBI) </a> </td>
+													    <td> <a href="../elements/id-85ab5c90a5454be98d3910b246566977.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-2b3c1a53a37b42e58897240fe28ab2ab.html" target="element"> Regulation (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014 </a> </td>
+															    <td> <a href="../elements/id-2b3c1a53a37b42e58897240fe28ab2ab.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+													
+											
+											<tr>
+											    <td> <a href="../elements/id-7fb46465880c4c699c0ab620de5299f7.html" target="element"> National Binding Instruments </a> </td>
+											    <td> <a href="../elements/id-7fb46465880c4c699c0ab620de5299f7.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-eddcca3306114cc8babeeff482bd5446.html" target="element"> Legislation on Structural Interoperability (NBI) </a> </td>
+													    <td> <a href="../elements/id-eddcca3306114cc8babeeff482bd5446.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-7424a2fc9fe74ab5904a47e4f6be272c.html" target="element"> National Schema on eIdentification </a> </td>
+															    <td> <a href="../elements/id-7424a2fc9fe74ab5904a47e4f6be272c.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-dbc07cb62b064a849bd72de5c86c7756.html" target="element"> National Schema on Cybersecurity </a> </td>
+															    <td> <a href="../elements/id-dbc07cb62b064a849bd72de5c86c7756.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-da88cd41c3a148b885c733dc09fca661.html" target="element"> National Schema on eDelivery </a> </td>
+															    <td> <a href="../elements/id-da88cd41c3a148b885c733dc09fca661.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-f6b1705ae62345f19a95572b9c8347e7.html" target="element"> National Schema on the access to Base Registries </a> </td>
+															    <td> <a href="../elements/id-f6b1705ae62345f19a95572b9c8347e7.html" target="element" class="i18n-elementtype-Requirement">
+															    </a> </td>
+															</tr>
+
+													
+													<tr>
+													    <td> <a href="../elements/id-635020f406aa4df4b59e31fa12f3ffb2.html" target="element"> Legislation on Behavioural Interoperability (NBI) </a> </td>
+													    <td> <a href="../elements/id-635020f406aa4df4b59e31fa12f3ffb2.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-07b05ce1416343e7b870c134f20a7bd5.html" target="element"> Legislation on Governance Interoperability (NBI) </a> </td>
+													    <td> <a href="../elements/id-07b05ce1416343e7b870c134f20a7bd5.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-a218b860c9e448218393e26fc0c3a7eb.html" target="element"> Code of ethics compliance </a> </td>
+											    <td> <a href="../elements/id-a218b860c9e448218393e26fc0c3a7eb.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-481e6e58c68a4f068c26f3e73d8fa0c9.html" target="element"> Transparency of the administrative environment </a> </td>
+											    <td> <a href="../elements/id-481e6e58c68a4f068c26f3e73d8fa0c9.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element"> Data Portability </a> </td>
+											    <td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-0586b12fed714134906aef22c1d48c95.html" target="element"> Subsidiarity and proportionality </a> </td>
+											    <td> <a href="../elements/id-0586b12fed714134906aef22c1d48c95.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-b085be545aaa4fae85e933f9356b4cbf.html" target="element"> Technology Neutrality </a> </td>
+											    <td> <a href="../elements/id-b085be545aaa4fae85e933f9356b4cbf.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-4393277865a84f2f8ee8df243a0b788b.html" target="element"> Best fit Public Service Implementation Orientation </a> </td>
+											    <td> <a href="../elements/id-4393277865a84f2f8ee8df243a0b788b.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-e1ace390d0154b9598a2560242f6a2bb.html" target="element"> Digital First </a> </td>
+											    <td> <a href="../elements/id-e1ace390d0154b9598a2560242f6a2bb.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-27a5e38f71c849c5852102bb91a5deec.html" target="element"> National Non-Binding Instruments </a> </td>
+											    <td> <a href="../elements/id-27a5e38f71c849c5852102bb91a5deec.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-8ea96a1157af45578cc256ff66aa4952.html" target="element"> Legislation on Structural Interoperability (NNBI) </a> </td>
+													    <td> <a href="../elements/id-8ea96a1157af45578cc256ff66aa4952.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-28e31d31e53b42e39950d258075a5383.html" target="element"> Legislation on Behavioural Interoperability (NNBI) </a> </td>
+													    <td> <a href="../elements/id-28e31d31e53b42e39950d258075a5383.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-804ab3a8f837427fae7b48e4b034f801.html" target="element"> Legislation on Governance Interoperability (NNBI) </a> </td>
+													    <td> <a href="../elements/id-804ab3a8f837427fae7b48e4b034f801.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+											
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+													
+																			<tr>
+																				<td> <a href="../elements/id-dc027e7b4788454399dce64864875f46.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-dc027e7b4788454399dce64864875f46.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-c6a1d5eea92e4516b56af7f22387f64c.html" target="element"> Legislation on Structural Interoperability (ENBI) </a> </td>
+																				<td> <a href="../elements/id-637a1b7e35174a19937ce9e3ad4f2d4c.html" target="element"> Declaration on Digital Rights and Principles </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-b32b557cbf294263b22a45503044c79c.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-b32b557cbf294263b22a45503044c79c.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-c6a1d5eea92e4516b56af7f22387f64c.html" target="element"> Legislation on Structural Interoperability (ENBI) </a> </td>
+																				<td> <a href="../elements/id-7d5a011b3a5d48afbf53dd875db40f54.html" target="element"> Declaration for the Future of Internet </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-b199b2bba434470699af01c705015421.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-b199b2bba434470699af01c705015421.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-c6a1d5eea92e4516b56af7f22387f64c.html" target="element"> Legislation on Structural Interoperability (ENBI) </a> </td>
+																				<td> <a href="../elements/id-c100f0bdfcc14f158c599cee89243be2.html" target="element"> Recommendation on Building a Joint Cyber Unit </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-081a393d20ab4406b9ee4bc7c380369c.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-081a393d20ab4406b9ee4bc7c380369c.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-c6a1d5eea92e4516b56af7f22387f64c.html" target="element"> Legislation on Structural Interoperability (ENBI) </a> </td>
+																				<td> <a href="../elements/id-f4dda2766a34449e853654a5091df79b.html" target="element"> Recommendation on a trusted and secure European e-ID </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-ebc577e241684b499987f5a34616bb8a.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-ebc577e241684b499987f5a34616bb8a.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-c6a1d5eea92e4516b56af7f22387f64c.html" target="element"> Legislation on Structural Interoperability (ENBI) </a> </td>
+																				<td> <a href="../elements/id-1d7197910ea64475bc6654a3e052a4d0.html" target="element"> Strengthened Code of Practice on Disinformation </a> </td>
+																			</tr>
+
+													
+											
+													
+																			<tr>
+																				<td> <a href="../elements/id-50e68edcfb154cc6974bb997f64d894b.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-50e68edcfb154cc6974bb997f64d894b.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-aba98bc7232e4c3380fd22a87d8451a3.html" target="element"> Legislation on Behavioural Interoperability (EBI) </a> </td>
+																				<td> <a href="../elements/id-bf830806bb5249de8a36237852e6aff2.html" target="element"> Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-bb52d6d899da4055b9621f52de8cf09e.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-bb52d6d899da4055b9621f52de8cf09e.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-aba98bc7232e4c3380fd22a87d8451a3.html" target="element"> Legislation on Behavioural Interoperability (EBI) </a> </td>
+																				<td> <a href="../elements/id-d288d9a9758f48b192e6f8a4ce0e46db.html" target="element"> Data Governance Act </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-f28a2edcaf2e49ceba02b0880b8b5bcd.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-f28a2edcaf2e49ceba02b0880b8b5bcd.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-aba98bc7232e4c3380fd22a87d8451a3.html" target="element"> Legislation on Behavioural Interoperability (EBI) </a> </td>
+																				<td> <a href="../elements/id-0ab374e224194459a80ae38cee35c083.html" target="element"> Regulation (EU) 2022/2065 of the European Parliament and of the Council of 19 October 2022 </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-f9962c297f9049d09a56796fc59996cd.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-f9962c297f9049d09a56796fc59996cd.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-aba98bc7232e4c3380fd22a87d8451a3.html" target="element"> Legislation on Behavioural Interoperability (EBI) </a> </td>
+																				<td> <a href="../elements/id-5ef26d7a372b4036a5685cbd74cc2ae7.html" target="element"> Artificial Intelligence Act Proposal </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-b24578d73618471381efde496000c9a1.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-b24578d73618471381efde496000c9a1.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-aba98bc7232e4c3380fd22a87d8451a3.html" target="element"> Legislation on Behavioural Interoperability (EBI) </a> </td>
+																				<td> <a href="../elements/id-e4269c27d0f549a1b7e39ccfb5830ae1.html" target="element"> Data Act Proposal </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-33a675d56f1249da8e5274ec9ebd9202.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-33a675d56f1249da8e5274ec9ebd9202.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-aba98bc7232e4c3380fd22a87d8451a3.html" target="element"> Legislation on Behavioural Interoperability (EBI) </a> </td>
+																				<td> <a href="../elements/id-34fb8b0916234d0d9c3334e6b1d47333.html" target="element"> Cyber Solidarity Act Proposal </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-48434c051c3d4247a89f0b24ff1affe0.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-48434c051c3d4247a89f0b24ff1affe0.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-aba98bc7232e4c3380fd22a87d8451a3.html" target="element"> Legislation on Behavioural Interoperability (EBI) </a> </td>
+																				<td> <a href="../elements/id-bbf50773f460450f8b0027299b2a1ea8.html" target="element"> Interoperable Europe Act Proposal </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-cb201cfa0fd94d3b8580f27f084a339f.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-cb201cfa0fd94d3b8580f27f084a339f.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-aba98bc7232e4c3380fd22a87d8451a3.html" target="element"> Legislation on Behavioural Interoperability (EBI) </a> </td>
+																				<td> <a href="../elements/id-2fe161a2b165466abb598a33c2e102b1.html" target="element"> Cyber Resilience Act Proposal </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-e3fec44dce57442a92039958e17cad36.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-e3fec44dce57442a92039958e17cad36.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-aba98bc7232e4c3380fd22a87d8451a3.html" target="element"> Legislation on Behavioural Interoperability (EBI) </a> </td>
+																				<td> <a href="../elements/id-6ac42b4c6c534ddf97eb7dda21e1377b.html" target="element"> Implementing Act on High-Value Datasets </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-6a144b2e0c1045a88b1d3a75ad598134.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-6a144b2e0c1045a88b1d3a75ad598134.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-aba98bc7232e4c3380fd22a87d8451a3.html" target="element"> Legislation on Behavioural Interoperability (EBI) </a> </td>
+																				<td> <a href="../elements/id-b206544e7382445899a46cbc1ee76c63.html" target="element"> Digital Markets Act </a> </td>
+																			</tr>
+
+																					<tr>
+																						<td> <a href="../elements/id-bb9b5d189f154c19a4df8b1758709f73.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-bb9b5d189f154c19a4df8b1758709f73.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																						</a> </td>
+																						<td> <a href="../elements/id-cd883286957a44ea985fee0727e2f966.html" target="element"> Open Data Directive </a> </td>
+																						<td> <a href="../elements/id-6ac42b4c6c534ddf97eb7dda21e1377b.html" target="element"> Implementing Act on High-Value Datasets </a> </td>
+																					</tr>
+
+													
+													
+											
+																	<tr>
+																		<td> <a href="../elements/id-c41bdc23ed9b45d19e37741fcc41e94b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-c41bdc23ed9b45d19e37741fcc41e94b.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7fb46465880c4c699c0ab620de5299f7.html" target="element"> National Binding Instruments </a> </td>
+																		<td> <a href="../elements/id-07b05ce1416343e7b870c134f20a7bd5.html" target="element"> Legislation on Governance Interoperability (NBI) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-da8b058ccf0d4695b6a0ceee1661fe86.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-da8b058ccf0d4695b6a0ceee1661fe86.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7fb46465880c4c699c0ab620de5299f7.html" target="element"> National Binding Instruments </a> </td>
+																		<td> <a href="../elements/id-635020f406aa4df4b59e31fa12f3ffb2.html" target="element"> Legislation on Behavioural Interoperability (NBI) </a> </td>
+																	</tr>
+
+													
+											
+																	<tr>
+																		<td> <a href="../elements/id-f79214753de0452f98bc8f8c4c01a64c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-f79214753de0452f98bc8f8c4c01a64c.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a218b860c9e448218393e26fc0c3a7eb.html" target="element"> Code of ethics compliance </a> </td>
+																		<td> <a href="../elements/id-5943f93a6c1947fea44cdfc92b8bd5e6.html" target="element"> European Non-Binding Instruments </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-038891251da44981936d8a06d56b014b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-038891251da44981936d8a06d56b014b.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a218b860c9e448218393e26fc0c3a7eb.html" target="element"> Code of ethics compliance </a> </td>
+																		<td> <a href="../elements/id-27a5e38f71c849c5852102bb91a5deec.html" target="element"> National Non-Binding Instruments </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-3c5e7e4e67784dfeb9bad44a611065f3.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-3c5e7e4e67784dfeb9bad44a611065f3.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-481e6e58c68a4f068c26f3e73d8fa0c9.html" target="element"> Transparency of the administrative environment </a> </td>
+																		<td> <a href="../elements/id-330a707f03f2458faae897e43da6a2b3.html" target="element"> European Binding Instruments </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-f471df9303d8418f95eec15e2658e9cb.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-f471df9303d8418f95eec15e2658e9cb.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-481e6e58c68a4f068c26f3e73d8fa0c9.html" target="element"> Transparency of the administrative environment </a> </td>
+																		<td> <a href="../elements/id-7fb46465880c4c699c0ab620de5299f7.html" target="element"> National Binding Instruments </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-7db06dceeb434e2494fc424bd1b3c0c6.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-7db06dceeb434e2494fc424bd1b3c0c6.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-481e6e58c68a4f068c26f3e73d8fa0c9.html" target="element"> Transparency of the administrative environment </a> </td>
+																		<td> <a href="../elements/id-27a5e38f71c849c5852102bb91a5deec.html" target="element"> National Non-Binding Instruments </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-402cf1b3e71f4611983b186124173f8a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-402cf1b3e71f4611983b186124173f8a.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element"> Data Portability </a> </td>
+																		<td> <a href="../elements/id-5943f93a6c1947fea44cdfc92b8bd5e6.html" target="element"> European Non-Binding Instruments </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-e4d8fed3b2f14a3bb6abc8d182c90c4b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e4d8fed3b2f14a3bb6abc8d182c90c4b.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element"> Data Portability </a> </td>
+																		<td> <a href="../elements/id-330a707f03f2458faae897e43da6a2b3.html" target="element"> European Binding Instruments </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-58b5d6a360604c58bce3d66b9b0c6de4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-58b5d6a360604c58bce3d66b9b0c6de4.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element"> Data Portability </a> </td>
+																		<td> <a href="../elements/id-7fb46465880c4c699c0ab620de5299f7.html" target="element"> National Binding Instruments </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-198c3d99d3f9433e99fca30863b4564d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-198c3d99d3f9433e99fca30863b4564d.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element"> Data Portability </a> </td>
+																		<td> <a href="../elements/id-27a5e38f71c849c5852102bb91a5deec.html" target="element"> National Non-Binding Instruments </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-f47e0e6c62934581a122edc72d4c9f4a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-f47e0e6c62934581a122edc72d4c9f4a.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-0586b12fed714134906aef22c1d48c95.html" target="element"> Subsidiarity and proportionality </a> </td>
+																		<td> <a href="../elements/id-7fb46465880c4c699c0ab620de5299f7.html" target="element"> National Binding Instruments </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-fc56752f107b49f980fc7e10db98c382.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-fc56752f107b49f980fc7e10db98c382.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-b085be545aaa4fae85e933f9356b4cbf.html" target="element"> Technology Neutrality </a> </td>
+																		<td> <a href="../elements/id-5943f93a6c1947fea44cdfc92b8bd5e6.html" target="element"> European Non-Binding Instruments </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-a481306711d64490951fc6fb123ed2e6.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-a481306711d64490951fc6fb123ed2e6.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-b085be545aaa4fae85e933f9356b4cbf.html" target="element"> Technology Neutrality </a> </td>
+																		<td> <a href="../elements/id-27a5e38f71c849c5852102bb91a5deec.html" target="element"> National Non-Binding Instruments </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-d50363ad6a8d45029be6f37eb4fa2abb.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d50363ad6a8d45029be6f37eb4fa2abb.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-4393277865a84f2f8ee8df243a0b788b.html" target="element"> Best fit Public Service Implementation Orientation </a> </td>
+																		<td> <a href="../elements/id-5943f93a6c1947fea44cdfc92b8bd5e6.html" target="element"> European Non-Binding Instruments </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-a6de1649b35f4919a6e698e288d48d4e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-a6de1649b35f4919a6e698e288d48d4e.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-4393277865a84f2f8ee8df243a0b788b.html" target="element"> Best fit Public Service Implementation Orientation </a> </td>
+																		<td> <a href="../elements/id-330a707f03f2458faae897e43da6a2b3.html" target="element"> European Binding Instruments </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-2d1fe65efd064f93bbf2709cc6d92bff.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-2d1fe65efd064f93bbf2709cc6d92bff.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-4393277865a84f2f8ee8df243a0b788b.html" target="element"> Best fit Public Service Implementation Orientation </a> </td>
+																		<td> <a href="../elements/id-27a5e38f71c849c5852102bb91a5deec.html" target="element"> National Non-Binding Instruments </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-78149a894ccf4bb08bf00086ecb1d5b8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-78149a894ccf4bb08bf00086ecb1d5b8.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e1ace390d0154b9598a2560242f6a2bb.html" target="element"> Digital First </a> </td>
+																		<td> <a href="../elements/id-5943f93a6c1947fea44cdfc92b8bd5e6.html" target="element"> European Non-Binding Instruments </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-e8789baf49b3402d8e98c0554e8445e2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e8789baf49b3402d8e98c0554e8445e2.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e1ace390d0154b9598a2560242f6a2bb.html" target="element"> Digital First </a> </td>
+																		<td> <a href="../elements/id-330a707f03f2458faae897e43da6a2b3.html" target="element"> European Binding Instruments </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-0d6b8730ca714086b3323b767cec63c5.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0d6b8730ca714086b3323b767cec63c5.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e1ace390d0154b9598a2560242f6a2bb.html" target="element"> Digital First </a> </td>
+																		<td> <a href="../elements/id-27a5e38f71c849c5852102bb91a5deec.html" target="element"> National Non-Binding Instruments </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-52785ea387724d91b6fabc8c77745b81.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-52785ea387724d91b6fabc8c77745b81.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-27a5e38f71c849c5852102bb91a5deec.html" target="element"> National Non-Binding Instruments </a> </td>
+																		<td> <a href="../elements/id-28e31d31e53b42e39950d258075a5383.html" target="element"> Legislation on Behavioural Interoperability (NNBI) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-2aca69ab667244808e23cad83aa632e2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-2aca69ab667244808e23cad83aa632e2.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-27a5e38f71c849c5852102bb91a5deec.html" target="element"> National Non-Binding Instruments </a> </td>
+																		<td> <a href="../elements/id-804ab3a8f837427fae7b48e4b034f801.html" target="element"> Legislation on Governance Interoperability (NNBI) </a> </td>
+																	</tr>
+
+											
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

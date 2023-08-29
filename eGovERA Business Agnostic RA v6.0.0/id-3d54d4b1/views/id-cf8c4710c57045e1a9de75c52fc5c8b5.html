@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>OV-Functional Architecture Principles</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>OV-Functional Architecture Principles</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-cf8c4710c57045e1a9de75c52fc5c8b5.png" alt="OV-Functional Architecture Principles" usemap="#id-cf8c4710c57045e1a9de75c52fc5c8b5map"/>
+			   <map name="id-cf8c4710c57045e1a9de75c52fc5c8b5map">
+				  		<area shape="rect" coords="1606,1027,1856,1102" href="../elements/id-58ee7a4f1e03458686c717fb34d551c0.html"  target="element">
+				  		<area shape="rect" coords="1606,919,1856,994" href="../elements/id-56e0d4768c73478dafb1413f59bd8e5f.html"  target="element">
+				  		<area shape="rect" coords="1606,823,1856,898" href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html"  target="element">
+				  		<area shape="rect" coords="1606,607,1856,682" href="../elements/id-f0fbf17b614648e6a9b60570729d0ae9.html"  target="element">
+				  		<area shape="rect" coords="1606,715,1856,790" href="../elements/id-5774bce6313d41ebb754f03e62534b93.html"  target="element">
+				  		<area shape="rect" coords="1606,487,1856,562" href="../elements/id-89fe3da93e6a4f2794fea08fcdd02ec1.html"  target="element">
+				  		<area shape="rect" coords="1606,391,1856,466" href="../elements/id-f6157270140640c98017ff52e7c1588d.html"  target="element">
+				  		<area shape="rect" coords="1606,295,1856,370" href="../elements/id-b15fd58b4ef047cb91b62ded14088c2a.html"  target="element">
+				  		<area shape="rect" coords="1606,103,1856,178" href="../elements/id-244bf4725c1548b9afb2fb9a6d9eec8d.html"  target="element">
+				  		<area shape="rect" coords="1606,10,1856,85" href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html"  target="element">
+				  		<area shape="rect" coords="1606,199,1856,274" href="../elements/id-e1ace390d0154b9598a2560242f6a2bb.html"  target="element">
+				  				<area shape="rect" coords="466,695,666,775" href="../elements/id-3e58bf21affb4e95aa24a86c8f5e7360.html"  target="element">
+				  				<area shape="rect" coords="682,695,882,775" href="../elements/id-f0f66a01071c4b70a43c531bc4f6060b.html"  target="element">
+				  				<area shape="rect" coords="22,695,222,775" href="../elements/id-00bc3c11dd93474eb265d045f7cb7d8f.html"  target="element">
+				  				<area shape="rect" coords="243,695,443,775" href="../elements/c83122fc-4b27-40e2-94ad-b03f02e43c3f.html"  target="element">
+				  				<area shape="rect" coords="243,911,443,991" href="../elements/id-53ab06ce-e343-4bd2-bf60-a1e5f3f076fe.html"  target="element">
+				  				<area shape="rect" coords="22,911,222,991" href="../elements/de351e7f-a944-49c4-b452-4b9e0571491f.html"  target="element">
+				  				<area shape="rect" coords="22,1019,222,1099" href="../elements/c073c753-1472-4e29-a4f1-d9d1ce5c083e.html"  target="element">
+				  				<area shape="rect" coords="466,911,666,991" href="../elements/aa3f8c7e-5642-42a4-88d0-a4835d717bbe.html"  target="element">
+				  				<area shape="rect" coords="682,1019,882,1099" href="../elements/id-339e54bf-e4fa-4c8a-8c40-8cca507f387b.html"  target="element">
+				  				<area shape="rect" coords="910,695,1110,775" href="../elements/id-76727a0d-5f7d-426e-a9dc-20cf4e6c344e.html"  target="element">
+				  				<area shape="rect" coords="243,803,443,883" href="../elements/id-683fa38b-2fde-4644-a7e3-bdd18070bf6a.html"  target="element">
+				  				<area shape="rect" coords="682,803,882,883" href="../elements/d43d5a66-233c-4613-908b-cc2c6b7ea5f5.html"  target="element">
+				  				<area shape="rect" coords="910,911,1110,991" href="../elements/id-3d5fafb3-8116-4d9a-856d-199c910bbf28.html"  target="element">
+				  				<area shape="rect" coords="682,911,882,991" href="../elements/id-6d8af733-e7ab-429d-b16e-69e09b19cb75.html"  target="element">
+				  				<area shape="rect" coords="22,803,222,883" href="../elements/id-6c7b2a9c-cee7-4815-9dc3-76db9b99e066.html"  target="element">
+				  				<area shape="rect" coords="466,803,666,883" href="../elements/id-0025b073-5858-4618-9641-dbef7bc40ae5.html"  target="element">
+				  				<area shape="rect" coords="910,803,1110,883" href="../elements/b151b174-b5bd-44fb-b3ca-2a686c58d338.html"  target="element">
+				  				<area shape="rect" coords="910,1019,1110,1099" href="../elements/id-2ac72a40-ff12-4d5d-8d81-43fd70c364d4.html"  target="element">
+				  				<area shape="rect" coords="466,1019,666,1099" href="../elements/id-04de5eeca33048e5bb39536ea7d03cf7.html"  target="element">
+				  				<area shape="rect" coords="243,1019,443,1099" href="../elements/id-d1d7651898de45ff9b6475f16d32649a.html"  target="element">
+
+				  		<area shape="rect" coords="10,659,1126,1132" href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html"  target="element">
+				  				<area shape="rect" coords="682,526,882,606" href="../elements/id-e69813dc0c5b4296a526703f26ccbbe5.html"  target="element">
+				  				<area shape="rect" coords="898,430,1098,510" href="../elements/id-a02fd72e70004c9f911cf97af77b8bce.html"  target="element">
+				  				<area shape="rect" coords="466,526,666,606" href="../elements/id-c38d28c689254e0e8737ea338beff5d3.html"  target="element">
+				  				<area shape="rect" coords="34,327,234,407" href="../elements/id-eeafe407a598495d934c0ef54173d17b.html"  target="element">
+				  				<area shape="rect" coords="250,327,450,407" href="../elements/id-069ce8640f224c7f86791aaf6905231a.html"  target="element">
+				  				<area shape="rect" coords="898,327,1098,407" href="../elements/id-224bd7a8623549468fce2da1a7b293ce.html"  target="element">
+				  				<area shape="rect" coords="682,327,882,407" href="../elements/id-405c209ade324a1fb404e022a251de36.html"  target="element">
+				  				<area shape="rect" coords="250,526,450,606" href="../elements/id-040f1c5d80b94b188b94d1fbb94c602a.html"  target="element">
+				  				<area shape="rect" coords="34,526,234,606" href="../elements/id-efa0da168db34261bebe318e236c39a4.html"  target="element">
+				  				<area shape="rect" coords="34,231,234,311" href="../elements/id-542bffd72c1f405d96dff33f5a39c916.html"  target="element">
+				  				<area shape="rect" coords="898,231,1098,311" href="../elements/id-3db195224b094f879fe657d7bea27dde.html"  target="element">
+				  				<area shape="rect" coords="682,231,882,311" href="../elements/id-7569cca69048477a9a31400c92691977.html"  target="element">
+				  				<area shape="rect" coords="466,231,666,311" href="../elements/id-a3d8335390c54f079a0ea862b7acca9c.html"  target="element">
+				  				<area shape="rect" coords="250,231,450,311" href="../elements/id-6278c6414fee4427a50b82f0264b5f90.html"  target="element">
+				  				<area shape="rect" coords="466,327,666,407" href="../elements/id-653e5e712ff4455e81e6f1ad4274014d.html"  target="element">
+				  				<area shape="rect" coords="250,430,450,510" href="../elements/id-85577d24b968425ca76eee83fc7de93f.html"  target="element">
+				  				<area shape="rect" coords="34,430,234,510" href="../elements/id-4977ee29fc50404aa299656f90a0eba7.html"  target="element">
+				  				<area shape="rect" coords="34,135,234,215" href="../elements/id-95a23f9ae7cb47dfa162a2dd9d476e6a.html"  target="element">
+				  				<area shape="rect" coords="898,135,1098,215" href="../elements/id-5922f5d5bb544bdb97f8524ecf01b027.html"  target="element">
+				  				<area shape="rect" coords="682,135,882,215" href="../elements/id-e9d9a86485854b0b892383dd41980094.html"  target="element">
+				  				<area shape="rect" coords="466,135,666,215" href="../elements/id-3c0c652408284bab91e4c46af96cee14.html"  target="element">
+				  				<area shape="rect" coords="250,135,450,215" href="../elements/id-865d367d94df43a6b18d6e6cdb0dd0e4.html"  target="element">
+				  				<area shape="rect" coords="682,430,882,510" href="../elements/id-2be5eb5382054619922ba9d71324f48b.html"  target="element">
+				  				<area shape="rect" coords="466,430,666,510" href="../elements/id-9e9af4354ced4bab98e90ee315cd56e0.html"  target="element">
+				  				<area shape="rect" coords="34,46,234,126" href="../elements/id-3994136175764deca83172aba59082d9.html"  target="element">
+				  				<area shape="rect" coords="898,46,1098,126" href="../elements/id-8adeed6de2bc48bb8882810d14e31a26.html"  target="element">
+				  				<area shape="rect" coords="682,46,882,126" href="../elements/id-ff108d5a524c47cb855aba850043af62.html"  target="element">
+				  				<area shape="rect" coords="466,46,666,126" href="../elements/id-bed18439807e45c3a449ab9d4ef57237.html"  target="element">
+				  				<area shape="rect" coords="250,46,450,126" href="../elements/id-f832d16752684180a2f5f578a6e74325.html"  target="element">
+
+				  		<area shape="rect" coords="10,10,1126,627" href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">The Organizational-Functional Architecture Principles view is a crucial aspect of solutions architecture, as it directly influences the implementation of solutions within an organization's functional layers. This view focuses on aligning the design and implementation of solutions with the goals, requirements, and processes of the organization.
+
+Aligning the Organizational-Functional Architecture Principles view with the organizational building blocks brings several benefits. Firstly, it ensures consistency and coherence across different functional areas within the organization. By defining and adhering to architecture principles, solutions architects establish a standardized approach that allows for seamless integration and interoperability between various building blocks. This consistency fosters effective communication and collaboration among departments and teams, promoting efficient business processes and operations.
+
+Secondly, aligning the Organizational-Functional Architecture Principles view supports the scalability and adaptability of solutions. The architecture principles provide guidelines for designing modular, flexible, and reusable solutions. By considering the specific requirements and characteristics of each organizational building block, solutions architects can design solutions that can easily accommodate future changes and expansions. This scalability and adaptability enable the organization to respond to evolving business needs, reducing the time and resources required for future modifications.
+
+Furthermore, aligning the Organizational-Functional Architecture Principles view enhances governance and decision-making processes within the organization. The architecture principles serve as a reference for making design decisions, ensuring that solutions align with the strategic objectives and priorities of the organization. By considering the unique characteristics and requirements of each building block, solutions architects can make informed choices that optimize resource utilization and support the overall organizational strategy.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+											    <td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-f832d16752684180a2f5f578a6e74325.html" target="element"> ePayment </a> </td>
+													    <td> <a href="../elements/id-f832d16752684180a2f5f578a6e74325.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-bed18439807e45c3a449ab9d4ef57237.html" target="element"> Audit </a> </td>
+													    <td> <a href="../elements/id-bed18439807e45c3a449ab9d4ef57237.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-ff108d5a524c47cb855aba850043af62.html" target="element"> eArchiving </a> </td>
+													    <td> <a href="../elements/id-ff108d5a524c47cb855aba850043af62.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-8adeed6de2bc48bb8882810d14e31a26.html" target="element"> eDelivery </a> </td>
+													    <td> <a href="../elements/id-8adeed6de2bc48bb8882810d14e31a26.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-3994136175764deca83172aba59082d9.html" target="element"> eQualification </a> </td>
+													    <td> <a href="../elements/id-3994136175764deca83172aba59082d9.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-9e9af4354ced4bab98e90ee315cd56e0.html" target="element"> eTranslation </a> </td>
+													    <td> <a href="../elements/id-9e9af4354ced4bab98e90ee315cd56e0.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-2be5eb5382054619922ba9d71324f48b.html" target="element"> Data Extraction, Transformation and Loading </a> </td>
+													    <td> <a href="../elements/id-2be5eb5382054619922ba9d71324f48b.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-865d367d94df43a6b18d6e6cdb0dd0e4.html" target="element"> Data Analytics </a> </td>
+													    <td> <a href="../elements/id-865d367d94df43a6b18d6e6cdb0dd0e4.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-3c0c652408284bab91e4c46af96cee14.html" target="element"> Delegation of Power </a> </td>
+													    <td> <a href="../elements/id-3c0c652408284bab91e4c46af96cee14.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-e9d9a86485854b0b892383dd41980094.html" target="element"> Workflow Management </a> </td>
+													    <td> <a href="../elements/id-e9d9a86485854b0b892383dd41980094.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-5922f5d5bb544bdb97f8524ecf01b027.html" target="element"> Knowledge Management </a> </td>
+													    <td> <a href="../elements/id-5922f5d5bb544bdb97f8524ecf01b027.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-95a23f9ae7cb47dfa162a2dd9d476e6a.html" target="element"> eNotification </a> </td>
+													    <td> <a href="../elements/id-95a23f9ae7cb47dfa162a2dd9d476e6a.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-4977ee29fc50404aa299656f90a0eba7.html" target="element"> eIdentification </a> </td>
+													    <td> <a href="../elements/id-4977ee29fc50404aa299656f90a0eba7.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-85577d24b968425ca76eee83fc7de93f.html" target="element"> Digital Collaboration </a> </td>
+													    <td> <a href="../elements/id-85577d24b968425ca76eee83fc7de93f.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-653e5e712ff4455e81e6f1ad4274014d.html" target="element"> Waiting list Management </a> </td>
+													    <td> <a href="../elements/id-653e5e712ff4455e81e6f1ad4274014d.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-6278c6414fee4427a50b82f0264b5f90.html" target="element"> Open Data Management </a> </td>
+													    <td> <a href="../elements/id-6278c6414fee4427a50b82f0264b5f90.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-a3d8335390c54f079a0ea862b7acca9c.html" target="element"> Anonymisation </a> </td>
+													    <td> <a href="../elements/id-a3d8335390c54f079a0ea862b7acca9c.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-7569cca69048477a9a31400c92691977.html" target="element"> eSignature </a> </td>
+													    <td> <a href="../elements/id-7569cca69048477a9a31400c92691977.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-3db195224b094f879fe657d7bea27dde.html" target="element"> Secure Access Control </a> </td>
+													    <td> <a href="../elements/id-3db195224b094f879fe657d7bea27dde.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-542bffd72c1f405d96dff33f5a39c916.html" target="element"> Content Management </a> </td>
+													    <td> <a href="../elements/id-542bffd72c1f405d96dff33f5a39c916.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-efa0da168db34261bebe318e236c39a4.html" target="element"> Log Management </a> </td>
+													    <td> <a href="../elements/id-efa0da168db34261bebe318e236c39a4.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-040f1c5d80b94b188b94d1fbb94c602a.html" target="element"> eInvoicing </a> </td>
+													    <td> <a href="../elements/id-040f1c5d80b94b188b94d1fbb94c602a.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-405c209ade324a1fb404e022a251de36.html" target="element"> eTendering </a> </td>
+													    <td> <a href="../elements/id-405c209ade324a1fb404e022a251de36.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-224bd7a8623549468fce2da1a7b293ce.html" target="element"> Contact Management </a> </td>
+													    <td> <a href="../elements/id-224bd7a8623549468fce2da1a7b293ce.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-069ce8640f224c7f86791aaf6905231a.html" target="element"> Forms Management </a> </td>
+													    <td> <a href="../elements/id-069ce8640f224c7f86791aaf6905231a.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-eeafe407a598495d934c0ef54173d17b.html" target="element"> Data Exchange </a> </td>
+													    <td> <a href="../elements/id-eeafe407a598495d934c0ef54173d17b.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-c38d28c689254e0e8737ea338beff5d3.html" target="element"> Digital Inmutability </a> </td>
+													    <td> <a href="../elements/id-c38d28c689254e0e8737ea338beff5d3.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-a02fd72e70004c9f911cf97af77b8bce.html" target="element"> Business Intelligenge </a> </td>
+													    <td> <a href="../elements/id-a02fd72e70004c9f911cf97af77b8bce.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-e69813dc0c5b4296a526703f26ccbbe5.html" target="element"> Compliance Testing </a> </td>
+													    <td> <a href="../elements/id-e69813dc0c5b4296a526703f26ccbbe5.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+											    <td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-d1d7651898de45ff9b6475f16d32649a.html" target="element"> Payment </a> </td>
+													    <td> <a href="../elements/id-d1d7651898de45ff9b6475f16d32649a.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-04de5eeca33048e5bb39536ea7d03cf7.html" target="element"> Transaction </a> </td>
+													    <td> <a href="../elements/id-04de5eeca33048e5bb39536ea7d03cf7.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-2ac72a40-ff12-4d5d-8d81-43fd70c364d4.html" target="element"> Identification </a> </td>
+													    <td> <a href="../elements/id-2ac72a40-ff12-4d5d-8d81-43fd70c364d4.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/b151b174-b5bd-44fb-b3ca-2a686c58d338.html" target="element"> Qualification </a> </td>
+													    <td> <a href="../elements/b151b174-b5bd-44fb-b3ca-2a686c58d338.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-0025b073-5858-4618-9641-dbef7bc40ae5.html" target="element"> Audit trail </a> </td>
+													    <td> <a href="../elements/id-0025b073-5858-4618-9641-dbef7bc40ae5.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-6c7b2a9c-cee7-4815-9dc3-76db9b99e066.html" target="element"> Access rights </a> </td>
+													    <td> <a href="../elements/id-6c7b2a9c-cee7-4815-9dc3-76db9b99e066.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-6d8af733-e7ab-429d-b16e-69e09b19cb75.html" target="element"> Profile </a> </td>
+													    <td> <a href="../elements/id-6d8af733-e7ab-429d-b16e-69e09b19cb75.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-3d5fafb3-8116-4d9a-856d-199c910bbf28.html" target="element"> Message </a> </td>
+													    <td> <a href="../elements/id-3d5fafb3-8116-4d9a-856d-199c910bbf28.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/d43d5a66-233c-4613-908b-cc2c6b7ea5f5.html" target="element"> Availability </a> </td>
+													    <td> <a href="../elements/d43d5a66-233c-4613-908b-cc2c6b7ea5f5.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-683fa38b-2fde-4644-a7e3-bdd18070bf6a.html" target="element"> Digital Signature </a> </td>
+													    <td> <a href="../elements/id-683fa38b-2fde-4644-a7e3-bdd18070bf6a.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-76727a0d-5f7d-426e-a9dc-20cf4e6c344e.html" target="element"> Document </a> </td>
+													    <td> <a href="../elements/id-76727a0d-5f7d-426e-a9dc-20cf4e6c344e.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-339e54bf-e4fa-4c8a-8c40-8cca507f387b.html" target="element"> Security Measure </a> </td>
+													    <td> <a href="../elements/id-339e54bf-e4fa-4c8a-8c40-8cca507f387b.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/aa3f8c7e-5642-42a4-88d0-a4835d717bbe.html" target="element"> Location </a> </td>
+													    <td> <a href="../elements/aa3f8c7e-5642-42a4-88d0-a4835d717bbe.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/c073c753-1472-4e29-a4f1-d9d1ce5c083e.html" target="element"> Invoice </a> </td>
+													    <td> <a href="../elements/c073c753-1472-4e29-a4f1-d9d1ce5c083e.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/de351e7f-a944-49c4-b452-4b9e0571491f.html" target="element"> Contracting authority </a> </td>
+													    <td> <a href="../elements/de351e7f-a944-49c4-b452-4b9e0571491f.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-53ab06ce-e343-4bd2-bf60-a1e5f3f076fe.html" target="element"> Economic operator </a> </td>
+													    <td> <a href="../elements/id-53ab06ce-e343-4bd2-bf60-a1e5f3f076fe.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/c83122fc-4b27-40e2-94ad-b03f02e43c3f.html" target="element"> Digital Asset </a> </td>
+													    <td> <a href="../elements/c83122fc-4b27-40e2-94ad-b03f02e43c3f.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-00bc3c11dd93474eb265d045f7cb7d8f.html" target="element"> Credential </a> </td>
+													    <td> <a href="../elements/id-00bc3c11dd93474eb265d045f7cb7d8f.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-f0f66a01071c4b70a43c531bc4f6060b.html" target="element"> Data Quality </a> </td>
+													    <td> <a href="../elements/id-f0f66a01071c4b70a43c531bc4f6060b.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-3e58bf21affb4e95aa24a86c8f5e7360.html" target="element"> Distribution list </a> </td>
+													    <td> <a href="../elements/id-3e58bf21affb4e95aa24a86c8f5e7360.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-e1ace390d0154b9598a2560242f6a2bb.html" target="element"> Digital First </a> </td>
+											    <td> <a href="../elements/id-e1ace390d0154b9598a2560242f6a2bb.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html" target="element"> Openness </a> </td>
+											    <td> <a href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-244bf4725c1548b9afb2fb9a6d9eec8d.html" target="element"> Security by Design </a> </td>
+											    <td> <a href="../elements/id-244bf4725c1548b9afb2fb9a6d9eec8d.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-b15fd58b4ef047cb91b62ded14088c2a.html" target="element"> Service Orientation </a> </td>
+											    <td> <a href="../elements/id-b15fd58b4ef047cb91b62ded14088c2a.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-f6157270140640c98017ff52e7c1588d.html" target="element"> User-centricity </a> </td>
+											    <td> <a href="../elements/id-f6157270140640c98017ff52e7c1588d.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-89fe3da93e6a4f2794fea08fcdd02ec1.html" target="element"> Once Only </a> </td>
+											    <td> <a href="../elements/id-89fe3da93e6a4f2794fea08fcdd02ec1.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-5774bce6313d41ebb754f03e62534b93.html" target="element"> Multilingualism </a> </td>
+											    <td> <a href="../elements/id-5774bce6313d41ebb754f03e62534b93.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-f0fbf17b614648e6a9b60570729d0ae9.html" target="element"> Evidence based Public Policy </a> </td>
+											    <td> <a href="../elements/id-f0fbf17b614648e6a9b60570729d0ae9.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html" target="element"> Openness </a> </td>
+											    <td> <a href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-56e0d4768c73478dafb1413f59bd8e5f.html" target="element"> Privacy </a> </td>
+											    <td> <a href="../elements/id-56e0d4768c73478dafb1413f59bd8e5f.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-58ee7a4f1e03458686c717fb34d551c0.html" target="element"> Preservation of information </a> </td>
+											    <td> <a href="../elements/id-58ee7a4f1e03458686c717fb34d551c0.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-78a8b103413c41d58230f87cdb40eb21.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-78a8b103413c41d58230f87cdb40eb21.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-653e5e712ff4455e81e6f1ad4274014d.html" target="element"> Waiting list Management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-b03013b33aee4ea5ae3b1f8ef80976e6.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-b03013b33aee4ea5ae3b1f8ef80976e6.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-c38d28c689254e0e8737ea338beff5d3.html" target="element"> Digital Inmutability </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-04cddae5d5674994833ea97b17a5c3d2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-04cddae5d5674994833ea97b17a5c3d2.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-069ce8640f224c7f86791aaf6905231a.html" target="element"> Forms Management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-fc6a7bd922944da6b7c31a48028c37ec.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-fc6a7bd922944da6b7c31a48028c37ec.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-a02fd72e70004c9f911cf97af77b8bce.html" target="element"> Business Intelligenge </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-cc5effdef5f64a069ee05f7513f1a4b2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-cc5effdef5f64a069ee05f7513f1a4b2.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-542bffd72c1f405d96dff33f5a39c916.html" target="element"> Content Management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-133665b160e84fc587077570cabdeec3.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-133665b160e84fc587077570cabdeec3.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-6278c6414fee4427a50b82f0264b5f90.html" target="element"> Open Data Management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-fc105357a89e434a87ce14621165c9ad.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-fc105357a89e434a87ce14621165c9ad.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-7569cca69048477a9a31400c92691977.html" target="element"> eSignature </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-8996d00286ef450fb80622b7c3d83720.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-8996d00286ef450fb80622b7c3d83720.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-ff108d5a524c47cb855aba850043af62.html" target="element"> eArchiving </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-982565c7a66440d0867dad75297c55ef.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-982565c7a66440d0867dad75297c55ef.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-95a23f9ae7cb47dfa162a2dd9d476e6a.html" target="element"> eNotification </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-f213f347531e4b6cadc4410c922a8e06.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-f213f347531e4b6cadc4410c922a8e06.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-405c209ade324a1fb404e022a251de36.html" target="element"> eTendering </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-dc1347f6dae744488dda9af15e6eed04.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-dc1347f6dae744488dda9af15e6eed04.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-8adeed6de2bc48bb8882810d14e31a26.html" target="element"> eDelivery </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-31b0ee4f5b6f43d2b491163b25a95233.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-31b0ee4f5b6f43d2b491163b25a95233.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-85577d24b968425ca76eee83fc7de93f.html" target="element"> Digital Collaboration </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-76d61d15743e45e1b3be8b990867287c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-76d61d15743e45e1b3be8b990867287c.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-eeafe407a598495d934c0ef54173d17b.html" target="element"> Data Exchange </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-e67b176c2f9645e38d5b54192c5fdab7.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e67b176c2f9645e38d5b54192c5fdab7.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-efa0da168db34261bebe318e236c39a4.html" target="element"> Log Management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-9ae03705f84e438ba12338a0c472316c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-9ae03705f84e438ba12338a0c472316c.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-040f1c5d80b94b188b94d1fbb94c602a.html" target="element"> eInvoicing </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-be1f8bd9b2e54443b454555dc5a0b302.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-be1f8bd9b2e54443b454555dc5a0b302.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-a3d8335390c54f079a0ea862b7acca9c.html" target="element"> Anonymisation </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-92c8bc8b4fdc4845adae8f98cd24f91e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-92c8bc8b4fdc4845adae8f98cd24f91e.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-3c0c652408284bab91e4c46af96cee14.html" target="element"> Delegation of Power </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-a421f1c20d094adfbab940cf18e17db5.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-a421f1c20d094adfbab940cf18e17db5.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-865d367d94df43a6b18d6e6cdb0dd0e4.html" target="element"> Data Analytics </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-c967c14f38444cf99f847e0365904446.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-c967c14f38444cf99f847e0365904446.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-2be5eb5382054619922ba9d71324f48b.html" target="element"> Data Extraction, Transformation and Loading </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-0a7acd9c647b48629a3ed33453282736.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0a7acd9c647b48629a3ed33453282736.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-224bd7a8623549468fce2da1a7b293ce.html" target="element"> Contact Management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-807cccd92f14449bbfd2faa7337219e7.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-807cccd92f14449bbfd2faa7337219e7.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-5922f5d5bb544bdb97f8524ecf01b027.html" target="element"> Knowledge Management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-85f5cf7e91d04c59aedbcf17fb5508f2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-85f5cf7e91d04c59aedbcf17fb5508f2.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-3994136175764deca83172aba59082d9.html" target="element"> eQualification </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-6e2895e5b0ef4cf2a63e5a8c59676fd1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6e2895e5b0ef4cf2a63e5a8c59676fd1.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-bed18439807e45c3a449ab9d4ef57237.html" target="element"> Audit </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-5a5b13811403491aaddfb18952a5fd11.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-5a5b13811403491aaddfb18952a5fd11.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-3db195224b094f879fe657d7bea27dde.html" target="element"> Secure Access Control </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-78f6d77fabb24e4eb19205867f5b0667.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-78f6d77fabb24e4eb19205867f5b0667.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-e69813dc0c5b4296a526703f26ccbbe5.html" target="element"> Compliance Testing </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-c5694e862d2b446fb2d05a01afc40371.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-c5694e862d2b446fb2d05a01afc40371.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-4977ee29fc50404aa299656f90a0eba7.html" target="element"> eIdentification </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-774ed72f5460488897dd18743d847ccd.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-774ed72f5460488897dd18743d847ccd.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-e9d9a86485854b0b892383dd41980094.html" target="element"> Workflow Management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-336cb4a52c0342c5ac65815ef821eb85.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-336cb4a52c0342c5ac65815ef821eb85.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-9e9af4354ced4bab98e90ee315cd56e0.html" target="element"> eTranslation </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-446bd76d6e4c4ee4b807a11773fbf2c9.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-446bd76d6e4c4ee4b807a11773fbf2c9.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																		<td> <a href="../elements/id-f832d16752684180a2f5f578a6e74325.html" target="element"> ePayment </a> </td>
+																	</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/id-3a3b76e6fcf246e19fe157fb7c9623d8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-3a3b76e6fcf246e19fe157fb7c9623d8.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/id-3e58bf21affb4e95aa24a86c8f5e7360.html" target="element"> Distribution list </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-21d53046-182e-4f78-b447-902d1b75ad3b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-21d53046-182e-4f78-b447-902d1b75ad3b.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/id-0025b073-5858-4618-9641-dbef7bc40ae5.html" target="element"> Audit trail </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/fe0cb0da-b160-4e8f-b593-5b50c305f47c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/fe0cb0da-b160-4e8f-b593-5b50c305f47c.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/b151b174-b5bd-44fb-b3ca-2a686c58d338.html" target="element"> Qualification </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/dd657d2f-1dd5-4be1-8af1-71f8fa903431.html" target="element">  </a> </td>
+																		<td> <a href="../elements/dd657d2f-1dd5-4be1-8af1-71f8fa903431.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/id-2ac72a40-ff12-4d5d-8d81-43fd70c364d4.html" target="element"> Identification </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-10372d57-a8be-44a0-b1b9-129b49813e1e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-10372d57-a8be-44a0-b1b9-129b49813e1e.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/c073c753-1472-4e29-a4f1-d9d1ce5c083e.html" target="element"> Invoice </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/d600239f-cdc4-4318-af34-7206368153ee.html" target="element">  </a> </td>
+																		<td> <a href="../elements/d600239f-cdc4-4318-af34-7206368153ee.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/id-76727a0d-5f7d-426e-a9dc-20cf4e6c344e.html" target="element"> Document </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/e3b5ace1-2ab3-4979-a21f-5d22c35d0aae.html" target="element">  </a> </td>
+																		<td> <a href="../elements/e3b5ace1-2ab3-4979-a21f-5d22c35d0aae.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/id-683fa38b-2fde-4644-a7e3-bdd18070bf6a.html" target="element"> Digital Signature </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-871bda2f-6be9-4724-9706-3bd3df7ba7ea.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-871bda2f-6be9-4724-9706-3bd3df7ba7ea.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/id-6c7b2a9c-cee7-4815-9dc3-76db9b99e066.html" target="element"> Access rights </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-2d9d7fb3-df23-4dd8-9979-4c0e336cdf7d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-2d9d7fb3-df23-4dd8-9979-4c0e336cdf7d.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/de351e7f-a944-49c4-b452-4b9e0571491f.html" target="element"> Contracting authority </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/a5d3b43b-488d-4d9c-836c-861724c1d8ce.html" target="element">  </a> </td>
+																		<td> <a href="../elements/a5d3b43b-488d-4d9c-836c-861724c1d8ce.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/id-6d8af733-e7ab-429d-b16e-69e09b19cb75.html" target="element"> Profile </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-5cedf6e0-72d3-4085-977d-ecea7a8be4c1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-5cedf6e0-72d3-4085-977d-ecea7a8be4c1.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/id-339e54bf-e4fa-4c8a-8c40-8cca507f387b.html" target="element"> Security Measure </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/ad76355f-631e-46e0-8fbb-b8d2f3008f5a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/ad76355f-631e-46e0-8fbb-b8d2f3008f5a.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/id-53ab06ce-e343-4bd2-bf60-a1e5f3f076fe.html" target="element"> Economic operator </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-d675e68ca109470dac2d53922cfe5fdf.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d675e68ca109470dac2d53922cfe5fdf.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/id-00bc3c11dd93474eb265d045f7cb7d8f.html" target="element"> Credential </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-302b5d23-5dde-44a3-b040-a397b573a982.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-302b5d23-5dde-44a3-b040-a397b573a982.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/aa3f8c7e-5642-42a4-88d0-a4835d717bbe.html" target="element"> Location </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/ecc2ae4a-7ec1-41df-ae97-74001709c3ea.html" target="element">  </a> </td>
+																		<td> <a href="../elements/ecc2ae4a-7ec1-41df-ae97-74001709c3ea.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/c83122fc-4b27-40e2-94ad-b03f02e43c3f.html" target="element"> Digital Asset </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/a91cb099-6e43-42ef-a8f1-4ed82924037e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/a91cb099-6e43-42ef-a8f1-4ed82924037e.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/id-3d5fafb3-8116-4d9a-856d-199c910bbf28.html" target="element"> Message </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-490930987b6d496a9383deae7913629b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-490930987b6d496a9383deae7913629b.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/id-d1d7651898de45ff9b6475f16d32649a.html" target="element"> Payment </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-a59a2d6fd3414a13baca849f006465bf.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-a59a2d6fd3414a13baca849f006465bf.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/id-04de5eeca33048e5bb39536ea7d03cf7.html" target="element"> Transaction </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-02b40cd26358409aab1ea01a0c5212f6.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-02b40cd26358409aab1ea01a0c5212f6.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/id-f0f66a01071c4b70a43c531bc4f6060b.html" target="element"> Data Quality </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/d31d683c-28f8-46ac-951a-0d4207a6c119.html" target="element">  </a> </td>
+																		<td> <a href="../elements/d31d683c-28f8-46ac-951a-0d4207a6c119.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																		<td> <a href="../elements/d43d5a66-233c-4613-908b-cc2c6b7ea5f5.html" target="element"> Availability </a> </td>
+																	</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/id-6e41ed1bb2a5480da43151851a99d936.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6e41ed1bb2a5480da43151851a99d936.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e1ace390d0154b9598a2560242f6a2bb.html" target="element"> Digital First </a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-96167606bfa946a0aa38bc2b8c94fe7a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-96167606bfa946a0aa38bc2b8c94fe7a.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html" target="element"> Openness </a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-299e2d0472bd438590a6d5fbae094df0.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-299e2d0472bd438590a6d5fbae094df0.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-244bf4725c1548b9afb2fb9a6d9eec8d.html" target="element"> Security by Design </a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-50e8f319220e43f78ce89f7de0ebceee.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-50e8f319220e43f78ce89f7de0ebceee.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-b15fd58b4ef047cb91b62ded14088c2a.html" target="element"> Service Orientation </a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-7fee9646fd774183b9ca98719b4d8f0d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-7fee9646fd774183b9ca98719b4d8f0d.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-f6157270140640c98017ff52e7c1588d.html" target="element"> User-centricity </a> </td>
+																		<td> <a href="../elements/id-e6ab5537e6b74b828956c4376d3871dd.html" target="element"> Business Agnostic Digital Public Services Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-dacd567c549d47309718b2aa2206c5d1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-dacd567c549d47309718b2aa2206c5d1.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-89fe3da93e6a4f2794fea08fcdd02ec1.html" target="element"> Once Only </a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-5c62b2ad16124aa884f6c95ac96ce819.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-5c62b2ad16124aa884f6c95ac96ce819.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-5774bce6313d41ebb754f03e62534b93.html" target="element"> Multilingualism </a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-36c6c6346eec4adf94871976286a3d4c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-36c6c6346eec4adf94871976286a3d4c.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-f0fbf17b614648e6a9b60570729d0ae9.html" target="element"> Evidence based Public Policy </a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-93dc1f8bec1847a18ec9eb1d427728cb.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-93dc1f8bec1847a18ec9eb1d427728cb.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html" target="element"> Openness </a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-94b6be6ba9e245bda11c567b80dc27f1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-94b6be6ba9e245bda11c567b80dc27f1.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-56e0d4768c73478dafb1413f59bd8e5f.html" target="element"> Privacy </a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-448afe20eb3e46ef9bffa3c574007197.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-448afe20eb3e46ef9bffa3c574007197.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-58ee7a4f1e03458686c717fb34d551c0.html" target="element"> Preservation of information </a> </td>
+																		<td> <a href="../elements/id-6c0de37c062e435e96040cb22c9b0d6c.html" target="element"> Business Agnostic Business Information Base </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

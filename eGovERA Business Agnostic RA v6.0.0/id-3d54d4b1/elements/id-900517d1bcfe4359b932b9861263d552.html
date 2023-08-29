@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>JWT Bearer</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>JWT Bearer</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Contract"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Contract" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: JWT Bearer is a method for authentication and authorization where a JSON Web Token (JWT) is used as a bearer token. This means that the client presents the token to the server or resource, and the server uses the information contained in the token to authenticate the client and authorize access. The server does not need to maintain a record or session state for the client, making this method suitable for scalable applications and microservices. The JWT Bearer is often used in OAuth 2.0 and OpenID Connect protocols.
+
+Additional information: JWT Bearer is a method of authentication that involves the use of JSON Web Tokens (JWTs) as bearer tokens. A bearer token is a type of access token that is given to the user after they have authenticated themselves, and it allows the user to access specific resources on a server. The term "bearer" implies that the person or application holding the token is the one that is authenticated.
+
+JWTs are a compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object that is digitally signed using JSON Web Signature (JWS). They can also be encrypted using JSON Web Encryption (JWE) for additional security. 
+
+In the context of JWT Bearer, the JWTs are used as the bearer tokens. When a user or application wants to access certain resources, they must include the JWT in the authorization header of the HTTP request. The server will then validate the JWT, and if it's valid, the server will process the request.
+
+The JWT Bearer is often used in the context of OAuth 2.0, an authorization framework that enables a third-party application to obtain limited access to an HTTP service. In OAuth 2.0, the JWT Bearer can be used as a method for client authentication to the token endpoint or as a means of application-level authorization.
+
+One of the main advantages of using JWT Bearer is that the tokens are self-contained. This means they contain all the necessary information about the user or application, so the server doesn't need to query a database to validate the token. This can lead to more efficient and scalable systems. However, it also means that the tokens can be quite large, especially if they contain a lot of claims.
+
+Example: 1. User Authentication: JWT Bearer is commonly used in user authentication. When a user logs in with their credentials, the server generates a JWT that is signed with a secret key and sends it back to the client. The client then includes this JWT in the header of each subsequent request to the server. The server verifies the JWT and if it's valid, allows access to the protected resources.
+
+2. API Authentication: JWT Bearer can be used to authenticate API requests. For example, a mobile app might use a JWT to authenticate requests to a backend API. The app requests a JWT from the server, includes it in the header of each API request, and the server verifies the JWT before processing the request.
+
+3. Single Sign-On (SSO): JWT Bearer can be used to implement SSO across multiple domains or services. When a user logs into one service, a JWT is generated and can be used to authenticate the user on other services without requiring them to log in again.
+
+4. Microservices: In a microservices architecture, JWT Bearer can be used to authenticate requests between services. Each service can generate and verify JWTs, allowing them to securely authenticate requests from other services.
+
+5. IoT Devices: JWT Bearer can be used to authenticate requests from IoT devices. For example, a smart home device might use a JWT to authenticate requests to a cloud-based service. The device requests a JWT from the server, includes it in the header of each request, and the server verifies the JWT before processing the request.
+
+Publisher: EIRA team
+
+LOST view: TV-Technical Agreements
+
+Identifier: http://data.europa.eu/dr8/egovera/JWTBearerContract
+
+EIRA traceability: eira:TechnicalInteroperabilityAgreementContract
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-08-03
+
+dct:identifier: http://data.europa.eu/dr8/egovera/JWTBearerContract
+
+dct:title: JWT Bearer Contract
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/JWTBearerContract</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:TechnicalInteroperabilityAgreementContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-03</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/JWTBearerContract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">JWT Bearer Contract</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">1. User Authentication: JWT Bearer is commonly used in user authentication. When a user logs in with their credentials, the server generates a JWT that is signed with a secret key and sends it back to the client. The client then includes this JWT in the header of each subsequent request to the server. The server verifies the JWT and if it's valid, allows access to the protected resources.
+
+								2. API Authentication: JWT Bearer can be used to authenticate API requests. For example, a mobile app might use a JWT to authenticate requests to a backend API. The app requests a JWT from the server, includes it in the header of each API request, and the server verifies the JWT before processing the request.
+
+								3. Single Sign-On (SSO): JWT Bearer can be used to implement SSO across multiple domains or services. When a user logs into one service, a JWT is generated and can be used to authenticate the user on other services without requiring them to log in again.
+
+								4. Microservices: In a microservices architecture, JWT Bearer can be used to authenticate requests between services. Each service can generate and verify JWTs, allowing them to securely authenticate requests from other services.
+
+								5. IoT Devices: JWT Bearer can be used to authenticate requests from IoT devices. For example, a smart home device might use a JWT to authenticate requests to a cloud-based service. The device requests a JWT from the server, includes it in the header of each request, and the server verifies the JWT before processing the request.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">JWT Bearer is a method of authentication that involves the use of JSON Web Tokens (JWTs) as bearer tokens. A bearer token is a type of access token that is given to the user after they have authenticated themselves, and it allows the user to access specific resources on a server. The term "bearer" implies that the person or application holding the token is the one that is authenticated.
+
+								JWTs are a compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object that is digitally signed using JSON Web Signature (JWS). They can also be encrypted using JSON Web Encryption (JWE) for additional security. 
+
+								In the context of JWT Bearer, the JWTs are used as the bearer tokens. When a user or application wants to access certain resources, they must include the JWT in the authorization header of the HTTP request. The server will then validate the JWT, and if it's valid, the server will process the request.
+
+								The JWT Bearer is often used in the context of OAuth 2.0, an authorization framework that enables a third-party application to obtain limited access to an HTTP service. In OAuth 2.0, the JWT Bearer can be used as a method for client authentication to the token endpoint or as a means of application-level authorization.
+
+								One of the main advantages of using JWT Bearer is that the tokens are self-contained. This means they contain all the necessary information about the user or application, so the server doesn't need to query a database to validate the token. This can lead to more efficient and scalable systems. However, it also means that the tokens can be quite large, especially if they contain a lot of claims.</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">JWT Bearer is a method for authentication and authorization where a JSON Web Token (JWT) is used as a bearer token. This means that the client presents the token to the server or resource, and the server uses the information contained in the token to authenticate the client and authorize access. The server does not need to maintain a record or session state for the client, making this method suitable for scalable applications and microservices. The JWT Bearer is often used in OAuth 2.0 and OpenID Connect protocols.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>SV-Governance Architecture Principles</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>SV-Governance Architecture Principles</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-ec73862b09b54d2f99e64c2c2dbfcb0a.png" alt="SV-Governance Architecture Principles" usemap="#id-ec73862b09b54d2f99e64c2c2dbfcb0amap"/>
+			   <map name="id-ec73862b09b54d2f99e64c2c2dbfcb0amap">
+				  		<area shape="rect" coords="694,10,944,85" href="../elements/id-56e0d4768c73478dafb1413f59bd8e5f.html"  target="element">
+				  		<area shape="rect" coords="1279,10,1529,85" href="../elements/id-901229d923ec460587b00441749c4848.html"  target="element">
+				  		<area shape="rect" coords="346,10,596,85" href="../elements/id-c34c619a7acb48b883ad7e5e44b5ad4b.html"  target="element">
+				  		<area shape="rect" coords="10,10,260,85" href="../elements/id-244bf4725c1548b9afb2fb9a6d9eec8d.html"  target="element">
+				  		<area shape="rect" coords="1567,10,1817,85" href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html"  target="element">
+				  		<area shape="rect" coords="994,10,1244,85" href="../elements/id-ac2ede8d46314392a2621af657fc0728.html"  target="element">
+				  		<area shape="rect" coords="643,394,893,469" href="../elements/id-828d92178167428aad67b374941419d3.html"  target="element">
+				  				<area shape="rect" coords="610,175,810,255" href="../elements/id-92c08a922322464a81cfe36d97915333.html"  target="element">
+
+				  		<area shape="rect" coords="562,139,858,279" href="../elements/id-7394e884a6134184bbb5730e70be6891.html"  target="element">
+				  				<area shape="rect" coords="226,175,426,255" href="../elements/id-4afab44446d44bc3b30cc6a23fc954e3.html"  target="element">
+
+				  		<area shape="rect" coords="178,139,474,279" href="../elements/id-8546f32c10634915a05b03ea9f3fd025.html"  target="element">
+				  				<area shape="rect" coords="1238,283,1438,363" href="../elements/id-d74070f86ae44c9e899c30ad4da13b06.html"  target="element">
+				  				<area shape="rect" coords="1238,175,1438,255" href="../elements/id-81bef72c74b341b086b50008c45b6367.html"  target="element">
+				  				<area shape="rect" coords="1000,283,1200,363" href="../elements/id-9480481a764347d0bd39e4b0b9d6c575.html"  target="element">
+				  				<area shape="rect" coords="1000,175,1200,255" href="../elements/id-2109451e2b1e4e78b26c3f93f4708e29.html"  target="element">
+
+				  		<area shape="rect" coords="964,139,1480,403" href="../elements/id-8a2936716ee04f06a573f599f1c49323.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">The view that relates Architecture principles to semantic view governance components is an essential aspect of solutions architecture. This view specifically focuses on how architecture principles influence the design and implementation of governance structures and processes within the semantic layer of a solution.
+
+Aligning architecture principles with semantic view governance components brings several benefits to the overall solution.
+
+Firstly, it ensures effective governance practices within the semantic layer. Architecture principles provide guidance on establishing governance structures, policies, and processes that govern the management and usage of data. By aligning governance components with these principles, solutions architects can design a robust governance framework that ensures compliance, transparency, and accountability in data management, access control, and data quality. This alignment promotes proper oversight and control over the semantic layer, facilitating efficient and secure data governance practices.
+
+Secondly, aligning architecture principles with semantic view governance components supports data integrity and quality. Architecture principles often emphasize data governance, security, and management best practices. By incorporating these principles into the design and implementation of governance components, solutions architects can establish mechanisms for enforcing data governance policies, implementing security measures, and monitoring data quality. This alignment enhances the reliability and accuracy of data within the semantic layer, contributing to more informed decision-making and reliable business insights.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-8a2936716ee04f06a573f599f1c49323.html" target="element"> Business Agnostic Data Policy Catalogue </a> </td>
+											    <td> <a href="../elements/id-8a2936716ee04f06a573f599f1c49323.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-2109451e2b1e4e78b26c3f93f4708e29.html" target="element"> Interoperability Policy </a> </td>
+													    <td> <a href="../elements/id-2109451e2b1e4e78b26c3f93f4708e29.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-9480481a764347d0bd39e4b0b9d6c575.html" target="element"> Data Quality Framework </a> </td>
+													    <td> <a href="../elements/id-9480481a764347d0bd39e4b0b9d6c575.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-81bef72c74b341b086b50008c45b6367.html" target="element"> Data Governance Guidelines </a> </td>
+													    <td> <a href="../elements/id-81bef72c74b341b086b50008c45b6367.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-d74070f86ae44c9e899c30ad4da13b06.html" target="element"> Blockchain policy </a> </td>
+													    <td> <a href="../elements/id-d74070f86ae44c9e899c30ad4da13b06.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-8546f32c10634915a05b03ea9f3fd025.html" target="element"> Security Data Policy Catalogue </a> </td>
+											    <td> <a href="../elements/id-8546f32c10634915a05b03ea9f3fd025.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-4afab44446d44bc3b30cc6a23fc954e3.html" target="element"> Permission Policy </a> </td>
+													    <td> <a href="../elements/id-4afab44446d44bc3b30cc6a23fc954e3.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-7394e884a6134184bbb5730e70be6891.html" target="element"> Privacy Data Policy Catalogue </a> </td>
+											    <td> <a href="../elements/id-7394e884a6134184bbb5730e70be6891.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-92c08a922322464a81cfe36d97915333.html" target="element"> Anonymisation Policy </a> </td>
+													    <td> <a href="../elements/id-92c08a922322464a81cfe36d97915333.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-828d92178167428aad67b374941419d3.html" target="element"> Data Sovereignty </a> </td>
+											    <td> <a href="../elements/id-828d92178167428aad67b374941419d3.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-ac2ede8d46314392a2621af657fc0728.html" target="element"> Data Interoperability </a> </td>
+											    <td> <a href="../elements/id-ac2ede8d46314392a2621af657fc0728.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element"> Data Reusability </a> </td>
+											    <td> <a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-244bf4725c1548b9afb2fb9a6d9eec8d.html" target="element"> Security by Design </a> </td>
+											    <td> <a href="../elements/id-244bf4725c1548b9afb2fb9a6d9eec8d.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-c34c619a7acb48b883ad7e5e44b5ad4b.html" target="element"> Trust </a> </td>
+											    <td> <a href="../elements/id-c34c619a7acb48b883ad7e5e44b5ad4b.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element"> Data Portability </a> </td>
+											    <td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-56e0d4768c73478dafb1413f59bd8e5f.html" target="element"> Privacy </a> </td>
+											    <td> <a href="../elements/id-56e0d4768c73478dafb1413f59bd8e5f.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-c306785fc35545259b65b976e7f54448.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-c306785fc35545259b65b976e7f54448.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-8a2936716ee04f06a573f599f1c49323.html" target="element"> Business Agnostic Data Policy Catalogue </a> </td>
+																		<td> <a href="../elements/id-81bef72c74b341b086b50008c45b6367.html" target="element"> Data Governance Guidelines </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-9c0f7629a7ba40ef9abb0609a1bf3e58.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-9c0f7629a7ba40ef9abb0609a1bf3e58.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-8a2936716ee04f06a573f599f1c49323.html" target="element"> Business Agnostic Data Policy Catalogue </a> </td>
+																		<td> <a href="../elements/id-9480481a764347d0bd39e4b0b9d6c575.html" target="element"> Data Quality Framework </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-2709520779724baa9f5ef0332317d818.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-2709520779724baa9f5ef0332317d818.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-8a2936716ee04f06a573f599f1c49323.html" target="element"> Business Agnostic Data Policy Catalogue </a> </td>
+																		<td> <a href="../elements/id-2109451e2b1e4e78b26c3f93f4708e29.html" target="element"> Interoperability Policy </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-3ed3324db9e94fec958638c87882eb72.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-3ed3324db9e94fec958638c87882eb72.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-8a2936716ee04f06a573f599f1c49323.html" target="element"> Business Agnostic Data Policy Catalogue </a> </td>
+																		<td> <a href="../elements/id-d74070f86ae44c9e899c30ad4da13b06.html" target="element"> Blockchain policy </a> </td>
+																	</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/id-7e75640e67804dc2a52f1d0463d18e6c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-7e75640e67804dc2a52f1d0463d18e6c.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-8546f32c10634915a05b03ea9f3fd025.html" target="element"> Security Data Policy Catalogue </a> </td>
+																		<td> <a href="../elements/id-4afab44446d44bc3b30cc6a23fc954e3.html" target="element"> Permission Policy </a> </td>
+																	</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/id-1a0c41ad47bf4cdb863d517ba1a8a8a1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-1a0c41ad47bf4cdb863d517ba1a8a8a1.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-7394e884a6134184bbb5730e70be6891.html" target="element"> Privacy Data Policy Catalogue </a> </td>
+																		<td> <a href="../elements/id-92c08a922322464a81cfe36d97915333.html" target="element"> Anonymisation Policy </a> </td>
+																	</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/id-ebf5bbe0b0a7435883ea741b9d502407.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-ebf5bbe0b0a7435883ea741b9d502407.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-828d92178167428aad67b374941419d3.html" target="element"> Data Sovereignty </a> </td>
+																		<td> <a href="../elements/id-8a2936716ee04f06a573f599f1c49323.html" target="element"> Business Agnostic Data Policy Catalogue </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-60fec80b5cad406986acf1a374f5b1d7.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-60fec80b5cad406986acf1a374f5b1d7.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-828d92178167428aad67b374941419d3.html" target="element"> Data Sovereignty </a> </td>
+																		<td> <a href="../elements/id-7394e884a6134184bbb5730e70be6891.html" target="element"> Privacy Data Policy Catalogue </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-df5f150700c2488da8303785e60ae38d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-df5f150700c2488da8303785e60ae38d.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-828d92178167428aad67b374941419d3.html" target="element"> Data Sovereignty </a> </td>
+																		<td> <a href="../elements/id-8546f32c10634915a05b03ea9f3fd025.html" target="element"> Security Data Policy Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-440a5840a680470e9f2224f7fa3fbb6b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-440a5840a680470e9f2224f7fa3fbb6b.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-ac2ede8d46314392a2621af657fc0728.html" target="element"> Data Interoperability </a> </td>
+																		<td> <a href="../elements/id-8a2936716ee04f06a573f599f1c49323.html" target="element"> Business Agnostic Data Policy Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-7797c3840d5445658a3fa46b23899bb7.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-7797c3840d5445658a3fa46b23899bb7.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element"> Data Reusability </a> </td>
+																		<td> <a href="../elements/id-8a2936716ee04f06a573f599f1c49323.html" target="element"> Business Agnostic Data Policy Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-94637d26cbb84421979cf7cb521c3bdd.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-94637d26cbb84421979cf7cb521c3bdd.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-244bf4725c1548b9afb2fb9a6d9eec8d.html" target="element"> Security by Design </a> </td>
+																		<td> <a href="../elements/id-8546f32c10634915a05b03ea9f3fd025.html" target="element"> Security Data Policy Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-12d5e69d96eb49f39ce5091b84c333ad.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-12d5e69d96eb49f39ce5091b84c333ad.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-c34c619a7acb48b883ad7e5e44b5ad4b.html" target="element"> Trust </a> </td>
+																		<td> <a href="../elements/id-8546f32c10634915a05b03ea9f3fd025.html" target="element"> Security Data Policy Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-fa810ad95011415ea2a6dee476eb2bde.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-fa810ad95011415ea2a6dee476eb2bde.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element"> Data Portability </a> </td>
+																		<td> <a href="../elements/id-8a2936716ee04f06a573f599f1c49323.html" target="element"> Business Agnostic Data Policy Catalogue </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-994f7fdf94f94b35bad008411bfc90e8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-994f7fdf94f94b35bad008411bfc90e8.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-56e0d4768c73478dafb1413f59bd8e5f.html" target="element"> Privacy </a> </td>
+																		<td> <a href="../elements/id-7394e884a6134184bbb5730e70be6891.html" target="element"> Privacy Data Policy Catalogue </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-4bb134ae1e534dba8ffd874b1d47ae88.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-4bb134ae1e534dba8ffd874b1d47ae88.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-56e0d4768c73478dafb1413f59bd8e5f.html" target="element"> Privacy </a> </td>
+																		<td> <a href="../elements/id-8a2936716ee04f06a573f599f1c49323.html" target="element"> Business Agnostic Data Policy Catalogue </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

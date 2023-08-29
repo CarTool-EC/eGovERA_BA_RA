@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>SAML</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>SAML</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Contract"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Contract" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: Security Assertion Markup Language (SAML) is an open standard for exchanging authentication and authorization data between parties, specifically between an identity provider and a service provider. It is an XML-based markup language for security assertions (statements that service providers use to make access-control decisions). SAML is widely used in enterprise-level applications to allow single sign-on, which means users can log in once and gain access to a wide range of systems.
+
+Additional information: SAML, which stands for Security Assertion Markup Language, is an open standard for exchanging authentication and authorization data between parties. This XML-based framework is used primarily between an identity provider and a service provider. It allows for the secure transmission of authentication credentials from one party, the identity provider, to another party, the service provider.
+
+SAML was developed by the Security Services Technical Committee of the Organization for the Advancement of Structured Information Standards (OASIS). The standard has been around since 2002, but it has become increasingly popular in recent years due to the rise of cloud computing and the need for single sign-on (SSO) solutions.
+
+In a typical SAML use case, a user requests access to a resource or service from the service provider. The service provider requests and obtains an identity assertion from the identity provider and then, on the basis of this assertion, decides whether to grant or deny access to the resource or service.
+
+The identity assertion provided by the identity provider specifies who the user is. It may also include additional information, such as how, when, and where the user was authenticated and any specific attributes related to the user or his/her role.
+
+SAML is a crucial part of many SSO systems that allow users to access multiple services with a single login. It helps to eliminate the need for multiple passwords and enables seamless secure access across numerous applications and platforms.
+
+SAML provides numerous benefits, including improved user productivity and experience, reduced administrative costs, and enhanced security. It is widely used in enterprise settings for web browser single sign-on, cloud identity verification, and various cross-domain web services and applications.
+
+Example: SAML (Security Assertion Markup Language) is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. Here are some examples of its application:
+
+1. Single Sign-On (SSO): SAML is often used to implement SSO solutions. For example, a user logs into their company's network and then can access a third-party application (like a cloud-based project management tool) without having to log in again. The company's identity provider sends a SAML assertion to the third-party application, which uses it to authenticate the user.
+
+2. Federated Identity: SAML can be used to establish a federated identity system, where multiple enterprises can share the same identity for a user. For example, a user could have a single identity that is valid across all the different services provided by a group of collaborating libraries.
+
+3. Cloud Security: SAML is used in cloud security to allow users to log in to multiple cloud services using the same credentials. For example, a user could log in to their Google account and then access their Salesforce account without having to log in again.
+
+4. E-commerce: In an e-commerce context, a user could log in to a shopping site, and then be able to access related services such as payment gateways or shipping calculators without having to log in to each one separately.
+
+5. Education: In the education sector, SAML is used to provide students and staff with access to a variety of online resources. For example, a student could log in to their university's system and then access library resources, online journals, and learning management systems without having to log in to each one separately.
+
+6. Government Services: Many government services use SAML to provide citizens with secure access to online services. For example, a citizen could log in to a government portal and then access various services such as tax filing, benefits applications, and license renewals without having to log in to each one separately.
+
+Publisher: EIRA team
+
+LOST view: TV-Technical Agreements
+
+Identifier: http://data.europa.eu/dr8/egovera/SAMLContract
+
+EIRA traceability: eira:TechnicalInteroperabilityAgreementContract
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-08-03
+
+dct:identifier: http://data.europa.eu/dr8/egovera/SAMLContract
+
+dct:title: SAML Contract
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/SAMLContract</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:TechnicalInteroperabilityAgreementContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-03</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/SAMLContract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">SAML Contract</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">SAML (Security Assertion Markup Language) is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. Here are some examples of its application:
+
+								1. Single Sign-On (SSO): SAML is often used to implement SSO solutions. For example, a user logs into their company's network and then can access a third-party application (like a cloud-based project management tool) without having to log in again. The company's identity provider sends a SAML assertion to the third-party application, which uses it to authenticate the user.
+
+								2. Federated Identity: SAML can be used to establish a federated identity system, where multiple enterprises can share the same identity for a user. For example, a user could have a single identity that is valid across all the different services provided by a group of collaborating libraries.
+
+								3. Cloud Security: SAML is used in cloud security to allow users to log in to multiple cloud services using the same credentials. For example, a user could log in to their Google account and then access their Salesforce account without having to log in again.
+
+								4. E-commerce: In an e-commerce context, a user could log in to a shopping site, and then be able to access related services such as payment gateways or shipping calculators without having to log in to each one separately.
+
+								5. Education: In the education sector, SAML is used to provide students and staff with access to a variety of online resources. For example, a student could log in to their university's system and then access library resources, online journals, and learning management systems without having to log in to each one separately.
+
+								6. Government Services: Many government services use SAML to provide citizens with secure access to online services. For example, a citizen could log in to a government portal and then access various services such as tax filing, benefits applications, and license renewals without having to log in to each one separately.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">SAML, which stands for Security Assertion Markup Language, is an open standard for exchanging authentication and authorization data between parties. This XML-based framework is used primarily between an identity provider and a service provider. It allows for the secure transmission of authentication credentials from one party, the identity provider, to another party, the service provider.
+
+								SAML was developed by the Security Services Technical Committee of the Organization for the Advancement of Structured Information Standards (OASIS). The standard has been around since 2002, but it has become increasingly popular in recent years due to the rise of cloud computing and the need for single sign-on (SSO) solutions.
+
+								In a typical SAML use case, a user requests access to a resource or service from the service provider. The service provider requests and obtains an identity assertion from the identity provider and then, on the basis of this assertion, decides whether to grant or deny access to the resource or service.
+
+								The identity assertion provided by the identity provider specifies who the user is. It may also include additional information, such as how, when, and where the user was authenticated and any specific attributes related to the user or his/her role.
+
+								SAML is a crucial part of many SSO systems that allow users to access multiple services with a single login. It helps to eliminate the need for multiple passwords and enables seamless secure access across numerous applications and platforms.
+
+								SAML provides numerous benefits, including improved user productivity and experience, reduced administrative costs, and enhanced security. It is widely used in enterprise settings for web browser single sign-on, cloud identity verification, and various cross-domain web services and applications.</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Security Assertion Markup Language (SAML) is an open standard for exchanging authentication and authorization data between parties, specifically between an identity provider and a service provider. It is an XML-based markup language for security assertions (statements that service providers use to make access-control decisions). SAML is widely used in enterprise-level applications to allow single sign-on, which means users can log in once and gain access to a wide range of systems.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

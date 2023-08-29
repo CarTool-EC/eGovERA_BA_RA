@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Observability</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Observability</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Requirement"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Requirement" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Definition: Observability is a non-functional requirement in IT that refers to the ability to monitor and analyze the behavior of a system or application in real-time. It involves collecting and analyzing data from various sources, such as logs, metrics, and traces, to gain insights into the system's performance, availability, and reliability. Observability helps IT teams identify and troubleshoot issues quickly, improve system performance, and ensure that the system meets the desired level of service. It is an essential requirement for complex and distributed systems that require constant monitoring and analysis to ensure optimal performance.
+
+Source: TOGAF
+
+Source reference: https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap03.html
+
+Additional information: Observability is a non-functional requirement that refers to the ability of a system to be monitored and analyzed in order to detect and diagnose issues. According to the TOGAF specification, observability is a key aspect of system performance and reliability, as it allows for proactive identification and resolution of problems before they impact users.
+
+To achieve observability, a system must be designed with the ability to collect and analyze data from various sources, including logs, metrics, and traces. This data must be made available to monitoring and analysis tools, which can then provide insights into system behavior and performance.
+
+The TOGAF guidelines recommend that observability be considered throughout the entire system development lifecycle, from initial design through to deployment and ongoing maintenance. This includes defining clear metrics and logging requirements, as well as selecting appropriate monitoring and analysis tools.
+
+In addition, the TOGAF documentation emphasizes the importance of ensuring that observability is integrated into the overall system architecture, rather than being treated as an afterthought. This requires careful consideration of factors such as data collection and storage, data processing and analysis, and user access to monitoring and analysis tools.
+
+Overall, observability is a critical non-functional requirement for any system that requires high levels of performance and reliability. By following the TOGAF guidelines and best practices, organizations can ensure that their systems are designed with observability in mind, and are able to proactively identify and resolve issues before they impact users.
+
+Example: One example of the IT non-functional requirement 'Observability' could be the ability to monitor and track system performance metrics such as CPU usage, memory usage, network traffic, and response times. This would allow IT teams to quickly identify and troubleshoot any issues that may arise, ensuring that the system remains reliable and available to users. Additionally, observability could also include the ability to log and analyze user behavior, allowing for insights into how the system is being used and how it can be improved.
+
+LOST view: Digital Solution Non-Functional Requirements Catalogue view
+
+Identifier: http://data.europa.eu/dr8/egovera/ObservabilityRequirement
+
+EIRA traceability: eira:DigitalSolutionNonFunctionalRequirementRequirement
+
+ABB name: egovera:ObservabilityRequirement
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2023-05-16
+
+dct:identifier: http://data.europa.eu/dr8/egovera/ObservabilityRequirement
+
+dct:title: Observability Non-Functional Requirement
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:DigitalSolutionNonFunctionalRequirementRequirement</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-05-16</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/ObservabilityRequirement</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Observability Non-Functional Requirement</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">One example of the IT non-functional requirement 'Observability' could be the ability to monitor and track system performance metrics such as CPU usage, memory usage, network traffic, and response times. This would allow IT teams to quickly identify and troubleshoot any issues that may arise, ensuring that the system remains reliable and available to users. Additionally, observability could also include the ability to log and analyze user behavior, allowing for insights into how the system is being used and how it can be improved.</td></tr><tr><td>skos:definition</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Observability is a non-functional requirement in IT that refers to the ability to monitor and analyze the behavior of a system or application in real-time. It involves collecting and analyzing data from various sources, such as logs, metrics, and traces, to gain insights into the system's performance, availability, and reliability. Observability helps IT teams identify and troubleshoot issues quickly, improve system performance, and ensure that the system meets the desired level of service. It is an essential requirement for complex and distributed systems that require constant monitoring and analysis to ensure optimal performance.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:ArchitectureBuildingBlock</td></tr><tr><td>eira:definitionSource</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TOGAF</td></tr><tr><td>eira:definitionSourceReference</td><td class="convertlinks no-margin" style="white-space:pre-wrap">https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap03.html</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Observability is a non-functional requirement that refers to the ability of a system to be monitored and analyzed in order to detect and diagnose issues. According to the TOGAF specification, observability is a key aspect of system performance and reliability, as it allows for proactive identification and resolution of problems before they impact users.
+
+								To achieve observability, a system must be designed with the ability to collect and analyze data from various sources, including logs, metrics, and traces. This data must be made available to monitoring and analysis tools, which can then provide insights into system behavior and performance.
+
+								The TOGAF guidelines recommend that observability be considered throughout the entire system development lifecycle, from initial design through to deployment and ongoing maintenance. This includes defining clear metrics and logging requirements, as well as selecting appropriate monitoring and analysis tools.
+
+								In addition, the TOGAF documentation emphasizes the importance of ensuring that observability is integrated into the overall system architecture, rather than being treated as an afterthought. This requires careful consideration of factors such as data collection and storage, data processing and analysis, and user access to monitoring and analysis tools.
+
+								Overall, observability is a critical non-functional requirement for any system that requires high levels of performance and reliability. By following the TOGAF guidelines and best practices, organizations can ensure that their systems are designed with observability in mind, and are able to proactively identify and resolve issues before they impact users.</td></tr><tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/ObservabilityRequirement</td></tr><tr><td>dct:type</td><td class="convertlinks no-margin" style="white-space:pre-wrap">egovera:ObservabilityRequirement</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Digital Solution Non-Functional Requirements Catalogue view</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

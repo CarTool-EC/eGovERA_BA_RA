@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>ActiveMQ</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>ActiveMQ</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-ApplicationService"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-ApplicationService" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: ActiveMQ is an open-source message broker that enables the exchange of messages between different applications or components in a distributed system. It provides reliable and scalable messaging functionality, allowing applications to communicate asynchronously and decoupling the sender and receiver. ActiveMQ supports various messaging patterns like point-to-point, publish-subscribe, and request-response.
+
+Additional information: ActiveMQ is built on the Java Message Service (JMS) API and supports multiple protocols such as AMQP, MQTT, and STOMP. It offers features like message persistence, message filtering, priority-based message delivery, and message acknowledgment. ActiveMQ can be used in various scenarios, including enterprise messaging, real-time data streaming, event-driven architectures, and integration of heterogeneous systems. It provides reliable messaging infrastructure for applications that require asynchronous communication, loose coupling, and scalability.
+
+Example: An example of using ActiveMQ is in a microservices architecture, where different microservices need to communicate with each other. Each microservice can publish messages to specific topics, and other microservices interested in those topics can subscribe to receive the messages. This allows the microservices to communicate asynchronously, reducing dependencies and enabling scalability. ActiveMQ ensures reliable delivery of messages even in the presence of network failures or high message volumes.
+
+Publisher: Apache ActiveMQ
+
+Source: https://activemq.apache.org/
+
+LOST view: TVA-Messaging Enablers [Motivation]
+
+Identifier: http://data.europa.eu/dr8/egovera/ActiveMQApplicationService
+
+EIRA traceability: eira:DigitalSolutionApplicationService
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-07-20
+
+dct:identifier: http://data.europa.eu/dr8/egovera/ActiveMQApplicationService
+
+dct:title: ActiveMQ Application Service
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/ActiveMQApplicationService</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:DigitalSolutionApplicationService</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-07-20</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/ActiveMQApplicationService</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">ActiveMQ Application Service</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">An example of using ActiveMQ is in a microservices architecture, where different microservices need to communicate with each other. Each microservice can publish messages to specific topics, and other microservices interested in those topics can subscribe to receive the messages. This allows the microservices to communicate asynchronously, reducing dependencies and enabling scalability. ActiveMQ ensures reliable delivery of messages even in the presence of network failures or high message volumes.</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">ActiveMQ is built on the Java Message Service (JMS) API and supports multiple protocols such as AMQP, MQTT, and STOMP. It offers features like message persistence, message filtering, priority-based message delivery, and message acknowledgment. ActiveMQ can be used in various scenarios, including enterprise messaging, real-time data streaming, event-driven architectures, and integration of heterogeneous systems. It provides reliable messaging infrastructure for applications that require asynchronous communication, loose coupling, and scalability.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">ActiveMQ is an open-source message broker that enables the exchange of messages between different applications or components in a distributed system. It provides reliable and scalable messaging functionality, allowing applications to communicate asynchronously and decoupling the sender and receiver. ActiveMQ supports various messaging patterns like point-to-point, publish-subscribe, and request-response.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Apache ActiveMQ</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap">https://activemq.apache.org/</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TVA-Messaging Enablers [Motivation]</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

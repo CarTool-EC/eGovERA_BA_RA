@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Kubernetes</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Kubernetes</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-ApplicationService"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-ApplicationService" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It provides a highly scalable and flexible environment for running, managing, and scaling applications across a cluster of machines.
+
+Additional information: Kubernetes simplifies the management of containerized applications by abstracting away the underlying infrastructure complexities. It allows developers to define their application's desired state and Kubernetes takes care of deploying and maintaining that state. It provides features like automatic scaling, load balancing, self-healing, and rolling updates, ensuring high availability and fault tolerance. Kubernetes also enables efficient resource utilization by intelligently scheduling containers across the cluster based on resource requirements. It supports various container runtimes and can be deployed on-premises, in the cloud, or in hybrid environments.
+
+Example: For example, a company running a microservices-based architecture can use Kubernetes to deploy and manage their containerized services. They can define the desired number of replicas for each service, specify resource requirements, and set up health checks. Kubernetes will then ensure that the desired state is maintained, automatically scaling the services based on demand, distributing traffic across replicas, and restarting failed containers. It provides a centralized control plane to monitor and manage the entire application infrastructure, making it easier to scale and update the system without downtime.
+
+Publisher: Kubernetes.io
+
+Source: https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
+
+LOST view: TVA-Containerization Enablers [Motivation]
+
+Identifier: http://data.europa.eu/dr8/egovera/KubernetesApplicationService
+
+EIRA traceability: eira:DigitalSolutionApplicationService
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-07-20
+
+dct:identifier: http://data.europa.eu/dr8/egovera/KubernetesApplicationService
+
+dct:title: Kubernetes Application Service
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/KubernetesApplicationService</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:DigitalSolutionApplicationService</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-07-20</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/KubernetesApplicationService</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Kubernetes Application Service</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">For example, a company running a microservices-based architecture can use Kubernetes to deploy and manage their containerized services. They can define the desired number of replicas for each service, specify resource requirements, and set up health checks. Kubernetes will then ensure that the desired state is maintained, automatically scaling the services based on demand, distributing traffic across replicas, and restarting failed containers. It provides a centralized control plane to monitor and manage the entire application infrastructure, making it easier to scale and update the system without downtime.</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Kubernetes simplifies the management of containerized applications by abstracting away the underlying infrastructure complexities. It allows developers to define their application's desired state and Kubernetes takes care of deploying and maintaining that state. It provides features like automatic scaling, load balancing, self-healing, and rolling updates, ensuring high availability and fault tolerance. Kubernetes also enables efficient resource utilization by intelligently scheduling containers across the cluster based on resource requirements. It supports various container runtimes and can be deployed on-premises, in the cloud, or in hybrid environments.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It provides a highly scalable and flexible environment for running, managing, and scaling applications across a cluster of machines.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Kubernetes.io</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap">https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TVA-Containerization Enablers [Motivation]</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

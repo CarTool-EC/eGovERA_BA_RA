@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>RESTful API</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>RESTful API</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Contract"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Contract" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: The RESTful API specification, also known as Representational State Transfer, is a set of constraints or rules used to build web services. It is a software architectural style that defines a set of constraints to be used for creating web services. These web services, or APIs, allow different software applications to communicate with each other, typically over HTTP. RESTful APIs are stateless, meaning they don't store any information about the client between requests, and they use standard HTTP methods like GET, POST, PUT, DELETE to perform operations. They are designed to take advantage of existing web protocols, are highly scalable, and can return data in different formats like JSON or XML.
+
+Additional information: Representational State Transfer (REST) is an architectural style that defines a set of constraints to be used for creating web services. When a web service adheres to these constraints, it is known as a RESTful API (Application Programming Interface). RESTful APIs are designed to take advantage of existing protocols, and often HTTP specifically. 
+
+RESTful APIs are stateless, meaning that each request from a client to a server must contain all the information needed to understand and process the request. The server should not store anything about the latest HTTP request the client made. It should treat each request as if it was brand new. This constraint increases reliability and scalability.
+
+The RESTful API specification is based on the following principles:
+
+1. Client-Server Architecture: The client is responsible for the user interface and user experience, and the server is responsible for processing requests and managing resources. This separation allows both to evolve independently.
+
+2. Stateless Interactions: As mentioned above, each request from a client to a server must contain all the information needed to process the request. The server should not store any session information.
+
+3. Cacheable Data: Clients can cache responses to improve performance. Responses must define themselves as cacheable or non-cacheable to prevent clients from reusing stale or inappropriate data.
+
+4. Uniform Interface: The method of communication between the client and the server should be uniform, simplifying the architecture and improving visibility of interactions. This is typically achieved through the use of resources (URIs), methods (GET, POST, PUT, DELETE), and representations (usually HTML, XML, or JSON).
+
+5. Layered System: The architecture can be composed of multiple layers, each with specific functionality. This allows for flexibility and scalability, as layers can be added, removed, or modified without affecting the system as a whole.
+
+6. Code on Demand (optional): Servers can provide executable code or scripts for clients to run in their context. This is the only optional constraint.
+
+RESTful APIs are commonly used in web applications due to their simplicity, scalability, and performance. They allow different software systems to communicate with each other, even if they use different languages or technologies.
+
+Example: 1. Social Media Applications: RESTful APIs are used extensively in social media platforms like Facebook, Twitter, and Instagram. They use APIs to allow third-party applications to integrate with them, enabling functionalities like login with Facebook, tweet or share something on the user's behalf, fetch user details, etc.
+
+2. E-commerce Websites: Online shopping websites like Amazon, eBay, and Alibaba use RESTful APIs to handle requests from users. These requests can include adding items to a shopping cart, making a payment, checking the status of an order, etc.
+
+3. Weather Forecasting Applications: Apps like Weather.com and AccuWeather use RESTful APIs to fetch real-time weather data from servers. The data is then displayed to the user in a readable format.
+
+4. Google Maps: Google Maps uses RESTful APIs to provide various services like displaying maps, providing directions, showing traffic conditions, etc. Developers can integrate these services into their own applications using the Google Maps API.
+
+5. Mobile Applications: Many mobile apps use RESTful APIs to communicate with a server. For example, a news app might use an API to fetch the latest news articles from the server, or a food delivery app might use an API to send a user's order to the restaurant.
+
+6. Banking Applications: Banks use RESTful APIs to provide services like balance checks, fund transfers, bill payments, etc. These APIs are typically secured using various authentication and authorization mechanisms to ensure the safety of the user's data.
+
+7. Content Management Systems: CMSs like WordPress and Drupal use RESTful APIs to manage the content on the website. This includes creating, reading, updating, and deleting posts, pages, and other types of content.
+
+8. IoT Devices: Internet of Things devices like smart home devices, wearables, etc., use RESTful APIs to communicate with each other and with servers. This allows them to provide various services like home automation, health tracking, etc.
+
+Publisher: EIRA team
+
+LOST view: TV-Technical Agreements
+
+Identifier: http://data.europa.eu/dr8/egovera/RESTfulAPIContract
+
+EIRA traceability: eira:TechnicalInteroperabilityAgreementContract
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-08-03
+
+dct:identifier: http://data.europa.eu/dr8/egovera/RESTfulAPIContract
+
+dct:title: RESTful API Contract
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/RESTfulAPIContract</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:TechnicalInteroperabilityAgreementContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-03</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/RESTfulAPIContract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">RESTful API Contract</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">1. Social Media Applications: RESTful APIs are used extensively in social media platforms like Facebook, Twitter, and Instagram. They use APIs to allow third-party applications to integrate with them, enabling functionalities like login with Facebook, tweet or share something on the user's behalf, fetch user details, etc.
+
+								2. E-commerce Websites: Online shopping websites like Amazon, eBay, and Alibaba use RESTful APIs to handle requests from users. These requests can include adding items to a shopping cart, making a payment, checking the status of an order, etc.
+
+								3. Weather Forecasting Applications: Apps like Weather.com and AccuWeather use RESTful APIs to fetch real-time weather data from servers. The data is then displayed to the user in a readable format.
+
+								4. Google Maps: Google Maps uses RESTful APIs to provide various services like displaying maps, providing directions, showing traffic conditions, etc. Developers can integrate these services into their own applications using the Google Maps API.
+
+								5. Mobile Applications: Many mobile apps use RESTful APIs to communicate with a server. For example, a news app might use an API to fetch the latest news articles from the server, or a food delivery app might use an API to send a user's order to the restaurant.
+
+								6. Banking Applications: Banks use RESTful APIs to provide services like balance checks, fund transfers, bill payments, etc. These APIs are typically secured using various authentication and authorization mechanisms to ensure the safety of the user's data.
+
+								7. Content Management Systems: CMSs like WordPress and Drupal use RESTful APIs to manage the content on the website. This includes creating, reading, updating, and deleting posts, pages, and other types of content.
+
+								8. IoT Devices: Internet of Things devices like smart home devices, wearables, etc., use RESTful APIs to communicate with each other and with servers. This allows them to provide various services like home automation, health tracking, etc.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Representational State Transfer (REST) is an architectural style that defines a set of constraints to be used for creating web services. When a web service adheres to these constraints, it is known as a RESTful API (Application Programming Interface). RESTful APIs are designed to take advantage of existing protocols, and often HTTP specifically. 
+
+								RESTful APIs are stateless, meaning that each request from a client to a server must contain all the information needed to understand and process the request. The server should not store anything about the latest HTTP request the client made. It should treat each request as if it was brand new. This constraint increases reliability and scalability.
+
+								The RESTful API specification is based on the following principles:
+
+								1. Client-Server Architecture: The client is responsible for the user interface and user experience, and the server is responsible for processing requests and managing resources. This separation allows both to evolve independently.
+
+								2. Stateless Interactions: As mentioned above, each request from a client to a server must contain all the information needed to process the request. The server should not store any session information.
+
+								3. Cacheable Data: Clients can cache responses to improve performance. Responses must define themselves as cacheable or non-cacheable to prevent clients from reusing stale or inappropriate data.
+
+								4. Uniform Interface: The method of communication between the client and the server should be uniform, simplifying the architecture and improving visibility of interactions. This is typically achieved through the use of resources (URIs), methods (GET, POST, PUT, DELETE), and representations (usually HTML, XML, or JSON).
+
+								5. Layered System: The architecture can be composed of multiple layers, each with specific functionality. This allows for flexibility and scalability, as layers can be added, removed, or modified without affecting the system as a whole.
+
+								6. Code on Demand (optional): Servers can provide executable code or scripts for clients to run in their context. This is the only optional constraint.
+
+								RESTful APIs are commonly used in web applications due to their simplicity, scalability, and performance. They allow different software systems to communicate with each other, even if they use different languages or technologies.</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">The RESTful API specification, also known as Representational State Transfer, is a set of constraints or rules used to build web services. It is a software architectural style that defines a set of constraints to be used for creating web services. These web services, or APIs, allow different software applications to communicate with each other, typically over HTTP. RESTful APIs are stateless, meaning they don't store any information about the client between requests, and they use standard HTTP methods like GET, POST, PUT, DELETE to perform operations. They are designed to take advantage of existing web protocols, are highly scalable, and can return data in different formats like JSON or XML.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

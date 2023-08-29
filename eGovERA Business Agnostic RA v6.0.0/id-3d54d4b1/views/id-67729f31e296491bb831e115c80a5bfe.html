@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>SV-Functional Architecture Principles</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>SV-Functional Architecture Principles</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-67729f31e296491bb831e115c80a5bfe.png" alt="SV-Functional Architecture Principles" usemap="#id-67729f31e296491bb831e115c80a5bfemap"/>
+			   <map name="id-67729f31e296491bb831e115c80a5bfemap">
+				  		<area shape="rect" coords="778,314,1028,389" href="../elements/id-f9115853bff046ddbed5f4e8e373aa96.html"  target="element">
+				  		<area shape="rect" coords="778,734,1028,809" href="../elements/id-481e6e58c68a4f068c26f3e73d8fa0c9.html"  target="element">
+				  		<area shape="rect" coords="778,842,1028,917" href="../elements/id-0f3bc869aab6436e95f6d7b7c7e399b0.html"  target="element">
+				  		<area shape="rect" coords="778,1382,1028,1457" href="../elements/id-58ee7a4f1e03458686c717fb34d551c0.html"  target="element">
+				  		<area shape="rect" coords="778,950,1028,1025" href="../elements/id-89fe3da93e6a4f2794fea08fcdd02ec1.html"  target="element">
+				  		<area shape="rect" coords="778,1166,1028,1241" href="../elements/id-4c61db61ed854be0b0d7f33f323579e7.html"  target="element">
+				  		<area shape="rect" coords="778,1490,1028,1565" href="../elements/id-901229d923ec460587b00441749c4848.html"  target="element">
+				  		<area shape="rect" coords="778,1060,1028,1135" href="../elements/id-bf86c39d9ac0428abb1874b98af632f5.html"  target="element">
+				  		<area shape="rect" coords="778,1274,1028,1349" href="../elements/id-1cb45cb5c81044428dac33e75c101437.html"  target="element">
+				  		<area shape="rect" coords="778,626,1028,701" href="../elements/id-3e5302a7445440c1a7b440cea8f87525.html"  target="element">
+				  		<area shape="rect" coords="778,518,1028,593" href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html"  target="element">
+				  		<area shape="rect" coords="778,419,1028,494" href="../elements/id-ac2ede8d46314392a2621af657fc0728.html"  target="element">
+				  				<area shape="rect" coords="305,1730,373,1761" href="../views/id-a72cbfdf1d4d492f83da639a43472a59.html"  target="view">
+				  		    <!-- Other diagram objects -->
+				  				<area shape="rect" coords="353,1778,473,1833" href="../elements/id-18d018a67e2341deb919d14f4c30aab7.html"  target="element">
+				  				<area shape="rect" coords="209,1778,329,1833" href="../elements/id-4af2439c284842e5a8ec98e766097090.html"  target="element">
+
+				  		<area shape="rect" coords="185,1682,497,1882" href="../elements/id-368b4b8e3ce9468fbd719c7ca9f18385.html"  target="element">
+				  				<area shape="rect" coords="106,1202,174,1238" href="../views/id-f8811571ca2c4129a00587a47a1c9648.html"  target="view">
+				  		    <!-- Other diagram objects -->
+				  						<area shape="rect" coords="274,1250,422,1323" href="../elements/id-5c0dadf660ae494cb8d58cc975f50f76.html"  target="element">
+
+				  				<area shape="rect" coords="250,1214,455,1347" href="../elements/id-c0f740667423400baa4b44777e7791a9.html"  target="element">
+				  				<area shape="rect" coords="46,1250,194,1323" href="../elements/id-2751081c5075454caad7e805893f2928.html"  target="element">
+
+				  		<area shape="rect" coords="10,1166,491,1383" href="../elements/id-fccbe14bbd3e41cab48169f506fdfed0.html"  target="element">
+				  				<area shape="rect" coords="1545,1190,1641,1226" href="../views/id-db5dbcbc15794b029ec630eccc8d6c1e.html"  target="view">
+				  		    <!-- Other diagram objects -->
+				  				<area shape="rect" coords="1557,1070,1745,1165" href="../elements/id-5d506668311b422c836dea5830d5860e.html"  target="element">
+				  				<area shape="rect" coords="1353,1070,1541,1165" href="../elements/id-4312e0c930684ecebf02b97642156b55.html"  target="element">
+
+				  		<area shape="rect" coords="1281,986,1789,1263" href="../elements/id-00faeb08c8cb4af19a96dcaafb7dadf3.html"  target="element">
+				  				<area shape="rect" coords="346,167,430,204" href="../views/id-eb909b709a294a07bdefc3f44e7aa692.html"  target="view">
+				  		    <!-- Other diagram objects -->
+				  				<area shape="rect" coords="274,50,474,130" href="../elements/id-230d8b708f534005b1050a35d8cf5126.html"  target="element">
+				  				<area shape="rect" coords="46,146,246,226" href="../elements/id-4af2439c284842e5a8ec98e766097090.html"  target="element">
+				  				<area shape="rect" coords="46,50,246,130" href="../elements/id-093d12f925bf48e39c6099ab899f18ea.html"  target="element">
+
+				  		<area shape="rect" coords="22,14,491,243" href="../elements/id-f6f6db98f86c458fb635988d35a27dbc.html"  target="element">
+				  				<area shape="rect" coords="431,567,491,591" href="../views/id-66a7431fa8b54813ba0ec79eb9fc079b.html"  target="view">
+				  		    <!-- Other diagram objects -->
+				  				<area shape="rect" coords="263,507,419,579" href="../elements/id-2f62a053e7c641a1a676d735e8453129.html"  target="element">
+
+				  		<area shape="rect" coords="191,471,491,603" href="../elements/id-5da2adbef1364df5b3d6ebfa6d21c713.html"  target="element">
+				  				<area shape="rect" coords="379,684,464,711" href="../views/id-5cf9ae735cf245098fa7beccbd927eee.html"  target="view">
+				  		    <!-- Other diagram objects -->
+				  				<area shape="rect" coords="283,925,451,985" href="../elements/id-392ecd79a0a540819458a43b2b2aa79d.html"  target="element">
+				  				<area shape="rect" coords="283,998,451,1058" href="../elements/id-a5495fa242ab45ba9eab1d219d66d92b.html"  target="element">
+				  				<area shape="rect" coords="91,925,259,985" href="../elements/id-09f7827357f94cdaa2d8ce9edf479268.html"  target="element">
+				  				<area shape="rect" coords="283,781,451,841" href="../elements/id-7d80ae7a2f634a0fb6b50eee3453e4a3.html"  target="element">
+				  				<area shape="rect" coords="283,853,451,913" href="../elements/id-8953e0bce85d4831a99bd29397d1034a.html"  target="element">
+				  				<area shape="rect" coords="91,998,259,1058" href="../elements/id-19605fc8524847d2aa7634c6c48338c3.html"  target="element">
+				  				<area shape="rect" coords="91,853,259,913" href="../elements/id-7834adfecfc44ad8aa97f3c797775fbd.html"  target="element">
+				  				<area shape="rect" coords="283,710,451,770" href="../elements/id-9289f144bf4048569b37d048037ba50a.html"  target="element">
+				  				<area shape="rect" coords="91,781,259,841" href="../elements/id-437feac3499a47ccac1e2c19a7de2584.html"  target="element">
+				  				<area shape="rect" coords="91,710,259,770" href="../elements/id-ad1657b3cfb149889cdba5588172d9aa.html"  target="element">
+
+				  		<area shape="rect" coords="67,674,491,1090" href="../elements/id-925cc30bb7034372a17203a86e17fa87.html"  target="element">
+				  				<area shape="rect" coords="2255,47,2375,102" href="../views/id-6777281d054740739a8c161185805242.html"  target="view">
+				  		    <!-- Other diagram objects -->
+				  						<area shape="rect" coords="1641,166,1711,198" href="../views/id-6777281d054740739a8c161185805242.html"  target="view">
+				  				    <!-- Other diagram objects -->
+				  						<area shape="rect" coords="2097,202,2297,282" href="../elements/id-1c483b3db60e437da5e8c72ff86c8d42.html"  target="element">
+				  						<area shape="rect" coords="1857,202,2057,282" href="../elements/id-965b23aba5024421a559a0c086f14325.html"  target="element">
+				  						<area shape="rect" coords="1617,202,1817,282" href="../elements/id-8a9cb32106fe4539a4331a34b3cc3f0c.html"  target="element">
+				  						<area shape="rect" coords="1389,202,1589,282" href="../elements/id-0cab82c7850a4c5b93669b3ad009ddcb.html"  target="element">
+
+				  				<area shape="rect" coords="1353,154,2386,335" href="../elements/id-1b1f623906f7482787168061bae862d8.html"  target="element">
+				  				<area shape="rect" coords="1581,46,1781,126" href="../elements/id-23ee5e9ee8ff4057a13d2a18c19a001d.html"  target="element">
+				  				<area shape="rect" coords="1353,46,1553,126" href="../elements/id-80419569ccc2442f9e18fce645a48de5.html"  target="element">
+
+				  		<area shape="rect" coords="1281,10,2446,359" href="../elements/id-8839565fc20f424285a122d80acd595f.html"  target="element">
+				  				<area shape="rect" coords="2157,469,2217,508" href="../views/id-0e5b57bec95e485fb38a60d9deedc6ec.html"  target="view">
+				  		    <!-- Other diagram objects -->
+				  				<area shape="rect" coords="1305,524,1505,604" href="../elements/id-3d500e79beb24e148f54dcd987746cc7.html"  target="element">
+				  				<area shape="rect" coords="1521,524,1721,604" href="../elements/id-1ab62be809b74369859152cf63368652.html"  target="element">
+				  				<area shape="rect" coords="1305,428,1505,508" href="../elements/id-86fbd8fb2c734b0aa66bb366165a44b2.html"  target="element">
+				  				<area shape="rect" coords="1737,524,1937,604" href="../elements/id-568ecdfee74849f4af00a82d83632516.html"  target="element">
+				  				<area shape="rect" coords="1521,428,1721,508" href="../elements/id-0999ee6adac8486d8cf9c75a82525b46.html"  target="element">
+				  				<area shape="rect" coords="1953,524,2153,604" href="../elements/id-47d4198e1eb54ad9b740c44253851cf3.html"  target="element">
+				  				<area shape="rect" coords="1953,428,2153,508" href="../elements/id-e8ade15f9145402c8baa7ed553b92cce.html"  target="element">
+				  				<area shape="rect" coords="1737,428,1937,508" href="../elements/id-67f09b3e0f404ee18bda10ee6045e29c.html"  target="element">
+
+				  		<area shape="rect" coords="1281,392,2218,621" href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html"  target="element">
+				  				<area shape="rect" coords="1341,1489,1447,1561" href="../elements/id-a17113150d3c4dd0abe19c5a28acb69d.html"  target="element">
+				  				<area shape="rect" coords="2073,2042,2217,2122" href="../elements/id-130510dfef80437b832f5e752ea1e670.html"  target="element">
+				  						<area shape="rect" coords="2109,1874,2325,1954" href="../elements/id-d7e8c2e0dfc94cd9be474a00ca4c11dc.html"  target="element">
+				  						<area shape="rect" coords="2109,1766,2325,1846" href="../elements/id-839ac5c3cc8c4db8a3b108a66be2eac9.html"  target="element">
+				  						<area shape="rect" coords="2349,1766,2565,1846" href="../elements/id-2b1cf667191e405ca56a950d04c6e0a4.html"  target="element">
+
+				  				<area shape="rect" coords="2073,1718,2613,1995" href="../elements/id-4822de1892214dbd8bacee49efc513df.html"  target="element">
+				  						<area shape="rect" coords="1713,2078,1913,2158" href="../elements/id-8ca280dc9364449788cde39ffbb8bd5e.html"  target="element">
+				  						<area shape="rect" coords="1413,2174,1613,2254" href="../elements/id-5b61fb0d72ca44769dfd141eee292137.html"  target="element">
+				  						<area shape="rect" coords="1713,2174,1913,2254" href="../elements/id-6754ccc2b37143e6a78bfb8d26554d6b.html"  target="element">
+				  						<area shape="rect" coords="1713,1982,1913,2062" href="../elements/id-44025d1012f14966a1ecd0c4cbd9fbd9.html"  target="element">
+				  						<area shape="rect" coords="1416,2078,1616,2158" href="../elements/id-276327da8ca74ce1984bd8461240dfef.html"  target="element">
+				  						<area shape="rect" coords="1413,1982,1618,2062" href="../elements/id-3e85162bb6354d2e9a698d5484ca65ec.html"  target="element">
+				  						<area shape="rect" coords="1413,1886,1613,1966" href="../elements/id-68de6843b0ae48d3a7f2e23888dc1464.html"  target="element">
+				  						<area shape="rect" coords="1713,1886,1913,1966" href="../elements/id-b7b5faeb52d14562be1f8eea0a2b0de4.html"  target="element">
+
+				  				<area shape="rect" coords="1341,1838,1989,2270" href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html"  target="element">
+				  				<area shape="rect" coords="2553,1506,2661,1586" href="../elements/id-4e0ab941648b4858895d56fb8b3c024a.html"  target="element">
+				  				<area shape="rect" coords="2421,1506,2529,1586" href="../elements/id-5045226442764b2aaf6136057ccc3fc7.html"  target="element">
+				  				<area shape="rect" coords="1524,1602,1630,1674" href="../elements/id-0a7518ac069646358ccd97cbdf2b1cdb.html"  target="element">
+				  				<area shape="rect" coords="1341,1601,1447,1673" href="../elements/id-8d4b1846674943ca87e6be0883a25eb9.html"  target="element">
+				  				<area shape="rect" coords="1953,1602,2059,1674" href="../elements/id-f6345db8d4ad49ff90a08d36ded267c6.html"  target="element">
+				  				<area shape="rect" coords="2205,1506,2311,1578" href="../elements/id-8020cf6606f9411abd318068b0334e94.html"  target="element">
+				  				<area shape="rect" coords="2073,1506,2179,1578" href="../elements/id-6f0a25641a6241b281f4977cdeb053e6.html"  target="element">
+				  				<area shape="rect" coords="1833,1506,1939,1578" href="../elements/id-3db1b4f829e74f3bba688d78780c815c.html"  target="element">
+				  				<area shape="rect" coords="1953,1506,2059,1578" href="../elements/id-3695cbf579bb426bbfde533df062d9ec.html"  target="element">
+				  				<area shape="rect" coords="1629,1382,2314,1462" href="../elements/id-434fd0bf39a84ff3b86a7910a4c820b9.html"  target="element">
+				  				<area shape="rect" coords="1524,1502,1630,1574" href="../elements/id-7684494050a04364b4cfa947ac650440.html"  target="element">
+				  				<area shape="rect" coords="1665,1602,1771,1674" href="../elements/id-f08d49e364df4795963d4148acbb7ae4.html"  target="element">
+				  				<area shape="rect" coords="2421,1382,2661,1462" href="../elements/id-ed16e7be53f3442b8f640905d6ff56f0.html"  target="element">
+				  				<area shape="rect" coords="1341,1382,1447,1454" href="../elements/id-3c876bb54e2a45ab93acf657377eed15.html"  target="element">
+				  				<area shape="rect" coords="2433,2042,2577,2122" href="../elements/id-31d402b4e57d4871aa5c0ec1caa28ca3.html"  target="element">
+				  				<area shape="rect" coords="1665,1502,1771,1574" href="../elements/id-2da53d981b644141a70b24968c23bbd3.html"  target="element">
+				  				<area shape="rect" coords="2253,2042,2397,2122" href="../elements/id-8b4fef875d06492e978bea744294a801.html"  target="element">
+
+				  		<area shape="rect" coords="1281,1334,2817,2306" href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html"  target="element">
+				  				<area shape="rect" coords="1738,857,1820,897" href="../views/id-40a5ab9f5c9441f68e1d4590876bb59e.html"  target="view">
+				  		    <!-- Other diagram objects -->
+				  				<area shape="rect" coords="1318,725,1466,797" href="../elements/id-6984879aa17f46b8b22ba57b2329337f.html"  target="element">
+				  				<area shape="rect" coords="1510,725,1658,797" href="../elements/id-bd32cd7fc56943d4bd8d7972bc7c6742.html"  target="element">
+				  				<area shape="rect" coords="1318,833,1466,905" href="../elements/id-fa01416b34224bf79aac69a394a31e89.html"  target="element">
+
+				  		<area shape="rect" coords="1282,665,1880,942" href="../elements/id-3172146315d0492b8723151fb7053bd7.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">The view that relates Architecture principles to semantic view functional components is a relevant aspect of solutions architecture. This view focuses on how architecture principles influence the design and implementation of functional components within the semantic layer of a solution.
+
+By aligning architecture principles with semantic view functional components, solutions architects ensure that the design and implementation of these components adhere to established guidelines and best practices. This alignment brings several benefits to the overall solution.
+
+Firstly, it promotes consistency and coherence in the design of functional components. Architecture principles provide guidelines for designing semantic components that ensure a standardized approach and facilitate seamless integration and interoperability. By aligning functional components with these principles, solutions architects ensure that the semantics and data structures across the solution remain consistent, enabling efficient data exchange and integration.
+
+Secondly, aligning architecture principles with semantic view functional components supports data integrity and quality. Architecture principles often emphasize data governance, data security, and data management practices. By incorporating these principles into the design and implementation of semantic components, solutions architects can enforce data governance policies, ensure data security measures, and maintain data quality standards. This alignment enhances the reliability and trustworthiness of the solution's data, leading to more accurate and informed decision-making.
+
+Furthermore, aligning architecture principles with semantic view functional components improves the understandability and maintainability of the solution. Architecture principles provide guidelines for organizing and structuring functional components, making them easier to comprehend and manage. By aligning functional components with these principles, solutions architects facilitate future enhancements, updates, and maintenance of the solution, reducing the complexity and effort required for managing the semantic layer.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-3172146315d0492b8723151fb7053bd7.html" target="element"> Business Agnostic Ontologies Solutions </a> </td>
+											    <td> <a href="../elements/id-3172146315d0492b8723151fb7053bd7.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-fa01416b34224bf79aac69a394a31e89.html" target="element"> W3C Organization </a> </td>
+													    <td> <a href="../elements/id-fa01416b34224bf79aac69a394a31e89.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-bd32cd7fc56943d4bd8d7972bc7c6742.html" target="element"> W3C Shapes Constraint Language </a> </td>
+													    <td> <a href="../elements/id-bd32cd7fc56943d4bd8d7972bc7c6742.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-6984879aa17f46b8b22ba57b2329337f.html" target="element"> PROV-O </a> </td>
+													    <td> <a href="../elements/id-6984879aa17f46b8b22ba57b2329337f.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../views/id-40a5ab9f5c9441f68e1d4590876bb59e.html" target="view"> SV-Agnostic Ontologies </a> </td>
+													    <td> <a href="../views/id-40a5ab9f5c9441f68e1d4590876bb59e.html" target="view" class="i18n-viewpoint-"> </a> </td>
+													</tr>
+											    <!-- Other graphical objects -->
+
+											
+											<tr>
+											    <td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+											    <td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-8b4fef875d06492e978bea744294a801.html" target="element"> Common Data Model </a> </td>
+													    <td> <a href="../elements/id-8b4fef875d06492e978bea744294a801.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-2da53d981b644141a70b24968c23bbd3.html" target="element"> XML </a> </td>
+													    <td> <a href="../elements/id-2da53d981b644141a70b24968c23bbd3.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-31d402b4e57d4871aa5c0ec1caa28ca3.html" target="element"> ISO 8601 </a> </td>
+													    <td> <a href="../elements/id-31d402b4e57d4871aa5c0ec1caa28ca3.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-3c876bb54e2a45ab93acf657377eed15.html" target="element"> CSV </a> </td>
+													    <td> <a href="../elements/id-3c876bb54e2a45ab93acf657377eed15.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-ed16e7be53f3442b8f640905d6ff56f0.html" target="element"> JSON </a> </td>
+													    <td> <a href="../elements/id-ed16e7be53f3442b8f640905d6ff56f0.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-f08d49e364df4795963d4148acbb7ae4.html" target="element"> AS4 Profile of ebMS 3.0 v1.0 </a> </td>
+													    <td> <a href="../elements/id-f08d49e364df4795963d4148acbb7ae4.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-7684494050a04364b4cfa947ac650440.html" target="element"> SIARD 2.0 format for databases </a> </td>
+													    <td> <a href="../elements/id-7684494050a04364b4cfa947ac650440.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-434fd0bf39a84ff3b86a7910a4c820b9.html" target="element"> RDF Serialisations </a> </td>
+													    <td> <a href="../elements/id-434fd0bf39a84ff3b86a7910a4c820b9.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-3695cbf579bb426bbfde533df062d9ec.html" target="element"> Turtle </a> </td>
+													    <td> <a href="../elements/id-3695cbf579bb426bbfde533df062d9ec.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-3db1b4f829e74f3bba688d78780c815c.html" target="element"> RDF-XML </a> </td>
+													    <td> <a href="../elements/id-3db1b4f829e74f3bba688d78780c815c.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-6f0a25641a6241b281f4977cdeb053e6.html" target="element"> N3 </a> </td>
+													    <td> <a href="../elements/id-6f0a25641a6241b281f4977cdeb053e6.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-8020cf6606f9411abd318068b0334e94.html" target="element"> NQads </a> </td>
+													    <td> <a href="../elements/id-8020cf6606f9411abd318068b0334e94.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-f6345db8d4ad49ff90a08d36ded267c6.html" target="element"> TRiG </a> </td>
+													    <td> <a href="../elements/id-f6345db8d4ad49ff90a08d36ded267c6.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-8d4b1846674943ca87e6be0883a25eb9.html" target="element"> SKOS </a> </td>
+													    <td> <a href="../elements/id-8d4b1846674943ca87e6be0883a25eb9.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-0a7518ac069646358ccd97cbdf2b1cdb.html" target="element"> SKOS-XL </a> </td>
+													    <td> <a href="../elements/id-0a7518ac069646358ccd97cbdf2b1cdb.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-5045226442764b2aaf6136057ccc3fc7.html" target="element"> JSON-LD </a> </td>
+													    <td> <a href="../elements/id-5045226442764b2aaf6136057ccc3fc7.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-4e0ab941648b4858895d56fb8b3c024a.html" target="element"> JSON-L </a> </td>
+													    <td> <a href="../elements/id-4e0ab941648b4858895d56fb8b3c024a.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element"> Semantic Web Data Formats Solutions </a> </td>
+													    <td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-b7b5faeb52d14562be1f8eea0a2b0de4.html" target="element"> LDES </a> </td>
+															    <td> <a href="../elements/id-b7b5faeb52d14562be1f8eea0a2b0de4.html" target="element" class="i18n-elementtype-Representation">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-68de6843b0ae48d3a7f2e23888dc1464.html" target="element"> RDF </a> </td>
+															    <td> <a href="../elements/id-68de6843b0ae48d3a7f2e23888dc1464.html" target="element" class="i18n-elementtype-Representation">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-3e85162bb6354d2e9a698d5484ca65ec.html" target="element"> RDF-S </a> </td>
+															    <td> <a href="../elements/id-3e85162bb6354d2e9a698d5484ca65ec.html" target="element" class="i18n-elementtype-Representation">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-276327da8ca74ce1984bd8461240dfef.html" target="element"> OWL2 </a> </td>
+															    <td> <a href="../elements/id-276327da8ca74ce1984bd8461240dfef.html" target="element" class="i18n-elementtype-Representation">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-44025d1012f14966a1ecd0c4cbd9fbd9.html" target="element"> RML </a> </td>
+															    <td> <a href="../elements/id-44025d1012f14966a1ecd0c4cbd9fbd9.html" target="element" class="i18n-elementtype-Representation">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-6754ccc2b37143e6a78bfb8d26554d6b.html" target="element"> SPARQL* </a> </td>
+															    <td> <a href="../elements/id-6754ccc2b37143e6a78bfb8d26554d6b.html" target="element" class="i18n-elementtype-Representation">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-5b61fb0d72ca44769dfd141eee292137.html" target="element"> RDF* </a> </td>
+															    <td> <a href="../elements/id-5b61fb0d72ca44769dfd141eee292137.html" target="element" class="i18n-elementtype-Representation">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-8ca280dc9364449788cde39ffbb8bd5e.html" target="element"> SPARQL </a> </td>
+															    <td> <a href="../elements/id-8ca280dc9364449788cde39ffbb8bd5e.html" target="element" class="i18n-elementtype-Representation">
+															    </a> </td>
+															</tr>
+
+													
+													<tr>
+													    <td> <a href="../elements/id-4822de1892214dbd8bacee49efc513df.html" target="element"> Geo-spatial Data Format Solutions </a> </td>
+													    <td> <a href="../elements/id-4822de1892214dbd8bacee49efc513df.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-2b1cf667191e405ca56a950d04c6e0a4.html" target="element"> geoJSON </a> </td>
+															    <td> <a href="../elements/id-2b1cf667191e405ca56a950d04c6e0a4.html" target="element" class="i18n-elementtype-Representation">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-839ac5c3cc8c4db8a3b108a66be2eac9.html" target="element"> KML </a> </td>
+															    <td> <a href="../elements/id-839ac5c3cc8c4db8a3b108a66be2eac9.html" target="element" class="i18n-elementtype-Representation">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-d7e8c2e0dfc94cd9be474a00ca4c11dc.html" target="element"> GML </a> </td>
+															    <td> <a href="../elements/id-d7e8c2e0dfc94cd9be474a00ca4c11dc.html" target="element" class="i18n-elementtype-Representation">
+															    </a> </td>
+															</tr>
+
+													
+													<tr>
+													    <td> <a href="../elements/id-130510dfef80437b832f5e752ea1e670.html" target="element"> Genericode </a> </td>
+													    <td> <a href="../elements/id-130510dfef80437b832f5e752ea1e670.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-a17113150d3c4dd0abe19c5a28acb69d.html" target="element"> SPARQL-CSV </a> </td>
+													    <td> <a href="../elements/id-a17113150d3c4dd0abe19c5a28acb69d.html" target="element" class="i18n-elementtype-Representation">
+													    </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html" target="element"> Business Agnostic Dataset Solutions </a> </td>
+											    <td> <a href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-67f09b3e0f404ee18bda10ee6045e29c.html" target="element"> Master Data </a> </td>
+													    <td> <a href="../elements/id-67f09b3e0f404ee18bda10ee6045e29c.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-e8ade15f9145402c8baa7ed553b92cce.html" target="element"> Multimedia Object Metadata </a> </td>
+													    <td> <a href="../elements/id-e8ade15f9145402c8baa7ed553b92cce.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-47d4198e1eb54ad9b740c44253851cf3.html" target="element"> Log Metadata </a> </td>
+													    <td> <a href="../elements/id-47d4198e1eb54ad9b740c44253851cf3.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-0999ee6adac8486d8cf9c75a82525b46.html" target="element"> Translation Item Metadata </a> </td>
+													    <td> <a href="../elements/id-0999ee6adac8486d8cf9c75a82525b46.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-568ecdfee74849f4af00a82d83632516.html" target="element"> Transaction metadata </a> </td>
+													    <td> <a href="../elements/id-568ecdfee74849f4af00a82d83632516.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-86fbd8fb2c734b0aa66bb366165a44b2.html" target="element"> Exchange Item metadata </a> </td>
+													    <td> <a href="../elements/id-86fbd8fb2c734b0aa66bb366165a44b2.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-1ab62be809b74369859152cf63368652.html" target="element"> Tender Item Metadata </a> </td>
+													    <td> <a href="../elements/id-1ab62be809b74369859152cf63368652.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-3d500e79beb24e148f54dcd987746cc7.html" target="element"> Authorised payment methods metadata </a> </td>
+													    <td> <a href="../elements/id-3d500e79beb24e148f54dcd987746cc7.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../views/id-0e5b57bec95e485fb38a60d9deedc6ec.html" target="view"> SV-Business Agnostic Metadata </a> </td>
+													    <td> <a href="../views/id-0e5b57bec95e485fb38a60d9deedc6ec.html" target="view" class="i18n-viewpoint-"> </a> </td>
+													</tr>
+											    <!-- Other graphical objects -->
+
+											
+											<tr>
+											    <td> <a href="../elements/id-8839565fc20f424285a122d80acd595f.html" target="element"> Business Agnostic Reference Data Solutions </a> </td>
+											    <td> <a href="../elements/id-8839565fc20f424285a122d80acd595f.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-80419569ccc2442f9e18fce645a48de5.html" target="element"> ESCO </a> </td>
+													    <td> <a href="../elements/id-80419569ccc2442f9e18fce645a48de5.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-23ee5e9ee8ff4057a13d2a18c19a001d.html" target="element"> Regulated Professions DB </a> </td>
+													    <td> <a href="../elements/id-23ee5e9ee8ff4057a13d2a18c19a001d.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-1b1f623906f7482787168061bae862d8.html" target="element"> Business Agnostic EU Vocabularies Reference Data Solutions </a> </td>
+													    <td> <a href="../elements/id-1b1f623906f7482787168061bae862d8.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-0cab82c7850a4c5b93669b3ad009ddcb.html" target="element"> NUTS </a> </td>
+															    <td> <a href="../elements/id-0cab82c7850a4c5b93669b3ad009ddcb.html" target="element" class="i18n-elementtype-DataObject">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-8a9cb32106fe4539a4331a34b3cc3f0c.html" target="element"> Reference Data Asset </a> </td>
+															    <td> <a href="../elements/id-8a9cb32106fe4539a4331a34b3cc3f0c.html" target="element" class="i18n-elementtype-DataObject">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-965b23aba5024421a559a0c086f14325.html" target="element"> Authority Tables </a> </td>
+															    <td> <a href="../elements/id-965b23aba5024421a559a0c086f14325.html" target="element" class="i18n-elementtype-DataObject">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-1c483b3db60e437da5e8c72ff86c8d42.html" target="element"> Digital Europe Thesaurus </a> </td>
+															    <td> <a href="../elements/id-1c483b3db60e437da5e8c72ff86c8d42.html" target="element" class="i18n-elementtype-DataObject">
+															    </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../views/id-6777281d054740739a8c161185805242.html" target="view"> SV-Agnostic Reference Data </a> </td>
+															    <td> <a href="../views/id-6777281d054740739a8c161185805242.html" target="view" class="i18n-viewpoint-"> </a> </td>
+															</tr>
+													    <!-- Other graphical objects -->
+
+													
+													<tr>
+													    <td> <a href="../views/id-6777281d054740739a8c161185805242.html" target="view"> SV-Agnostic Reference Data </a> </td>
+													    <td> <a href="../views/id-6777281d054740739a8c161185805242.html" target="view" class="i18n-viewpoint-"> </a> </td>
+													</tr>
+											    <!-- Other graphical objects -->
+
+											
+											<tr>
+											    <td> <a href="../elements/id-925cc30bb7034372a17203a86e17fa87.html" target="element"> Business Agnostic Vocabularies Solutions </a> </td>
+											    <td> <a href="../elements/id-925cc30bb7034372a17203a86e17fa87.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-ad1657b3cfb149889cdba5588172d9aa.html" target="element"> eGovernment Core Vocabularies </a> </td>
+													    <td> <a href="../elements/id-ad1657b3cfb149889cdba5588172d9aa.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-437feac3499a47ccac1e2c19a7de2584.html" target="element"> Core Assessment Vocabulary </a> </td>
+													    <td> <a href="../elements/id-437feac3499a47ccac1e2c19a7de2584.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-9289f144bf4048569b37d048037ba50a.html" target="element"> Core Standards and Specifications Vocabulary </a> </td>
+													    <td> <a href="../elements/id-9289f144bf4048569b37d048037ba50a.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-7834adfecfc44ad8aa97f3c797775fbd.html" target="element"> W3C Profiles Vocabulary </a> </td>
+													    <td> <a href="../elements/id-7834adfecfc44ad8aa97f3c797775fbd.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-19605fc8524847d2aa7634c6c48338c3.html" target="element"> ADMS-AP </a> </td>
+													    <td> <a href="../elements/id-19605fc8524847d2aa7634c6c48338c3.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-8953e0bce85d4831a99bd29397d1034a.html" target="element"> DCAT-AP </a> </td>
+													    <td> <a href="../elements/id-8953e0bce85d4831a99bd29397d1034a.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-7d80ae7a2f634a0fb6b50eee3453e4a3.html" target="element"> FOAF </a> </td>
+													    <td> <a href="../elements/id-7d80ae7a2f634a0fb6b50eee3453e4a3.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-09f7827357f94cdaa2d8ce9edf479268.html" target="element"> ADMS </a> </td>
+													    <td> <a href="../elements/id-09f7827357f94cdaa2d8ce9edf479268.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-a5495fa242ab45ba9eab1d219d66d92b.html" target="element"> DCAT </a> </td>
+													    <td> <a href="../elements/id-a5495fa242ab45ba9eab1d219d66d92b.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-392ecd79a0a540819458a43b2b2aa79d.html" target="element"> EuroVoc </a> </td>
+													    <td> <a href="../elements/id-392ecd79a0a540819458a43b2b2aa79d.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../views/id-5cf9ae735cf245098fa7beccbd927eee.html" target="view"> SV-Agnostic Vocabularies </a> </td>
+													    <td> <a href="../views/id-5cf9ae735cf245098fa7beccbd927eee.html" target="view" class="i18n-viewpoint-"> </a> </td>
+													</tr>
+											    <!-- Other graphical objects -->
+
+											
+											<tr>
+											    <td> <a href="../elements/id-5da2adbef1364df5b3d6ebfa6d21c713.html" target="element"> Business Agnostic Data Mapping Solutions </a> </td>
+											    <td> <a href="../elements/id-5da2adbef1364df5b3d6ebfa6d21c713.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-2f62a053e7c641a1a676d735e8453129.html" target="element"> RDF Mapping Language (RML) </a> </td>
+													    <td> <a href="../elements/id-2f62a053e7c641a1a676d735e8453129.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../views/id-66a7431fa8b54813ba0ec79eb9fc079b.html" target="view"> SV-Data Mapping </a> </td>
+													    <td> <a href="../views/id-66a7431fa8b54813ba0ec79eb9fc079b.html" target="view" class="i18n-viewpoint-"> </a> </td>
+													</tr>
+											    <!-- Other graphical objects -->
+
+											
+											<tr>
+											    <td> <a href="../elements/id-f6f6db98f86c458fb635988d35a27dbc.html" target="element"> Business Agnostic Dataset Catalogue Solutions </a> </td>
+											    <td> <a href="../elements/id-f6f6db98f86c458fb635988d35a27dbc.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-093d12f925bf48e39c6099ab899f18ea.html" target="element"> Eurostat Data Catalogue </a> </td>
+													    <td> <a href="../elements/id-093d12f925bf48e39c6099ab899f18ea.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-4af2439c284842e5a8ec98e766097090.html" target="element"> Official Portal for European Data </a> </td>
+													    <td> <a href="../elements/id-4af2439c284842e5a8ec98e766097090.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-230d8b708f534005b1050a35d8cf5126.html" target="element"> CELLAR </a> </td>
+													    <td> <a href="../elements/id-230d8b708f534005b1050a35d8cf5126.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../views/id-eb909b709a294a07bdefc3f44e7aa692.html" target="view"> SV-Datasets Catalogue Solutions </a> </td>
+													    <td> <a href="../views/id-eb909b709a294a07bdefc3f44e7aa692.html" target="view" class="i18n-viewpoint-"> </a> </td>
+													</tr>
+											    <!-- Other graphical objects -->
+
+											
+											<tr>
+											    <td> <a href="../elements/id-00faeb08c8cb4af19a96dcaafb7dadf3.html" target="element"> Business Agnostic Ontologies Catalogue Solutions </a> </td>
+											    <td> <a href="../elements/id-00faeb08c8cb4af19a96dcaafb7dadf3.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-4312e0c930684ecebf02b97642156b55.html" target="element"> Linked Open Vocabularies (LOV) </a> </td>
+													    <td> <a href="../elements/id-4312e0c930684ecebf02b97642156b55.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-5d506668311b422c836dea5830d5860e.html" target="element"> ODP </a> </td>
+													    <td> <a href="../elements/id-5d506668311b422c836dea5830d5860e.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../views/id-db5dbcbc15794b029ec630eccc8d6c1e.html" target="view"> SV-Agnostic Ontology Catalogue </a> </td>
+													    <td> <a href="../views/id-db5dbcbc15794b029ec630eccc8d6c1e.html" target="view" class="i18n-viewpoint-"> </a> </td>
+													</tr>
+											    <!-- Other graphical objects -->
+
+											
+											<tr>
+											    <td> <a href="../elements/id-fccbe14bbd3e41cab48169f506fdfed0.html" target="element"> Business Agnostic Data Models Solutions </a> </td>
+											    <td> <a href="../elements/id-fccbe14bbd3e41cab48169f506fdfed0.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-2751081c5075454caad7e805893f2928.html" target="element"> Common Data Model </a> </td>
+													    <td> <a href="../elements/id-2751081c5075454caad7e805893f2928.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-c0f740667423400baa4b44777e7791a9.html" target="element"> eProcurement Data Model </a> </td>
+													    <td> <a href="../elements/id-c0f740667423400baa4b44777e7791a9.html" target="element" class="i18n-elementtype-Grouping">
+													    </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-5c0dadf660ae494cb8d58cc975f50f76.html" target="element"> ESPD-EDM </a> </td>
+															    <td> <a href="../elements/id-5c0dadf660ae494cb8d58cc975f50f76.html" target="element" class="i18n-elementtype-DataObject">
+															    </a> </td>
+															</tr>
+
+													
+													<tr>
+													    <td> <a href="../views/id-f8811571ca2c4129a00587a47a1c9648.html" target="view"> SV-Business Agnostic Data Models </a> </td>
+													    <td> <a href="../views/id-f8811571ca2c4129a00587a47a1c9648.html" target="view" class="i18n-viewpoint-"> </a> </td>
+													</tr>
+											    <!-- Other graphical objects -->
+
+											
+											<tr>
+											    <td> <a href="../elements/id-368b4b8e3ce9468fbd719c7ca9f18385.html" target="element"> Business Agnostic Metadata Catalogue Solutions </a> </td>
+											    <td> <a href="../elements/id-368b4b8e3ce9468fbd719c7ca9f18385.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-4af2439c284842e5a8ec98e766097090.html" target="element"> Official Portal for European Data </a> </td>
+													    <td> <a href="../elements/id-4af2439c284842e5a8ec98e766097090.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-18d018a67e2341deb919d14f4c30aab7.html" target="element"> JRC Data Catalogue </a> </td>
+													    <td> <a href="../elements/id-18d018a67e2341deb919d14f4c30aab7.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../views/id-a72cbfdf1d4d492f83da639a43472a59.html" target="view"> SV-Metadata Catalogue </a> </td>
+													    <td> <a href="../views/id-a72cbfdf1d4d492f83da639a43472a59.html" target="view" class="i18n-viewpoint-"> </a> </td>
+													</tr>
+											    <!-- Other graphical objects -->
+
+											
+											<tr>
+											    <td> <a href="../elements/id-ac2ede8d46314392a2621af657fc0728.html" target="element"> Data Interoperability </a> </td>
+											    <td> <a href="../elements/id-ac2ede8d46314392a2621af657fc0728.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element"> Data Reusability </a> </td>
+											    <td> <a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-3e5302a7445440c1a7b440cea8f87525.html" target="element"> Loosely coupled integration </a> </td>
+											    <td> <a href="../elements/id-3e5302a7445440c1a7b440cea8f87525.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-1cb45cb5c81044428dac33e75c101437.html" target="element"> Data Accessibility </a> </td>
+											    <td> <a href="../elements/id-1cb45cb5c81044428dac33e75c101437.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-bf86c39d9ac0428abb1874b98af632f5.html" target="element"> Data Findability </a> </td>
+											    <td> <a href="../elements/id-bf86c39d9ac0428abb1874b98af632f5.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element"> Data Portability </a> </td>
+											    <td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-4c61db61ed854be0b0d7f33f323579e7.html" target="element"> EU Localisation Framework compliance </a> </td>
+											    <td> <a href="../elements/id-4c61db61ed854be0b0d7f33f323579e7.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-89fe3da93e6a4f2794fea08fcdd02ec1.html" target="element"> Once Only </a> </td>
+											    <td> <a href="../elements/id-89fe3da93e6a4f2794fea08fcdd02ec1.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-58ee7a4f1e03458686c717fb34d551c0.html" target="element"> Preservation of information </a> </td>
+											    <td> <a href="../elements/id-58ee7a4f1e03458686c717fb34d551c0.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-0f3bc869aab6436e95f6d7b7c7e399b0.html" target="element"> Transparency of internal information systems </a> </td>
+											    <td> <a href="../elements/id-0f3bc869aab6436e95f6d7b7c7e399b0.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-481e6e58c68a4f068c26f3e73d8fa0c9.html" target="element"> Transparency of the administrative environment </a> </td>
+											    <td> <a href="../elements/id-481e6e58c68a4f068c26f3e73d8fa0c9.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-f9115853bff046ddbed5f4e8e373aa96.html" target="element"> Reuse, before buy, before build </a> </td>
+											    <td> <a href="../elements/id-f9115853bff046ddbed5f4e8e373aa96.html" target="element" class="i18n-elementtype-Principle">
+											    </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-74ca775dcde34213b3c0848f3f6984f8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-74ca775dcde34213b3c0848f3f6984f8.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3172146315d0492b8723151fb7053bd7.html" target="element"> Business Agnostic Ontologies Solutions </a> </td>
+																		<td> <a href="../elements/id-6984879aa17f46b8b22ba57b2329337f.html" target="element"> PROV-O </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-11b2b60eb1a440af9d3e204331f3c865.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-11b2b60eb1a440af9d3e204331f3c865.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3172146315d0492b8723151fb7053bd7.html" target="element"> Business Agnostic Ontologies Solutions </a> </td>
+																		<td> <a href="../elements/id-bd32cd7fc56943d4bd8d7972bc7c6742.html" target="element"> W3C Shapes Constraint Language </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-e8d833aa14a345aaa8af64d7753330a8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e8d833aa14a345aaa8af64d7753330a8.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3172146315d0492b8723151fb7053bd7.html" target="element"> Business Agnostic Ontologies Solutions </a> </td>
+																		<td> <a href="../elements/id-fa01416b34224bf79aac69a394a31e89.html" target="element"> W3C Organization </a> </td>
+																	</tr>
+
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelReference -->
+											
+																	<tr>
+																		<td> <a href="../elements/id-4202b5c100b748a8a2776c2499f4e7bb.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-4202b5c100b748a8a2776c2499f4e7bb.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-2da53d981b644141a70b24968c23bbd3.html" target="element"> XML </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-efcae19aa6a540c986fbfd4699678235.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-efcae19aa6a540c986fbfd4699678235.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-31d402b4e57d4871aa5c0ec1caa28ca3.html" target="element"> ISO 8601 </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-8b7611b747c849ecaf488ec3a899f316.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-8b7611b747c849ecaf488ec3a899f316.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-7684494050a04364b4cfa947ac650440.html" target="element"> SIARD 2.0 format for databases </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-b1d6a11603574ab58fa43545e774b678.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-b1d6a11603574ab58fa43545e774b678.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-5045226442764b2aaf6136057ccc3fc7.html" target="element"> JSON-LD </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-e9980f841cd04ac9bb1109247c3261aa.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e9980f841cd04ac9bb1109247c3261aa.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-8b4fef875d06492e978bea744294a801.html" target="element"> Common Data Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-478a29d5793a467ba2b13f0d48d9c27b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-478a29d5793a467ba2b13f0d48d9c27b.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-6f0a25641a6241b281f4977cdeb053e6.html" target="element"> N3 </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-0b5fef6bafb24020832c80400d8cc484.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0b5fef6bafb24020832c80400d8cc484.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-3695cbf579bb426bbfde533df062d9ec.html" target="element"> Turtle </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-d3a9a4f223214daba7fa078ddb033cf3.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d3a9a4f223214daba7fa078ddb033cf3.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-a17113150d3c4dd0abe19c5a28acb69d.html" target="element"> SPARQL-CSV </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-268823bcfab949e28e27e5df53cb7254.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-268823bcfab949e28e27e5df53cb7254.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-3c876bb54e2a45ab93acf657377eed15.html" target="element"> CSV </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-895c80fc6e164b6d8b475b30e7eff608.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-895c80fc6e164b6d8b475b30e7eff608.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-4822de1892214dbd8bacee49efc513df.html" target="element"> Geo-spatial Data Format Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-d9550b5f14e3409c92af8f1d032eb74f.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d9550b5f14e3409c92af8f1d032eb74f.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-8020cf6606f9411abd318068b0334e94.html" target="element"> NQads </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-fa7bad81f4a540e9b9b22f6e846f03f0.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-fa7bad81f4a540e9b9b22f6e846f03f0.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-0a7518ac069646358ccd97cbdf2b1cdb.html" target="element"> SKOS-XL </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-15d6873d80cd4255981c11bfb51cd46b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-15d6873d80cd4255981c11bfb51cd46b.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-ed16e7be53f3442b8f640905d6ff56f0.html" target="element"> JSON </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-e2c0f964a3ed4c098bca9a6a7a37c36c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e2c0f964a3ed4c098bca9a6a7a37c36c.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-8d4b1846674943ca87e6be0883a25eb9.html" target="element"> SKOS </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-357ea0e0837042d0be84de2d7092270f.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-357ea0e0837042d0be84de2d7092270f.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-130510dfef80437b832f5e752ea1e670.html" target="element"> Genericode </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-ae13d75a3bbb4db5a20b0f26a27a853b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-ae13d75a3bbb4db5a20b0f26a27a853b.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element"> Semantic Web Data Formats Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-4cb0bec4b0f54e54a93a3a64a6692af7.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-4cb0bec4b0f54e54a93a3a64a6692af7.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-434fd0bf39a84ff3b86a7910a4c820b9.html" target="element"> RDF Serialisations </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-33167548f6b844be9817a0144657353d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-33167548f6b844be9817a0144657353d.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-f6345db8d4ad49ff90a08d36ded267c6.html" target="element"> TRiG </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-0012a20250ee42efb254c3b556f9885e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0012a20250ee42efb254c3b556f9885e.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-3db1b4f829e74f3bba688d78780c815c.html" target="element"> RDF-XML </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-a07de714703d43ee93bc40ea3782c2dc.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-a07de714703d43ee93bc40ea3782c2dc.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-f08d49e364df4795963d4148acbb7ae4.html" target="element"> AS4 Profile of ebMS 3.0 v1.0 </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-221fb3238ae849bea1158762b4117fe0.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-221fb3238ae849bea1158762b4117fe0.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																		<td> <a href="../elements/id-4e0ab941648b4858895d56fb8b3c024a.html" target="element"> JSON-L </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-01cf07e0931d48fb91704c10aebb5f97.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-01cf07e0931d48fb91704c10aebb5f97.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-2da53d981b644141a70b24968c23bbd3.html" target="element"> XML </a> </td>
+																				<td> <a href="../elements/id-434fd0bf39a84ff3b86a7910a4c820b9.html" target="element"> RDF Serialisations </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-2c711d8724764343bc067c157ca41f7f.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-2c711d8724764343bc067c157ca41f7f.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-3c876bb54e2a45ab93acf657377eed15.html" target="element"> CSV </a> </td>
+																				<td> <a href="../elements/id-434fd0bf39a84ff3b86a7910a4c820b9.html" target="element"> RDF Serialisations </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-3f2bd6b7ea3b41b8b2054307b5b25038.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-3f2bd6b7ea3b41b8b2054307b5b25038.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-f08d49e364df4795963d4148acbb7ae4.html" target="element"> AS4 Profile of ebMS 3.0 v1.0 </a> </td>
+																				<td> <a href="../elements/id-2da53d981b644141a70b24968c23bbd3.html" target="element"> XML </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-d49899567e954e92b138d9d714fae304.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-d49899567e954e92b138d9d714fae304.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-7684494050a04364b4cfa947ac650440.html" target="element"> SIARD 2.0 format for databases </a> </td>
+																				<td> <a href="../elements/id-2da53d981b644141a70b24968c23bbd3.html" target="element"> XML </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-880c24f94f8445bea1e6f4970804db56.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-880c24f94f8445bea1e6f4970804db56.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-3695cbf579bb426bbfde533df062d9ec.html" target="element"> Turtle </a> </td>
+																				<td> <a href="../elements/id-434fd0bf39a84ff3b86a7910a4c820b9.html" target="element"> RDF Serialisations </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-cb668835979f47f1a5cbd00662aa51d5.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-cb668835979f47f1a5cbd00662aa51d5.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-3db1b4f829e74f3bba688d78780c815c.html" target="element"> RDF-XML </a> </td>
+																				<td> <a href="../elements/id-2da53d981b644141a70b24968c23bbd3.html" target="element"> XML </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-fedfe53adfa849b69092245b45f8358a.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-fedfe53adfa849b69092245b45f8358a.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-6f0a25641a6241b281f4977cdeb053e6.html" target="element"> N3 </a> </td>
+																				<td> <a href="../elements/id-434fd0bf39a84ff3b86a7910a4c820b9.html" target="element"> RDF Serialisations </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-9ccd6e892dac4f96b903dd9626dc73d4.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-9ccd6e892dac4f96b903dd9626dc73d4.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-8020cf6606f9411abd318068b0334e94.html" target="element"> NQads </a> </td>
+																				<td> <a href="../elements/id-434fd0bf39a84ff3b86a7910a4c820b9.html" target="element"> RDF Serialisations </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-2686bea1daa843748c1b031b4bdbddda.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-2686bea1daa843748c1b031b4bdbddda.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-f6345db8d4ad49ff90a08d36ded267c6.html" target="element"> TRiG </a> </td>
+																				<td> <a href="../elements/id-3695cbf579bb426bbfde533df062d9ec.html" target="element"> Turtle </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-e0ee4acd949344bea5d1bc1b25ebadd4.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-e0ee4acd949344bea5d1bc1b25ebadd4.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-0a7518ac069646358ccd97cbdf2b1cdb.html" target="element"> SKOS-XL </a> </td>
+																				<td> <a href="../elements/id-8d4b1846674943ca87e6be0883a25eb9.html" target="element"> SKOS </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-3bafa58bcebb41fe9996265d643a5816.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-3bafa58bcebb41fe9996265d643a5816.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-5045226442764b2aaf6136057ccc3fc7.html" target="element"> JSON-LD </a> </td>
+																				<td> <a href="../elements/id-434fd0bf39a84ff3b86a7910a4c820b9.html" target="element"> RDF Serialisations </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-baf1f48fc6544039846a0f89b4e72d26.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-baf1f48fc6544039846a0f89b4e72d26.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-5045226442764b2aaf6136057ccc3fc7.html" target="element"> JSON-LD </a> </td>
+																				<td> <a href="../elements/id-ed16e7be53f3442b8f640905d6ff56f0.html" target="element"> JSON </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-6ab82562dd5f4a5c8bc9ab6b24f2dc37.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-6ab82562dd5f4a5c8bc9ab6b24f2dc37.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-4e0ab941648b4858895d56fb8b3c024a.html" target="element"> JSON-L </a> </td>
+																				<td> <a href="../elements/id-ed16e7be53f3442b8f640905d6ff56f0.html" target="element"> JSON </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-210607e0b6194232b956dc8bee07d178.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-210607e0b6194232b956dc8bee07d178.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element"> Semantic Web Data Formats Solutions </a> </td>
+																				<td> <a href="../elements/id-6754ccc2b37143e6a78bfb8d26554d6b.html" target="element"> SPARQL* </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-8f52da741ea24cd0bcded5977addea0e.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-8f52da741ea24cd0bcded5977addea0e.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element"> Semantic Web Data Formats Solutions </a> </td>
+																				<td> <a href="../elements/id-276327da8ca74ce1984bd8461240dfef.html" target="element"> OWL2 </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-ede7fc1c6d4d41e0855f0c0adee6b687.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-ede7fc1c6d4d41e0855f0c0adee6b687.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element"> Semantic Web Data Formats Solutions </a> </td>
+																				<td> <a href="../elements/id-5b61fb0d72ca44769dfd141eee292137.html" target="element"> RDF* </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-5381777ff7db4429b6f17deb5b2e82b1.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-5381777ff7db4429b6f17deb5b2e82b1.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element"> Semantic Web Data Formats Solutions </a> </td>
+																				<td> <a href="../elements/id-b7b5faeb52d14562be1f8eea0a2b0de4.html" target="element"> LDES </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-fb80fbb5f5a64f259b4ac5cb3856cca2.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-fb80fbb5f5a64f259b4ac5cb3856cca2.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element"> Semantic Web Data Formats Solutions </a> </td>
+																				<td> <a href="../elements/id-8ca280dc9364449788cde39ffbb8bd5e.html" target="element"> SPARQL </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-f0674dee2be342a99440e934e156101c.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-f0674dee2be342a99440e934e156101c.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element"> Semantic Web Data Formats Solutions </a> </td>
+																				<td> <a href="../elements/id-44025d1012f14966a1ecd0c4cbd9fbd9.html" target="element"> RML </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-b0cab301f681431c99aa9f3e918f43dc.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-b0cab301f681431c99aa9f3e918f43dc.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element"> Semantic Web Data Formats Solutions </a> </td>
+																				<td> <a href="../elements/id-68de6843b0ae48d3a7f2e23888dc1464.html" target="element"> RDF </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-3fa8f4e8cc6845ceb7530ca2245be366.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-3fa8f4e8cc6845ceb7530ca2245be366.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element"> Semantic Web Data Formats Solutions </a> </td>
+																				<td> <a href="../elements/id-3e85162bb6354d2e9a698d5484ca65ec.html" target="element"> RDF-S </a> </td>
+																			</tr>
+
+																					<tr>
+																						<td> <a href="../elements/id-a198398e3e5444c08df2a572fd23128e.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-a198398e3e5444c08df2a572fd23128e.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																						</a> </td>
+																						<td> <a href="../elements/id-3e85162bb6354d2e9a698d5484ca65ec.html" target="element"> RDF-S </a> </td>
+																						<td> <a href="../elements/id-68de6843b0ae48d3a7f2e23888dc1464.html" target="element"> RDF </a> </td>
+																					</tr>
+
+																					<tr>
+																						<td> <a href="../elements/id-4287a98b4fb64ff48c3980d0fe94e7db.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-4287a98b4fb64ff48c3980d0fe94e7db.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																						</a> </td>
+																						<td> <a href="../elements/id-276327da8ca74ce1984bd8461240dfef.html" target="element"> OWL2 </a> </td>
+																						<td> <a href="../elements/id-3e85162bb6354d2e9a698d5484ca65ec.html" target="element"> RDF-S </a> </td>
+																					</tr>
+
+													
+																			<tr>
+																				<td> <a href="../elements/id-1bf4efef4c6c4dc7a81ebede7c621bd3.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-1bf4efef4c6c4dc7a81ebede7c621bd3.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-4822de1892214dbd8bacee49efc513df.html" target="element"> Geo-spatial Data Format Solutions </a> </td>
+																				<td> <a href="../elements/id-839ac5c3cc8c4db8a3b108a66be2eac9.html" target="element"> KML </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-e03f8c1c6cf14a389f6bdf4b973fd5ec.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-e03f8c1c6cf14a389f6bdf4b973fd5ec.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-4822de1892214dbd8bacee49efc513df.html" target="element"> Geo-spatial Data Format Solutions </a> </td>
+																				<td> <a href="../elements/id-2b1cf667191e405ca56a950d04c6e0a4.html" target="element"> geoJSON </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-b54ba5985a1a42f1bd1e0d3be82b93eb.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-b54ba5985a1a42f1bd1e0d3be82b93eb.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-4822de1892214dbd8bacee49efc513df.html" target="element"> Geo-spatial Data Format Solutions </a> </td>
+																				<td> <a href="../elements/id-d7e8c2e0dfc94cd9be474a00ca4c11dc.html" target="element"> GML </a> </td>
+																			</tr>
+
+																					<tr>
+																						<td> <a href="../elements/id-ed419bb89d4c41f3a229363f8c4aab70.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-ed419bb89d4c41f3a229363f8c4aab70.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																						</a> </td>
+																						<td> <a href="../elements/id-2b1cf667191e405ca56a950d04c6e0a4.html" target="element"> geoJSON </a> </td>
+																						<td> <a href="../elements/id-ed16e7be53f3442b8f640905d6ff56f0.html" target="element"> JSON </a> </td>
+																					</tr>
+
+													
+																			<tr>
+																				<td> <a href="../elements/id-18c666c6d69340f689e749c403df2f82.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-18c666c6d69340f689e749c403df2f82.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-a17113150d3c4dd0abe19c5a28acb69d.html" target="element"> SPARQL-CSV </a> </td>
+																				<td> <a href="../elements/id-3c876bb54e2a45ab93acf657377eed15.html" target="element"> CSV </a> </td>
+																			</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/id-5101957586cd47f4a7c4c90ecb3fa8c2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-5101957586cd47f4a7c4c90ecb3fa8c2.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html" target="element"> Business Agnostic Dataset Solutions </a> </td>
+																		<td> <a href="../elements/id-86fbd8fb2c734b0aa66bb366165a44b2.html" target="element"> Exchange Item metadata </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-661117e3e3c44906bb3c262acc2edb46.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-661117e3e3c44906bb3c262acc2edb46.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html" target="element"> Business Agnostic Dataset Solutions </a> </td>
+																		<td> <a href="../elements/id-568ecdfee74849f4af00a82d83632516.html" target="element"> Transaction metadata </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-d65d150bde6a46fea14b2e69512ab339.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d65d150bde6a46fea14b2e69512ab339.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html" target="element"> Business Agnostic Dataset Solutions </a> </td>
+																		<td> <a href="../elements/id-0999ee6adac8486d8cf9c75a82525b46.html" target="element"> Translation Item Metadata </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-c0c44deb519041248c1e01bcee4cd612.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-c0c44deb519041248c1e01bcee4cd612.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html" target="element"> Business Agnostic Dataset Solutions </a> </td>
+																		<td> <a href="../elements/id-47d4198e1eb54ad9b740c44253851cf3.html" target="element"> Log Metadata </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-853df4fc676942268ada1455f71afc3f.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-853df4fc676942268ada1455f71afc3f.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html" target="element"> Business Agnostic Dataset Solutions </a> </td>
+																		<td> <a href="../elements/id-e8ade15f9145402c8baa7ed553b92cce.html" target="element"> Multimedia Object Metadata </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-5365de04adee4882983bb95d50b42eec.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-5365de04adee4882983bb95d50b42eec.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html" target="element"> Business Agnostic Dataset Solutions </a> </td>
+																		<td> <a href="../elements/id-67f09b3e0f404ee18bda10ee6045e29c.html" target="element"> Master Data </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-e352c994a35d45b68d1d50ccc1cfeb1d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e352c994a35d45b68d1d50ccc1cfeb1d.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html" target="element"> Business Agnostic Dataset Solutions </a> </td>
+																		<td> <a href="../elements/id-1ab62be809b74369859152cf63368652.html" target="element"> Tender Item Metadata </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-680ef4e880ec47efbb2dbbdc4479161e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-680ef4e880ec47efbb2dbbdc4479161e.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html" target="element"> Business Agnostic Dataset Solutions </a> </td>
+																		<td> <a href="../elements/id-3d500e79beb24e148f54dcd987746cc7.html" target="element"> Authorised payment methods metadata </a> </td>
+																	</tr>
+
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelReference -->
+											
+																	<tr>
+																		<td> <a href="../elements/id-ca5e7148c3614cb9aaaeb20bc9b52363.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-ca5e7148c3614cb9aaaeb20bc9b52363.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-8839565fc20f424285a122d80acd595f.html" target="element"> Business Agnostic Reference Data Solutions </a> </td>
+																		<td> <a href="../elements/id-23ee5e9ee8ff4057a13d2a18c19a001d.html" target="element"> Regulated Professions DB </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-7642c00d7598433487fa8881c9f3dbe6.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-7642c00d7598433487fa8881c9f3dbe6.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-8839565fc20f424285a122d80acd595f.html" target="element"> Business Agnostic Reference Data Solutions </a> </td>
+																		<td> <a href="../elements/id-80419569ccc2442f9e18fce645a48de5.html" target="element"> ESCO </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-099b370cfe564813abe12572522f2b77.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-099b370cfe564813abe12572522f2b77.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-8839565fc20f424285a122d80acd595f.html" target="element"> Business Agnostic Reference Data Solutions </a> </td>
+																		<td> <a href="../elements/id-1b1f623906f7482787168061bae862d8.html" target="element"> Business Agnostic EU Vocabularies Reference Data Solutions </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-28ee6b1d1a2649c6a8d12221c34fe04c.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-28ee6b1d1a2649c6a8d12221c34fe04c.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-1b1f623906f7482787168061bae862d8.html" target="element"> Business Agnostic EU Vocabularies Reference Data Solutions </a> </td>
+																				<td> <a href="../elements/id-1c483b3db60e437da5e8c72ff86c8d42.html" target="element"> Digital Europe Thesaurus </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-271b1e1048fc4b9c9f6fd1f788d6eb31.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-271b1e1048fc4b9c9f6fd1f788d6eb31.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-1b1f623906f7482787168061bae862d8.html" target="element"> Business Agnostic EU Vocabularies Reference Data Solutions </a> </td>
+																				<td> <a href="../elements/id-0cab82c7850a4c5b93669b3ad009ddcb.html" target="element"> NUTS </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-9b15421f02bc498ca1bfa2b76eaae2a0.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-9b15421f02bc498ca1bfa2b76eaae2a0.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-1b1f623906f7482787168061bae862d8.html" target="element"> Business Agnostic EU Vocabularies Reference Data Solutions </a> </td>
+																				<td> <a href="../elements/id-965b23aba5024421a559a0c086f14325.html" target="element"> Authority Tables </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-1c99c4c7e593406c923ae5f47664e557.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-1c99c4c7e593406c923ae5f47664e557.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-1b1f623906f7482787168061bae862d8.html" target="element"> Business Agnostic EU Vocabularies Reference Data Solutions </a> </td>
+																				<td> <a href="../elements/id-8a9cb32106fe4539a4331a34b3cc3f0c.html" target="element"> Reference Data Asset </a> </td>
+																			</tr>
+
+															<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelReference -->
+													
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelReference -->
+											
+																	<tr>
+																		<td> <a href="../elements/id-f69a69bab81240dba3b07c9f60d3afa0.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-f69a69bab81240dba3b07c9f60d3afa0.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-925cc30bb7034372a17203a86e17fa87.html" target="element"> Business Agnostic Vocabularies Solutions </a> </td>
+																		<td> <a href="../elements/id-7834adfecfc44ad8aa97f3c797775fbd.html" target="element"> W3C Profiles Vocabulary </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-617f2a1928fd45f8b6ceb5ac5efd4c8b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-617f2a1928fd45f8b6ceb5ac5efd4c8b.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-925cc30bb7034372a17203a86e17fa87.html" target="element"> Business Agnostic Vocabularies Solutions </a> </td>
+																		<td> <a href="../elements/id-7d80ae7a2f634a0fb6b50eee3453e4a3.html" target="element"> FOAF </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-db72704b1ed544b0bb33c2ed66e126fe.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-db72704b1ed544b0bb33c2ed66e126fe.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-925cc30bb7034372a17203a86e17fa87.html" target="element"> Business Agnostic Vocabularies Solutions </a> </td>
+																		<td> <a href="../elements/id-8953e0bce85d4831a99bd29397d1034a.html" target="element"> DCAT-AP </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-189970fa94cd4227854a3db7d6b7daa7.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-189970fa94cd4227854a3db7d6b7daa7.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-925cc30bb7034372a17203a86e17fa87.html" target="element"> Business Agnostic Vocabularies Solutions </a> </td>
+																		<td> <a href="../elements/id-19605fc8524847d2aa7634c6c48338c3.html" target="element"> ADMS-AP </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-42067f68c7e841eaa63501e006a59e00.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-42067f68c7e841eaa63501e006a59e00.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-925cc30bb7034372a17203a86e17fa87.html" target="element"> Business Agnostic Vocabularies Solutions </a> </td>
+																		<td> <a href="../elements/id-392ecd79a0a540819458a43b2b2aa79d.html" target="element"> EuroVoc </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-9cc146ef16424a57a28fb06b8849f03b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-9cc146ef16424a57a28fb06b8849f03b.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-925cc30bb7034372a17203a86e17fa87.html" target="element"> Business Agnostic Vocabularies Solutions </a> </td>
+																		<td> <a href="../elements/id-9289f144bf4048569b37d048037ba50a.html" target="element"> Core Standards and Specifications Vocabulary </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-74991da41c944466b47a06ea9d672b03.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-74991da41c944466b47a06ea9d672b03.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-925cc30bb7034372a17203a86e17fa87.html" target="element"> Business Agnostic Vocabularies Solutions </a> </td>
+																		<td> <a href="../elements/id-437feac3499a47ccac1e2c19a7de2584.html" target="element"> Core Assessment Vocabulary </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-de9efb5b3e5545a29b28bfcb7d9b8fbc.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-de9efb5b3e5545a29b28bfcb7d9b8fbc.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-925cc30bb7034372a17203a86e17fa87.html" target="element"> Business Agnostic Vocabularies Solutions </a> </td>
+																		<td> <a href="../elements/id-09f7827357f94cdaa2d8ce9edf479268.html" target="element"> ADMS </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-d04ac59a4a3a477ebb9be142d5dbcc40.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d04ac59a4a3a477ebb9be142d5dbcc40.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-925cc30bb7034372a17203a86e17fa87.html" target="element"> Business Agnostic Vocabularies Solutions </a> </td>
+																		<td> <a href="../elements/id-ad1657b3cfb149889cdba5588172d9aa.html" target="element"> eGovernment Core Vocabularies </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-403823ba4f8e4fb3819455fe48d21e29.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-403823ba4f8e4fb3819455fe48d21e29.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-925cc30bb7034372a17203a86e17fa87.html" target="element"> Business Agnostic Vocabularies Solutions </a> </td>
+																		<td> <a href="../elements/id-a5495fa242ab45ba9eab1d219d66d92b.html" target="element"> DCAT </a> </td>
+																	</tr>
+
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelReference -->
+											
+																	<tr>
+																		<td> <a href="../elements/id-0372d6007f094c4f987353387ffce837.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0372d6007f094c4f987353387ffce837.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-5da2adbef1364df5b3d6ebfa6d21c713.html" target="element"> Business Agnostic Data Mapping Solutions </a> </td>
+																		<td> <a href="../elements/id-2f62a053e7c641a1a676d735e8453129.html" target="element"> RDF Mapping Language (RML) </a> </td>
+																	</tr>
+
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelReference -->
+											
+																	<tr>
+																		<td> <a href="../elements/id-81ce093e06804ac1853379a0f4aaaff1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-81ce093e06804ac1853379a0f4aaaff1.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-f6f6db98f86c458fb635988d35a27dbc.html" target="element"> Business Agnostic Dataset Catalogue Solutions </a> </td>
+																		<td> <a href="../elements/id-093d12f925bf48e39c6099ab899f18ea.html" target="element"> Eurostat Data Catalogue </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-058999313d69404bae434906a11d0ac7.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-058999313d69404bae434906a11d0ac7.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-f6f6db98f86c458fb635988d35a27dbc.html" target="element"> Business Agnostic Dataset Catalogue Solutions </a> </td>
+																		<td> <a href="../elements/id-4af2439c284842e5a8ec98e766097090.html" target="element"> Official Portal for European Data </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-9c65cd8969af4195a26f0251b5540dca.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-9c65cd8969af4195a26f0251b5540dca.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-f6f6db98f86c458fb635988d35a27dbc.html" target="element"> Business Agnostic Dataset Catalogue Solutions </a> </td>
+																		<td> <a href="../elements/id-230d8b708f534005b1050a35d8cf5126.html" target="element"> CELLAR </a> </td>
+																	</tr>
+
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelReference -->
+											
+																	<tr>
+																		<td> <a href="../elements/id-aa57d31bb3f4458e8743d4a5a569c1f4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-aa57d31bb3f4458e8743d4a5a569c1f4.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-00faeb08c8cb4af19a96dcaafb7dadf3.html" target="element"> Business Agnostic Ontologies Catalogue Solutions </a> </td>
+																		<td> <a href="../elements/id-3172146315d0492b8723151fb7053bd7.html" target="element"> Business Agnostic Ontologies Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-af7ee266442e4896883a4ec9986be5bd.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-af7ee266442e4896883a4ec9986be5bd.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-00faeb08c8cb4af19a96dcaafb7dadf3.html" target="element"> Business Agnostic Ontologies Catalogue Solutions </a> </td>
+																		<td> <a href="../elements/id-5d506668311b422c836dea5830d5860e.html" target="element"> ODP </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-360e3f256f534d99834bee17fa01155d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-360e3f256f534d99834bee17fa01155d.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-00faeb08c8cb4af19a96dcaafb7dadf3.html" target="element"> Business Agnostic Ontologies Catalogue Solutions </a> </td>
+																		<td> <a href="../elements/id-4312e0c930684ecebf02b97642156b55.html" target="element"> Linked Open Vocabularies (LOV) </a> </td>
+																	</tr>
+
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelReference -->
+											
+																	<tr>
+																		<td> <a href="../elements/id-6afbae883f6044e88ca23fe7a8488051.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6afbae883f6044e88ca23fe7a8488051.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-fccbe14bbd3e41cab48169f506fdfed0.html" target="element"> Business Agnostic Data Models Solutions </a> </td>
+																		<td> <a href="../elements/id-c0f740667423400baa4b44777e7791a9.html" target="element"> eProcurement Data Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-a48f0a0b2dc14408a973911782f01943.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-a48f0a0b2dc14408a973911782f01943.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-fccbe14bbd3e41cab48169f506fdfed0.html" target="element"> Business Agnostic Data Models Solutions </a> </td>
+																		<td> <a href="../elements/id-2751081c5075454caad7e805893f2928.html" target="element"> Common Data Model </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-5ad9846f3ccc44c686cea316e9bef3d4.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-5ad9846f3ccc44c686cea316e9bef3d4.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-c0f740667423400baa4b44777e7791a9.html" target="element"> eProcurement Data Model </a> </td>
+																				<td> <a href="../elements/id-5c0dadf660ae494cb8d58cc975f50f76.html" target="element"> ESPD-EDM </a> </td>
+																			</tr>
+
+													
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelReference -->
+											
+																	<tr>
+																		<td> <a href="../elements/id-2478915d35a74aaba1f724c6ff409876.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-2478915d35a74aaba1f724c6ff409876.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-368b4b8e3ce9468fbd719c7ca9f18385.html" target="element"> Business Agnostic Metadata Catalogue Solutions </a> </td>
+																		<td> <a href="../elements/id-18d018a67e2341deb919d14f4c30aab7.html" target="element"> JRC Data Catalogue </a> </td>
+																	</tr>
+
+													<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelReference -->
+											
+																	<tr>
+																		<td> <a href="../elements/id-8c628cf19d8f4d48b194bc43a3c236ab.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-8c628cf19d8f4d48b194bc43a3c236ab.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-ac2ede8d46314392a2621af657fc0728.html" target="element"> Data Interoperability </a> </td>
+																		<td> <a href="../elements/id-f6f6db98f86c458fb635988d35a27dbc.html" target="element"> Business Agnostic Dataset Catalogue Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-934f4fc497134373a34e598c76b0eb7e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-934f4fc497134373a34e598c76b0eb7e.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-ac2ede8d46314392a2621af657fc0728.html" target="element"> Data Interoperability </a> </td>
+																		<td> <a href="../elements/id-5da2adbef1364df5b3d6ebfa6d21c713.html" target="element"> Business Agnostic Data Mapping Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-2b2dd6ca24c3458aa783c85377f18459.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-2b2dd6ca24c3458aa783c85377f18459.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-ac2ede8d46314392a2621af657fc0728.html" target="element"> Data Interoperability </a> </td>
+																		<td> <a href="../elements/id-925cc30bb7034372a17203a86e17fa87.html" target="element"> Business Agnostic Vocabularies Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-fdf9c3a49a3b40db99b81626c50a1c03.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-fdf9c3a49a3b40db99b81626c50a1c03.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-ac2ede8d46314392a2621af657fc0728.html" target="element"> Data Interoperability </a> </td>
+																		<td> <a href="../elements/id-fccbe14bbd3e41cab48169f506fdfed0.html" target="element"> Business Agnostic Data Models Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-6882724ceab2451194882bfb56221a72.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6882724ceab2451194882bfb56221a72.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-ac2ede8d46314392a2621af657fc0728.html" target="element"> Data Interoperability </a> </td>
+																		<td> <a href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html" target="element"> Business Agnostic Dataset Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-23ec456ad6254c70a85405cc64044b7d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-23ec456ad6254c70a85405cc64044b7d.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-ac2ede8d46314392a2621af657fc0728.html" target="element"> Data Interoperability </a> </td>
+																		<td> <a href="../elements/id-3172146315d0492b8723151fb7053bd7.html" target="element"> Business Agnostic Ontologies Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-b74ca408f1a44f369519ef34e06a1087.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-b74ca408f1a44f369519ef34e06a1087.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-ac2ede8d46314392a2621af657fc0728.html" target="element"> Data Interoperability </a> </td>
+																		<td> <a href="../elements/id-e5dfa8d89c2a446da6750851db375e72.html" target="element"> Business Agnostic Data Format, Representation and Syntax Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-9124052612694b39968cc35f1c645a44.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-9124052612694b39968cc35f1c645a44.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-ac2ede8d46314392a2621af657fc0728.html" target="element"> Data Interoperability </a> </td>
+																		<td> <a href="../elements/id-4822de1892214dbd8bacee49efc513df.html" target="element"> Geo-spatial Data Format Solutions </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-022484f2ff30406f91139da069e4fc84.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-022484f2ff30406f91139da069e4fc84.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element"> Data Reusability </a> </td>
+																		<td> <a href="../elements/id-f6f6db98f86c458fb635988d35a27dbc.html" target="element"> Business Agnostic Dataset Catalogue Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-acede6af967c4802ba320bd858f7a52e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-acede6af967c4802ba320bd858f7a52e.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element"> Data Reusability </a> </td>
+																		<td> <a href="../elements/id-5da2adbef1364df5b3d6ebfa6d21c713.html" target="element"> Business Agnostic Data Mapping Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-980b50609d9c48c1a659215bf563da1f.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-980b50609d9c48c1a659215bf563da1f.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element"> Data Reusability </a> </td>
+																		<td> <a href="../elements/id-368b4b8e3ce9468fbd719c7ca9f18385.html" target="element"> Business Agnostic Metadata Catalogue Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-6edad1911da943ee83081caef48f4125.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6edad1911da943ee83081caef48f4125.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element"> Data Reusability </a> </td>
+																		<td> <a href="../elements/id-925cc30bb7034372a17203a86e17fa87.html" target="element"> Business Agnostic Vocabularies Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-03e38d21db05451eb94e6cdbcde3c621.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-03e38d21db05451eb94e6cdbcde3c621.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element"> Data Reusability </a> </td>
+																		<td> <a href="../elements/id-fccbe14bbd3e41cab48169f506fdfed0.html" target="element"> Business Agnostic Data Models Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-f524cf6ee1174c82a3472a3f233a6ca1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-f524cf6ee1174c82a3472a3f233a6ca1.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element"> Data Reusability </a> </td>
+																		<td> <a href="../elements/id-8839565fc20f424285a122d80acd595f.html" target="element"> Business Agnostic Reference Data Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-7e24df348903492bb4c95155ab6352d8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-7e24df348903492bb4c95155ab6352d8.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element"> Data Reusability </a> </td>
+																		<td> <a href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html" target="element"> Business Agnostic Dataset Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-e0c99d7ef2614f3fb6396fa87f78b129.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e0c99d7ef2614f3fb6396fa87f78b129.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element"> Data Reusability </a> </td>
+																		<td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element"> Semantic Web Data Formats Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-0c716ee3f75d4a029b0e999326a40de3.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0c716ee3f75d4a029b0e999326a40de3.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element"> Data Reusability </a> </td>
+																		<td> <a href="../elements/id-4822de1892214dbd8bacee49efc513df.html" target="element"> Geo-spatial Data Format Solutions </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-c272e9ecf09d4e16be2a9efde9d27988.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-c272e9ecf09d4e16be2a9efde9d27988.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-3e5302a7445440c1a7b440cea8f87525.html" target="element"> Loosely coupled integration </a> </td>
+																		<td> <a href="../elements/id-fccbe14bbd3e41cab48169f506fdfed0.html" target="element"> Business Agnostic Data Models Solutions </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-90af6bb3e7ac4736b6de2587cae744ed.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-90af6bb3e7ac4736b6de2587cae744ed.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-1cb45cb5c81044428dac33e75c101437.html" target="element"> Data Accessibility </a> </td>
+																		<td> <a href="../elements/id-368b4b8e3ce9468fbd719c7ca9f18385.html" target="element"> Business Agnostic Metadata Catalogue Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-8adcdb0d80594d098cebe5f62f309a5c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-8adcdb0d80594d098cebe5f62f309a5c.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-1cb45cb5c81044428dac33e75c101437.html" target="element"> Data Accessibility </a> </td>
+																		<td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element"> Semantic Web Data Formats Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-5e1981c876c84a25801cfffa52eb6ee4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-5e1981c876c84a25801cfffa52eb6ee4.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-1cb45cb5c81044428dac33e75c101437.html" target="element"> Data Accessibility </a> </td>
+																		<td> <a href="../elements/id-4822de1892214dbd8bacee49efc513df.html" target="element"> Geo-spatial Data Format Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-0af209d3d1164b469bd0681e6fb87ba5.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0af209d3d1164b469bd0681e6fb87ba5.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-1cb45cb5c81044428dac33e75c101437.html" target="element"> Data Accessibility </a> </td>
+																		<td> <a href="../elements/id-00faeb08c8cb4af19a96dcaafb7dadf3.html" target="element"> Business Agnostic Ontologies Catalogue Solutions </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-ff33369d7c0e4510b92f061fb1b07117.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-ff33369d7c0e4510b92f061fb1b07117.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-bf86c39d9ac0428abb1874b98af632f5.html" target="element"> Data Findability </a> </td>
+																		<td> <a href="../elements/id-368b4b8e3ce9468fbd719c7ca9f18385.html" target="element"> Business Agnostic Metadata Catalogue Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-b1e8dac033b84b0582d6ebe0142f6212.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-b1e8dac033b84b0582d6ebe0142f6212.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-bf86c39d9ac0428abb1874b98af632f5.html" target="element"> Data Findability </a> </td>
+																		<td> <a href="../elements/id-00faeb08c8cb4af19a96dcaafb7dadf3.html" target="element"> Business Agnostic Ontologies Catalogue Solutions </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-7e1b6b68e5c540348f9b79df15c2dff6.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-7e1b6b68e5c540348f9b79df15c2dff6.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element"> Data Portability </a> </td>
+																		<td> <a href="../elements/id-368b4b8e3ce9468fbd719c7ca9f18385.html" target="element"> Business Agnostic Metadata Catalogue Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-85a7d1629c4a440394e4251de42be9db.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-85a7d1629c4a440394e4251de42be9db.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element"> Data Portability </a> </td>
+																		<td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element"> Semantic Web Data Formats Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-d4c68b9c8a1e412ea41106e3b2b6b25c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d4c68b9c8a1e412ea41106e3b2b6b25c.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element"> Data Portability </a> </td>
+																		<td> <a href="../elements/id-4822de1892214dbd8bacee49efc513df.html" target="element"> Geo-spatial Data Format Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-acc5fd06b69f42778b4b804189b80881.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-acc5fd06b69f42778b4b804189b80881.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element"> Data Portability </a> </td>
+																		<td> <a href="../elements/id-00faeb08c8cb4af19a96dcaafb7dadf3.html" target="element"> Business Agnostic Ontologies Catalogue Solutions </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-5187babb944a4ab197a21a6e8181c0a4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-5187babb944a4ab197a21a6e8181c0a4.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-4c61db61ed854be0b0d7f33f323579e7.html" target="element"> EU Localisation Framework compliance </a> </td>
+																		<td> <a href="../elements/id-368b4b8e3ce9468fbd719c7ca9f18385.html" target="element"> Business Agnostic Metadata Catalogue Solutions </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-b614cf9c500c49d395bbf891ebf5900c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-b614cf9c500c49d395bbf891ebf5900c.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-89fe3da93e6a4f2794fea08fcdd02ec1.html" target="element"> Once Only </a> </td>
+																		<td> <a href="../elements/id-368b4b8e3ce9468fbd719c7ca9f18385.html" target="element"> Business Agnostic Metadata Catalogue Solutions </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-304dcf6a61944832834316922f3dd4d4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-304dcf6a61944832834316922f3dd4d4.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-58ee7a4f1e03458686c717fb34d551c0.html" target="element"> Preservation of information </a> </td>
+																		<td> <a href="../elements/id-368b4b8e3ce9468fbd719c7ca9f18385.html" target="element"> Business Agnostic Metadata Catalogue Solutions </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-d1367b6302104e24a3e6720d66ca53f8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d1367b6302104e24a3e6720d66ca53f8.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-0f3bc869aab6436e95f6d7b7c7e399b0.html" target="element"> Transparency of internal information systems </a> </td>
+																		<td> <a href="../elements/id-f6f6db98f86c458fb635988d35a27dbc.html" target="element"> Business Agnostic Dataset Catalogue Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-22d655ab431b4335983030335ee2dc21.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-22d655ab431b4335983030335ee2dc21.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-0f3bc869aab6436e95f6d7b7c7e399b0.html" target="element"> Transparency of internal information systems </a> </td>
+																		<td> <a href="../elements/id-368b4b8e3ce9468fbd719c7ca9f18385.html" target="element"> Business Agnostic Metadata Catalogue Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-168a34250405420f8475b3d9d39e5a62.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-168a34250405420f8475b3d9d39e5a62.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-0f3bc869aab6436e95f6d7b7c7e399b0.html" target="element"> Transparency of internal information systems </a> </td>
+																		<td> <a href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html" target="element"> Business Agnostic Dataset Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-8d05245e8cda46abb6ab17797e77b8d1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-8d05245e8cda46abb6ab17797e77b8d1.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-0f3bc869aab6436e95f6d7b7c7e399b0.html" target="element"> Transparency of internal information systems </a> </td>
+																		<td> <a href="../elements/id-9d0a67533fdd48afb766ee6399f05174.html" target="element"> Semantic Web Data Formats Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-e9707afb1cb64e7eb3d57d5211f0613a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e9707afb1cb64e7eb3d57d5211f0613a.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-0f3bc869aab6436e95f6d7b7c7e399b0.html" target="element"> Transparency of internal information systems </a> </td>
+																		<td> <a href="../elements/id-4822de1892214dbd8bacee49efc513df.html" target="element"> Geo-spatial Data Format Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-4327478d8c034276873359f7d6d7686c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-4327478d8c034276873359f7d6d7686c.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-0f3bc869aab6436e95f6d7b7c7e399b0.html" target="element"> Transparency of internal information systems </a> </td>
+																		<td> <a href="../elements/id-00faeb08c8cb4af19a96dcaafb7dadf3.html" target="element"> Business Agnostic Ontologies Catalogue Solutions </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-9820fd780a04455cb5dc6285f7b39980.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-9820fd780a04455cb5dc6285f7b39980.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-481e6e58c68a4f068c26f3e73d8fa0c9.html" target="element"> Transparency of the administrative environment </a> </td>
+																		<td> <a href="../elements/id-f6f6db98f86c458fb635988d35a27dbc.html" target="element"> Business Agnostic Dataset Catalogue Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-150ffadf956342e48281427393025254.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-150ffadf956342e48281427393025254.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-481e6e58c68a4f068c26f3e73d8fa0c9.html" target="element"> Transparency of the administrative environment </a> </td>
+																		<td> <a href="../elements/id-368b4b8e3ce9468fbd719c7ca9f18385.html" target="element"> Business Agnostic Metadata Catalogue Solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-e16b4598c7b94ea5965a8e80f5d54559.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e16b4598c7b94ea5965a8e80f5d54559.html" target="element" class="i18n-elementtype-InfluenceRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-481e6e58c68a4f068c26f3e73d8fa0c9.html" target="element"> Transparency of the administrative environment </a> </td>
+																		<td> <a href="../elements/id-a97954444c6a4d5ea7562684d1b7a3e1.html" target="element"> Business Agnostic Dataset Solutions </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

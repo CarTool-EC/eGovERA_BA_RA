@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>NTLM</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>NTLM</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Contract"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Contract" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: NTLM, which stands for NT LAN Manager, is a suite of Microsoft security protocols that provides authentication, integrity, and confidentiality to users. It is the successor of the LAN Manager protocol from IBM and was the default protocol used by the Windows NT 4.0 operating system. NTLM is used for authentication in various network protocols, including SMB, RPC, and HTTP, and is supported by all subsequent Windows versions for backward compatibility, although Microsoft recommends using Kerberos instead for newer versions.
+
+Additional information: NTLM, which stands for NT LAN Manager, is a suite of Microsoft security protocols that provides authentication, integrity, and confidentiality to users. It is an older authentication protocol used by Microsoft Windows systems in a networked environment, and it was the primary authentication protocol in Windows NT 4.0 and Windows 2000.
+
+NTLM uses a challenge-response mechanism for authentication, where the server sends a challenge to the client, the client responds, and then the server verifies the response. This process helps to ensure that the user's password is never sent across the network, which can help to improve security.
+
+NTLM is composed of three messages, namely, Type 1 (negotiation), Type 2 (challenge) and Type 3 (authentication). The client initiates the authentication process by sending a Type 1 message to the server. The server responds with a Type 2 message that contains a challenge, which is a randomly generated number. The client then responds with a Type 3 message that contains the response to the challenge, which is computed using the user's password.
+
+While NTLM is still supported by Microsoft, it has been replaced in newer versions of Windows by more secure protocols such as Kerberos. NTLM is considered to be less secure than these newer protocols because it is vulnerable to various types of attacks, such as replay attacks and brute force attacks. Therefore, it is generally recommended to use NTLM only when necessary for compatibility reasons, and to use more secure protocols whenever possible.
+
+In addition, NTLM does not support modern security features such as claims-based identity, federation, or multi-factor authentication. It also does not provide a mechanism for server authentication, which can leave users vulnerable to man-in-the-middle attacks.
+
+Example: NTLM (NT LAN Manager) is a suite of Microsoft security protocols that provides authentication, integrity, and confidentiality to users. Here are some examples of applying NTLM:
+
+1. Network Authentication: NTLM is often used in network authentication where client applications need to authenticate to servers. For example, when a user logs into a Windows computer that is part of a Windows domain, the user's NTLM credentials are used to authenticate the user to the domain controller.
+
+2. Web Authentication: NTLM can also be used for web authentication. For example, when a user tries to access a protected Microsoft IIS web server, the server can use NTLM to authenticate the user. The user's web browser will typically prompt the user for their username and password, and then use these credentials to authenticate to the server using NTLM.
+
+3. Database Authentication: NTLM is also used in database authentication. For instance, when a user tries to connect to a Microsoft SQL Server database, the server can use NTLM to authenticate the user. The client application (e.g., SQL Server Management Studio) will typically prompt the user for their username and password, and then use these credentials to authenticate to the server using NTLM.
+
+4. Email Authentication: NTLM can be used for email authentication in Microsoft Exchange Server. When a user tries to access their mailbox, the server can use NTLM to authenticate the user. The user's email client (e.g., Microsoft Outlook) will typically prompt the user for their username and password, and then use these credentials to authenticate to the server using NTLM.
+
+5. File Sharing: NTLM is used in file sharing protocols like SMB (Server Message Block) used by Windows for shared folders. When a user tries to access a shared folder, the server can use NTLM to authenticate the user.
+
+Publisher: EIRA team
+
+LOST view: TV-Technical Agreements
+
+Identifier: http://data.europa.eu/dr8/egovera/NTLMContract
+
+EIRA traceability: eira:TechnicalInteroperabilityAgreementContract
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-08-03
+
+dct:identifier: http://data.europa.eu/dr8/egovera/NTLMContract
+
+dct:title: NTLM Contract
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/NTLMContract</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:TechnicalInteroperabilityAgreementContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-03</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/NTLMContract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">NTLM Contract</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">NTLM (NT LAN Manager) is a suite of Microsoft security protocols that provides authentication, integrity, and confidentiality to users. Here are some examples of applying NTLM:
+
+								1. Network Authentication: NTLM is often used in network authentication where client applications need to authenticate to servers. For example, when a user logs into a Windows computer that is part of a Windows domain, the user's NTLM credentials are used to authenticate the user to the domain controller.
+
+								2. Web Authentication: NTLM can also be used for web authentication. For example, when a user tries to access a protected Microsoft IIS web server, the server can use NTLM to authenticate the user. The user's web browser will typically prompt the user for their username and password, and then use these credentials to authenticate to the server using NTLM.
+
+								3. Database Authentication: NTLM is also used in database authentication. For instance, when a user tries to connect to a Microsoft SQL Server database, the server can use NTLM to authenticate the user. The client application (e.g., SQL Server Management Studio) will typically prompt the user for their username and password, and then use these credentials to authenticate to the server using NTLM.
+
+								4. Email Authentication: NTLM can be used for email authentication in Microsoft Exchange Server. When a user tries to access their mailbox, the server can use NTLM to authenticate the user. The user's email client (e.g., Microsoft Outlook) will typically prompt the user for their username and password, and then use these credentials to authenticate to the server using NTLM.
+
+								5. File Sharing: NTLM is used in file sharing protocols like SMB (Server Message Block) used by Windows for shared folders. When a user tries to access a shared folder, the server can use NTLM to authenticate the user.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">NTLM, which stands for NT LAN Manager, is a suite of Microsoft security protocols that provides authentication, integrity, and confidentiality to users. It is an older authentication protocol used by Microsoft Windows systems in a networked environment, and it was the primary authentication protocol in Windows NT 4.0 and Windows 2000.
+
+								NTLM uses a challenge-response mechanism for authentication, where the server sends a challenge to the client, the client responds, and then the server verifies the response. This process helps to ensure that the user's password is never sent across the network, which can help to improve security.
+
+								NTLM is composed of three messages, namely, Type 1 (negotiation), Type 2 (challenge) and Type 3 (authentication). The client initiates the authentication process by sending a Type 1 message to the server. The server responds with a Type 2 message that contains a challenge, which is a randomly generated number. The client then responds with a Type 3 message that contains the response to the challenge, which is computed using the user's password.
+
+								While NTLM is still supported by Microsoft, it has been replaced in newer versions of Windows by more secure protocols such as Kerberos. NTLM is considered to be less secure than these newer protocols because it is vulnerable to various types of attacks, such as replay attacks and brute force attacks. Therefore, it is generally recommended to use NTLM only when necessary for compatibility reasons, and to use more secure protocols whenever possible.
+
+								In addition, NTLM does not support modern security features such as claims-based identity, federation, or multi-factor authentication. It also does not provide a mechanism for server authentication, which can leave users vulnerable to man-in-the-middle attacks.</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">NTLM, which stands for NT LAN Manager, is a suite of Microsoft security protocols that provides authentication, integrity, and confidentiality to users. It is the successor of the LAN Manager protocol from IBM and was the default protocol used by the Windows NT 4.0 operating system. NTLM is used for authentication in various network protocols, including SMB, RPC, and HTTP, and is supported by all subsequent Windows versions for backward compatibility, although Microsoft recommends using Kerberos instead for newer versions.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

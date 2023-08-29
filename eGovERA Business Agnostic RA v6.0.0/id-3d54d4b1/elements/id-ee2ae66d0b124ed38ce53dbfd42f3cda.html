@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>JSON-RPC</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>JSON-RPC</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Contract"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Contract" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: The JSON-RPC specification is a remote procedure call (RPC) protocol encoded in JSON. It allows for data to be sent and received between a client and a server, or between peer services, using the JSON (JavaScript Object Notation) format. The protocol supports both positional and named parameters and allows for notifications (data sent to the server that does not require a response). JSON-RPC can be used over any transport layer that allows for the sending and receiving of text data, such as HTTP, WebSocket, or raw sockets.
+
+Additional information: JSON-RPC is a remote procedure call (RPC) protocol encoded in JSON. It is a light-weight, data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is designed to be transport-agnostic, meaning it can be used over different types of transport protocols such as HTTP, WebSockets, or raw sockets. 
+
+The JSON-RPC specification defines a few fundamental types of messages: request, response, and notification. A request is a call to a specific method provided by a remote system. It includes parameters needed for the method, and an ID that is used to match the request with the response. A response includes the result of the method call, or an error object if the call failed. A notification is similar to a request, but does not require a response.
+
+In the JSON-RPC protocol, both the client and server can initiate communication. The client can send a request to the server to call a specific method, and the server can respond with the result. Conversely, the server can send a notification to the client to inform it of events or updates.
+
+The JSON-RPC specification also defines a standard error object format. This includes an error code, a short description, and optional additional data. This allows the client to handle errors in a consistent way.
+
+JSON-RPC is stateless, meaning each request from a client to a server must contain all the information needed to understand and process the request. This makes it suitable for stateless or RESTful services, where the server does not need to keep track of client state between requests.
+
+The JSON-RPC specification is simple and flexible, making it easy to implement in many programming languages. It is widely used in web development, mobile app development, and distributed computing. It is also used in some blockchain technologies for communication between nodes.
+
+Example: 1. Cryptocurrency Wallets: JSON-RPC is used in cryptocurrency wallets such as Bitcoin and Ethereum to communicate with the blockchain. The wallet sends a request to the blockchain to get information about a transaction or to send a transaction. The blockchain then responds with the requested information or the result of the transaction.
+
+2. Web Applications: JSON-RPC can be used in web applications to communicate between the client and the server. For example, a web application could use JSON-RPC to request data from a server, such as user information or data to populate a table. The server would then respond with the requested data.
+
+3. Mobile Applications: JSON-RPC can also be used in mobile applications to communicate with a server. For example, a mobile app could use JSON-RPC to request data from a server, such as the latest news articles or weather updates. The server would then respond with the requested data.
+
+4. IoT Devices: JSON-RPC can be used in IoT devices to communicate with a server. For example, a smart thermostat could use JSON-RPC to send temperature data to a server, which could then respond with instructions to adjust the temperature.
+
+5. Game Development: In game development, JSON-RPC can be used to communicate between the game client and the game server. For example, the game client could send a request to the server to get the latest game state, and the server would respond with the requested data.
+
+6. Remote Procedure Calls: JSON-RPC is often used for remote procedure calls (RPCs), where a client can request that a server execute a specific function and return the result. This can be used in a variety of applications, from web services to distributed computing.
+
+Publisher: EIRA team
+
+LOST view: TV-Technical Agreements
+
+Identifier: http://data.europa.eu/dr8/egovera/JSON-RPCContract
+
+EIRA traceability: eira:TechnicalInteroperabilityAgreementContract
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-08-03
+
+dct:identifier: http://data.europa.eu/dr8/egovera/JSON-RPCContract
+
+dct:title: JSON-RPC Contract
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/JSON-RPCContract</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:TechnicalInteroperabilityAgreementContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-03</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/JSON-RPCContract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">JSON-RPC Contract</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">1. Cryptocurrency Wallets: JSON-RPC is used in cryptocurrency wallets such as Bitcoin and Ethereum to communicate with the blockchain. The wallet sends a request to the blockchain to get information about a transaction or to send a transaction. The blockchain then responds with the requested information or the result of the transaction.
+
+								2. Web Applications: JSON-RPC can be used in web applications to communicate between the client and the server. For example, a web application could use JSON-RPC to request data from a server, such as user information or data to populate a table. The server would then respond with the requested data.
+
+								3. Mobile Applications: JSON-RPC can also be used in mobile applications to communicate with a server. For example, a mobile app could use JSON-RPC to request data from a server, such as the latest news articles or weather updates. The server would then respond with the requested data.
+
+								4. IoT Devices: JSON-RPC can be used in IoT devices to communicate with a server. For example, a smart thermostat could use JSON-RPC to send temperature data to a server, which could then respond with instructions to adjust the temperature.
+
+								5. Game Development: In game development, JSON-RPC can be used to communicate between the game client and the game server. For example, the game client could send a request to the server to get the latest game state, and the server would respond with the requested data.
+
+								6. Remote Procedure Calls: JSON-RPC is often used for remote procedure calls (RPCs), where a client can request that a server execute a specific function and return the result. This can be used in a variety of applications, from web services to distributed computing.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">JSON-RPC is a remote procedure call (RPC) protocol encoded in JSON. It is a light-weight, data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is designed to be transport-agnostic, meaning it can be used over different types of transport protocols such as HTTP, WebSockets, or raw sockets. 
+
+								The JSON-RPC specification defines a few fundamental types of messages: request, response, and notification. A request is a call to a specific method provided by a remote system. It includes parameters needed for the method, and an ID that is used to match the request with the response. A response includes the result of the method call, or an error object if the call failed. A notification is similar to a request, but does not require a response.
+
+								In the JSON-RPC protocol, both the client and server can initiate communication. The client can send a request to the server to call a specific method, and the server can respond with the result. Conversely, the server can send a notification to the client to inform it of events or updates.
+
+								The JSON-RPC specification also defines a standard error object format. This includes an error code, a short description, and optional additional data. This allows the client to handle errors in a consistent way.
+
+								JSON-RPC is stateless, meaning each request from a client to a server must contain all the information needed to understand and process the request. This makes it suitable for stateless or RESTful services, where the server does not need to keep track of client state between requests.
+
+								The JSON-RPC specification is simple and flexible, making it easy to implement in many programming languages. It is widely used in web development, mobile app development, and distributed computing. It is also used in some blockchain technologies for communication between nodes.</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">The JSON-RPC specification is a remote procedure call (RPC) protocol encoded in JSON. It allows for data to be sent and received between a client and a server, or between peer services, using the JSON (JavaScript Object Notation) format. The protocol supports both positional and named parameters and allows for notifications (data sent to the server that does not require a response). JSON-RPC can be used over any transport layer that allows for the sending and receiving of text data, such as HTTP, WebSocket, or raw sockets.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

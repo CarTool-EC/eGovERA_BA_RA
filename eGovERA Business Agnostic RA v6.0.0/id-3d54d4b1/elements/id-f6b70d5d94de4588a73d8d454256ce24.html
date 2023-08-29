@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>OData</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>OData</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Contract"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Contract" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: The Open Data Protocol (OData) specification is a protocol developed by Microsoft for building and consuming RESTful APIs. It allows clients to query and manipulate data using standard HTTP protocols. OData APIs expose data as resources that are addressable by URLs. It supports CRUD operations (Create, Read, Update, Delete) and provides a way to describe the data model and the functions available for each resource. This makes it easy for clients to interact with the data in a more standard and simplified way.
+
+Additional information: The Open Data Protocol (OData) is an open standard that defines a set of best practices for building and consuming RESTful APIs. It was initiated by Microsoft and is now an ISO/IEC approved OASIS standard. OData enables the creation of HTTP-based data services, which allow resources, identified using Uniform Resource Identifiers (URIs) and defined in an abstract data model, to be published and edited by web clients using simple HTTP messages.
+
+OData is built upon the AtomPub protocol and JSON format, which provides a way to exchange data over the web in a simple and standard way. It provides a uniform way to expose, structure, and manipulate data on the web, regardless of the storage medium. This allows for the creation of RESTful APIs, which can be easily accessed and consumed by any client capable of sending HTTP requests and parsing XML/JSON responses.
+
+The OData specification covers the following aspects:
+
+1. Conventions for OData Service URLs: OData services are identified by their service root URIs. The conventions for addressing and accessing data expose a hierarchical model to the clients.
+
+2. Conventions for OData Payloads: OData supports two formats for representing data: AtomPub (XML-based) and JSON. The conventions define the structure of the payloads and the way data is represented.
+
+3. Querying Data: OData includes a set of query options that allow clients to filter, sort, and navigate data.
+
+4. CRUD Operations: OData services support Create, Read, Update, and Delete (CRUD) operations using standard HTTP verbs (POST, GET, PUT/PATCH, DELETE).
+
+5. Service Metadata Document: OData services expose a service metadata document that describes the data model of the service (the structure of the data).
+
+6. Batch Processing: OData includes support for grouping multiple operations into a single HTTP request payload.
+
+7. Asynchronous Processing: OData includes support for processing requests asynchronously.
+
+8. Customization and Extensibility: OData allows services to be customized and extended to meet specific needs.
+
+The OData specification is designed to provide a rich and flexible way to interact with data on the web. It allows clients to easily navigate through data, perform operations on data, and receive results in a predictable and easy-to-handle format.
+
+Example: 1. Customer Relationship Management (CRM) Systems: OData can be used in CRM systems to access, update, or delete data. For example, Microsoft Dynamics 365 uses OData for its Web API.
+
+2. Business Intelligence Tools: Tools like Power BI, Tableau, or SAP Analytics Cloud use OData to connect to various data sources and provide real-time analytics and insights.
+
+3. Mobile Applications: Mobile apps can use OData to consume data from a server. For example, an app might use OData to display user data from a server, allowing the app to stay up-to-date with the most recent data.
+
+4. Content Management Systems: CMS like SharePoint use OData as a protocol to expose data. This allows users to interact with the data in a standardized way, regardless of the underlying storage system.
+
+5. Data Integration: OData can be used to integrate data from different sources. For example, a company might use OData to pull data from different databases into a single, unified view.
+
+6. IoT Devices: Internet of Things devices can use OData to send data back to a central server. This allows the devices to be managed and monitored remotely.
+
+7. E-Commerce Platforms: E-commerce platforms like Magento use OData to expose product, customer, and order data to other systems, such as ERP or CRM systems.
+
+8. Public APIs: Many public APIs, such as the Netflix API, use OData to allow developers to query and manipulate data. This makes it easier for developers to build applications that interact with these services.
+
+Publisher: EIRA team
+
+LOST view: TV-Technical Agreements
+
+Identifier: http://data.europa.eu/dr8/egovera/ODataContract
+
+EIRA traceability: eira:TechnicalInteroperabilityAgreementContract
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-08-03
+
+dct:identifier: http://data.europa.eu/dr8/egovera/ODataContract
+
+dct:title: OData Contract
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/ODataContract</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:TechnicalInteroperabilityAgreementContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-03</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/ODataContract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OData Contract</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">1. Customer Relationship Management (CRM) Systems: OData can be used in CRM systems to access, update, or delete data. For example, Microsoft Dynamics 365 uses OData for its Web API.
+
+								2. Business Intelligence Tools: Tools like Power BI, Tableau, or SAP Analytics Cloud use OData to connect to various data sources and provide real-time analytics and insights.
+
+								3. Mobile Applications: Mobile apps can use OData to consume data from a server. For example, an app might use OData to display user data from a server, allowing the app to stay up-to-date with the most recent data.
+
+								4. Content Management Systems: CMS like SharePoint use OData as a protocol to expose data. This allows users to interact with the data in a standardized way, regardless of the underlying storage system.
+
+								5. Data Integration: OData can be used to integrate data from different sources. For example, a company might use OData to pull data from different databases into a single, unified view.
+
+								6. IoT Devices: Internet of Things devices can use OData to send data back to a central server. This allows the devices to be managed and monitored remotely.
+
+								7. E-Commerce Platforms: E-commerce platforms like Magento use OData to expose product, customer, and order data to other systems, such as ERP or CRM systems.
+
+								8. Public APIs: Many public APIs, such as the Netflix API, use OData to allow developers to query and manipulate data. This makes it easier for developers to build applications that interact with these services.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">The Open Data Protocol (OData) is an open standard that defines a set of best practices for building and consuming RESTful APIs. It was initiated by Microsoft and is now an ISO/IEC approved OASIS standard. OData enables the creation of HTTP-based data services, which allow resources, identified using Uniform Resource Identifiers (URIs) and defined in an abstract data model, to be published and edited by web clients using simple HTTP messages.
+
+								OData is built upon the AtomPub protocol and JSON format, which provides a way to exchange data over the web in a simple and standard way. It provides a uniform way to expose, structure, and manipulate data on the web, regardless of the storage medium. This allows for the creation of RESTful APIs, which can be easily accessed and consumed by any client capable of sending HTTP requests and parsing XML/JSON responses.
+
+								The OData specification covers the following aspects:
+
+								1. Conventions for OData Service URLs: OData services are identified by their service root URIs. The conventions for addressing and accessing data expose a hierarchical model to the clients.
+
+								2. Conventions for OData Payloads: OData supports two formats for representing data: AtomPub (XML-based) and JSON. The conventions define the structure of the payloads and the way data is represented.
+
+								3. Querying Data: OData includes a set of query options that allow clients to filter, sort, and navigate data.
+
+								4. CRUD Operations: OData services support Create, Read, Update, and Delete (CRUD) operations using standard HTTP verbs (POST, GET, PUT/PATCH, DELETE).
+
+								5. Service Metadata Document: OData services expose a service metadata document that describes the data model of the service (the structure of the data).
+
+								6. Batch Processing: OData includes support for grouping multiple operations into a single HTTP request payload.
+
+								7. Asynchronous Processing: OData includes support for processing requests asynchronously.
+
+								8. Customization and Extensibility: OData allows services to be customized and extended to meet specific needs.
+
+								The OData specification is designed to provide a rich and flexible way to interact with data on the web. It allows clients to easily navigate through data, perform operations on data, and receive results in a predictable and easy-to-handle format.</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">The Open Data Protocol (OData) specification is a protocol developed by Microsoft for building and consuming RESTful APIs. It allows clients to query and manipulate data using standard HTTP protocols. OData APIs expose data as resources that are addressable by URLs. It supports CRUD operations (Create, Read, Update, Delete) and provides a way to describe the data model and the functions available for each resource. This makes it easy for clients to interact with the data in a more standard and simplified way.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>OAuth 1.0</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>OAuth 1.0</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Contract"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Contract" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: OAuth 1.0 is an open standard for authorization that allows users to share their private resources (like photos and videos) stored on one site with another site without having to hand out their credentials, typically username and password. It provides a process for end-users to authorize third-party access to their server resources without sharing their credentials. It uses various signatures to verify the authenticity of the data being transferred, providing a secure method for ensuring that the data is coming from a trusted source.
+
+Additional information: OAuth 1.0 is an open standard for authorization that provides applications the ability for secure designated access. It is used over HTTP and allows applications to access user data from other applications without requiring users to reveal their passwords. OAuth 1.0 was developed in 2007 to provide a standard way for developers to offer their services via an API without forcing their users to expose their passwords (and other credentials).
+
+OAuth 1.0 works by providing the client with a 'token' that can be used to access the specific resources on the server. This token is issued by the server at the request of the client, after successful authentication of the client's identity. The client can then use this token to make requests on behalf of the user, without the need for the user's password.
+
+OAuth 1.0 uses a three-legged model for this process. The three legs are the client, the server, and the user. The client is the application that wants to access the user's account. The server is the application that holds the user's account, and the user is the person who owns the account.
+
+The process starts when the client asks the user for permission to access their account. If the user agrees, the client sends a request to the server, asking for a token. The server then authenticates the client and issues a token. The client can then use this token to make requests on behalf of the user.
+
+OAuth 1.0 provides a method for clients to access server resources on behalf of a resource owner (such as a different client or an end-user). It also provides a process for end-users to authorize third-party access to their server resources without sharing their credentials (typically, a username and password pair), using user-agent redirections.
+
+OAuth 1.0 was later superseded by OAuth 2.0, which offers improved security and a more streamlined workflow. However, some applications still use OAuth 1.0 due to its simplicity and wide adoption at the time of its release.
+
+Example: OAuth 1.0 is an open standard for access delegation, commonly used as a way for Internet users to grant websites or applications access to their information on other websites but without giving them the passwords. Here are some examples of how OAuth 1.0 can be applied:
+
+1. Social Media Integration: OAuth 1.0 is used by social media platforms like Twitter and Facebook to allow third-party apps to access user data without needing the user's password. For example, a user can use a third-party app to post tweets on their Twitter account using OAuth 1.0.
+
+2. Email Clients: OAuth 1.0 can be used by email clients like Outlook or Thunderbird to access a user's email account on a service like Gmail or Yahoo. The user grants the email client permission to access their email account, and the client uses OAuth 1.0 to authenticate with the email service.
+
+3. Mobile Apps: Many mobile apps use OAuth 1.0 to authenticate with web services. For example, a user might use a mobile app to access their Dropbox account. The app uses OAuth 1.0 to authenticate with Dropbox and access the user's files.
+
+4. E-Commerce Websites: OAuth 1.0 can be used by e-commerce websites to allow users to make purchases using their PayPal or Amazon accounts. The website uses OAuth 1.0 to authenticate with PayPal or Amazon and make the purchase on behalf of the user.
+
+5. Cloud Services: Cloud services like Google Cloud or Microsoft Azure use OAuth 1.0 to allow users to authenticate with their services. This allows users to access their cloud resources without having to provide their password each time.
+
+6. API Access: Developers can use OAuth 1.0 to authenticate with APIs and access their resources. For example, a developer might use OAuth 1.0 to authenticate with the Twitter API and access its resources to create a new Twitter client.
+
+Publisher: EIRA team
+
+LOST view: TV-Technical Agreements
+
+Identifier: http://data.europa.eu/dr8/egovera/OAuth10Contract
+
+EIRA traceability: eira:TechnicalInteroperabilityAgreementContract
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-08-03
+
+dct:identifier: http://data.europa.eu/dr8/egovera/OAuth10Contract
+
+dct:title: OAuth 1.0 Contract
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/OAuth10Contract</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:TechnicalInteroperabilityAgreementContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-03</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/OAuth10Contract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OAuth 1.0 Contract</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OAuth 1.0 is an open standard for access delegation, commonly used as a way for Internet users to grant websites or applications access to their information on other websites but without giving them the passwords. Here are some examples of how OAuth 1.0 can be applied:
+
+								1. Social Media Integration: OAuth 1.0 is used by social media platforms like Twitter and Facebook to allow third-party apps to access user data without needing the user's password. For example, a user can use a third-party app to post tweets on their Twitter account using OAuth 1.0.
+
+								2. Email Clients: OAuth 1.0 can be used by email clients like Outlook or Thunderbird to access a user's email account on a service like Gmail or Yahoo. The user grants the email client permission to access their email account, and the client uses OAuth 1.0 to authenticate with the email service.
+
+								3. Mobile Apps: Many mobile apps use OAuth 1.0 to authenticate with web services. For example, a user might use a mobile app to access their Dropbox account. The app uses OAuth 1.0 to authenticate with Dropbox and access the user's files.
+
+								4. E-Commerce Websites: OAuth 1.0 can be used by e-commerce websites to allow users to make purchases using their PayPal or Amazon accounts. The website uses OAuth 1.0 to authenticate with PayPal or Amazon and make the purchase on behalf of the user.
+
+								5. Cloud Services: Cloud services like Google Cloud or Microsoft Azure use OAuth 1.0 to allow users to authenticate with their services. This allows users to access their cloud resources without having to provide their password each time.
+
+								6. API Access: Developers can use OAuth 1.0 to authenticate with APIs and access their resources. For example, a developer might use OAuth 1.0 to authenticate with the Twitter API and access its resources to create a new Twitter client.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OAuth 1.0 is an open standard for authorization that provides applications the ability for secure designated access. It is used over HTTP and allows applications to access user data from other applications without requiring users to reveal their passwords. OAuth 1.0 was developed in 2007 to provide a standard way for developers to offer their services via an API without forcing their users to expose their passwords (and other credentials).
+
+								OAuth 1.0 works by providing the client with a 'token' that can be used to access the specific resources on the server. This token is issued by the server at the request of the client, after successful authentication of the client's identity. The client can then use this token to make requests on behalf of the user, without the need for the user's password.
+
+								OAuth 1.0 uses a three-legged model for this process. The three legs are the client, the server, and the user. The client is the application that wants to access the user's account. The server is the application that holds the user's account, and the user is the person who owns the account.
+
+								The process starts when the client asks the user for permission to access their account. If the user agrees, the client sends a request to the server, asking for a token. The server then authenticates the client and issues a token. The client can then use this token to make requests on behalf of the user.
+
+								OAuth 1.0 provides a method for clients to access server resources on behalf of a resource owner (such as a different client or an end-user). It also provides a process for end-users to authorize third-party access to their server resources without sharing their credentials (typically, a username and password pair), using user-agent redirections.
+
+								OAuth 1.0 was later superseded by OAuth 2.0, which offers improved security and a more streamlined workflow. However, some applications still use OAuth 1.0 due to its simplicity and wide adoption at the time of its release.</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OAuth 1.0 is an open standard for authorization that allows users to share their private resources (like photos and videos) stored on one site with another site without having to hand out their credentials, typically username and password. It provides a process for end-users to authorize third-party access to their server resources without sharing their credentials. It uses various signatures to verify the authenticity of the data being transferred, providing a secure method for ensuring that the data is coming from a trusted source.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

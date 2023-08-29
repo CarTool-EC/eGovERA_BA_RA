@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>GraphQL</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>GraphQL</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Contract"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Contract" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: The GraphQL specification is a detailed technical document that defines the rules, syntax, and semantics of GraphQL, an open-source data query and manipulation language for APIs. It outlines how a GraphQL service should expose, validate, and execute a GraphQL request, including the structure of queries, mutations, and subscriptions, as well as the types of data that can be returned. The specification is designed to be platform and language agnostic, meaning it can be implemented in any programming language and run on any platform.
+
+Additional information: The GraphQL specification is a detailed technical document that defines the GraphQL language and its behavior in a precise and implementation-agnostic manner. It serves as the authoritative reference for anyone implementing or using GraphQL. The specification is maintained by the GraphQL Foundation, a project of the Linux Foundation, and is open source, meaning that it is freely available for anyone to use or contribute to.
+
+The specification covers all aspects of GraphQL, including its syntax, type system, query execution, error handling, and more. It describes how a GraphQL service should parse and validate queries, how it should execute them against a data source, and how it should format the results. It also defines a set of rules for how clients and servers should communicate, ensuring interoperability between different implementations.
+
+The GraphQL specification is not a tutorial or a guide to using GraphQL, but rather a formal definition of the language itself. It is intended to be precise and comprehensive, providing a definitive answer to any question about how GraphQL should behave. However, it is also written in a way that is intended to be understandable and useful to developers, not just to computer scientists or language theorists.
+
+The specification is divided into several sections, each covering a different aspect of the language. These include:
+
+1. Language: This section defines the syntax of GraphQL, including its types, fields, arguments, directives, and other constructs. It also describes how queries are parsed and validated.
+
+2. Execution: This section describes how a GraphQL query is executed against a data source. It covers topics like how to resolve fields, how to handle errors, and how to deal with asynchronous operations.
+
+3. Type System: This section defines the GraphQL type system, which is used to describe the shape of the data that a GraphQL service can return. It includes definitions of scalar types, object types, interface types, union types, and more.
+
+4. Introspection: This section describes how clients can query a GraphQL service to learn about its schema, which is the set of types and fields that it supports.
+
+5. Validation: This section describes how a GraphQL query is validated against a schema before it is executed. This includes checks for things like type compatibility, correct use of directives, and more.
+
+6. Response: This section describes the format of a GraphQL response, including how data is serialized and how errors are reported.
+
+The GraphQL specification is continually evolving, with new versions released periodically to incorporate improvements, clarify ambiguities, and add new features. Each version of the specification is fully backwards-compatible with previous versions, ensuring that existing GraphQL services and clients continue to work as expected.
+
+Example: 1. Social Media Applications: GraphQL is used in social media applications like Facebook, Instagram, and Twitter to fetch and update user data, posts, comments, likes, etc. It allows these applications to request specific data and aggregate responses from multiple sources.
+
+2. E-commerce Platforms: E-commerce platforms like Shopify use GraphQL to manage their product catalog, customer data, and shopping cart operations. It allows them to fetch specific product details, update inventory, and manage orders efficiently.
+
+3. Content Management Systems: Content management systems like WordPress use GraphQL to manage their content, user data, and other resources. It allows them to fetch specific content, update content, and manage user roles and permissions.
+
+4. News and Media Websites: News and media websites like The New York Times use GraphQL to manage their news articles, user comments, and other resources. It allows them to fetch specific news articles, update news content, and manage user comments.
+
+5. Travel and Booking Platforms: Travel and booking platforms like Airbnb use GraphQL to manage their property listings, user data, and booking operations. It allows them to fetch specific property details, update property listings, and manage bookings efficiently.
+
+6. Music Streaming Applications: Music streaming applications like Spotify use GraphQL to manage their music catalog, user data, and playlist operations. It allows them to fetch specific song details, update song metadata, and manage playlists.
+
+7. GitHub: GitHub uses GraphQL to power its API v4. This allows developers to selectively request the data they need, making it more efficient than traditional REST APIs.
+
+8. Yelp: Yelp uses GraphQL to power its public API. This allows developers to selectively request data about businesses, reviews, and photos.
+
+Publisher: EIRA team
+
+LOST view: TV-Technical Agreements
+
+Identifier: http://data.europa.eu/dr8/egovera/GraphQLContract
+
+EIRA traceability: eira:TechnicalInteroperabilityAgreementContract
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-08-03
+
+dct:identifier: http://data.europa.eu/dr8/egovera/GraphQLContract
+
+dct:title: GraphQL Contract
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/GraphQLContract</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:TechnicalInteroperabilityAgreementContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-03</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/GraphQLContract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">GraphQL Contract</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">1. Social Media Applications: GraphQL is used in social media applications like Facebook, Instagram, and Twitter to fetch and update user data, posts, comments, likes, etc. It allows these applications to request specific data and aggregate responses from multiple sources.
+
+								2. E-commerce Platforms: E-commerce platforms like Shopify use GraphQL to manage their product catalog, customer data, and shopping cart operations. It allows them to fetch specific product details, update inventory, and manage orders efficiently.
+
+								3. Content Management Systems: Content management systems like WordPress use GraphQL to manage their content, user data, and other resources. It allows them to fetch specific content, update content, and manage user roles and permissions.
+
+								4. News and Media Websites: News and media websites like The New York Times use GraphQL to manage their news articles, user comments, and other resources. It allows them to fetch specific news articles, update news content, and manage user comments.
+
+								5. Travel and Booking Platforms: Travel and booking platforms like Airbnb use GraphQL to manage their property listings, user data, and booking operations. It allows them to fetch specific property details, update property listings, and manage bookings efficiently.
+
+								6. Music Streaming Applications: Music streaming applications like Spotify use GraphQL to manage their music catalog, user data, and playlist operations. It allows them to fetch specific song details, update song metadata, and manage playlists.
+
+								7. GitHub: GitHub uses GraphQL to power its API v4. This allows developers to selectively request the data they need, making it more efficient than traditional REST APIs.
+
+								8. Yelp: Yelp uses GraphQL to power its public API. This allows developers to selectively request data about businesses, reviews, and photos.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">The GraphQL specification is a detailed technical document that defines the GraphQL language and its behavior in a precise and implementation-agnostic manner. It serves as the authoritative reference for anyone implementing or using GraphQL. The specification is maintained by the GraphQL Foundation, a project of the Linux Foundation, and is open source, meaning that it is freely available for anyone to use or contribute to.
+
+								The specification covers all aspects of GraphQL, including its syntax, type system, query execution, error handling, and more. It describes how a GraphQL service should parse and validate queries, how it should execute them against a data source, and how it should format the results. It also defines a set of rules for how clients and servers should communicate, ensuring interoperability between different implementations.
+
+								The GraphQL specification is not a tutorial or a guide to using GraphQL, but rather a formal definition of the language itself. It is intended to be precise and comprehensive, providing a definitive answer to any question about how GraphQL should behave. However, it is also written in a way that is intended to be understandable and useful to developers, not just to computer scientists or language theorists.
+
+								The specification is divided into several sections, each covering a different aspect of the language. These include:
+
+								1. Language: This section defines the syntax of GraphQL, including its types, fields, arguments, directives, and other constructs. It also describes how queries are parsed and validated.
+
+								2. Execution: This section describes how a GraphQL query is executed against a data source. It covers topics like how to resolve fields, how to handle errors, and how to deal with asynchronous operations.
+
+								3. Type System: This section defines the GraphQL type system, which is used to describe the shape of the data that a GraphQL service can return. It includes definitions of scalar types, object types, interface types, union types, and more.
+
+								4. Introspection: This section describes how clients can query a GraphQL service to learn about its schema, which is the set of types and fields that it supports.
+
+								5. Validation: This section describes how a GraphQL query is validated against a schema before it is executed. This includes checks for things like type compatibility, correct use of directives, and more.
+
+								6. Response: This section describes the format of a GraphQL response, including how data is serialized and how errors are reported.
+
+								The GraphQL specification is continually evolving, with new versions released periodically to incorporate improvements, clarify ambiguities, and add new features. Each version of the specification is fully backwards-compatible with previous versions, ensuring that existing GraphQL services and clients continue to work as expected.</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">The GraphQL specification is a detailed technical document that defines the rules, syntax, and semantics of GraphQL, an open-source data query and manipulation language for APIs. It outlines how a GraphQL service should expose, validate, and execute a GraphQL request, including the structure of queries, mutations, and subscriptions, as well as the types of data that can be returned. The specification is designed to be platform and language agnostic, meaning it can be implemented in any programming language and run on any platform.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

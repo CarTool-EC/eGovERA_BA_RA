@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Multi-Factor Authentication</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Multi-Factor Authentication</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Contract"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Contract" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Definition: Multi-Factor Authentication (MFA) is a security measure that requires users to provide two or more verification factors to gain access to a resource such as an application, online account, or a VPN. It is designed to provide an additional layer of protection, minimizing the risk of security breaches and data theft. The factors used in MFA could include something you know (like a password), something you have (like a hardware token or a smartphone), or something you are (like a fingerprint or other biometric method).
+
+Source: EIRA team
+
+Additional information: Multi-Factor Authentication (MFA) is a security system that requires more than one method of authentication from independent categories of credentials to verify the user's identity for a login or other transaction. It is designed to provide an additional layer of protection, making it harder for unauthorized users to gain access to a person's devices or online accounts because knowing the victim's password alone is not enough to pass the authentication check.
+
+MFA works by requiring any two or more of the following authentication methods:
+
+1. Something you know (knowledge), such as a password or PIN.
+2. Something you have (possession), such as a badge, smartphone, or token.
+3. Something you are (inherence), such as biometrics like fingerprints, voice recognition, or retinal scans.
+
+In practice, this might mean entering a password (something you know) and then receiving a text message with a code to enter (something you have). Or it could involve scanning a fingerprint (something you are) and entering a PIN (something you know). 
+
+The goal of MFA is to create a layered defense system. If an attacker can compromise one method, such as guessing a password, they would still need to compromise the second or third method, which is significantly more difficult. 
+
+MFA is increasingly being used in areas beyond the traditional use of securing access to sensitive systems or data. It is now often used in everyday situations such as online banking, accessing work emails, or even social media accounts. 
+
+While MFA significantly improves security, it is not foolproof. For example, if a user loses their physical device used for authentication, an attacker could potentially gain access to it. However, the benefits of MFA in preventing unauthorized access generally outweigh the potential drawbacks.
+
+Example: 1. Online Banking: Many banks require multi-factor authentication for online banking. This often involves entering a username and password (first factor), then receiving a text message or email with a one-time code (second factor) that must be entered to gain access.
+
+2. Social Media Accounts: Platforms like Facebook, Instagram, and Twitter offer multi-factor authentication to protect users' accounts. After entering the password, the user may be required to enter a code sent to their mobile device or email.
+
+3. Corporate Networks: Companies often use multi-factor authentication to protect sensitive data. Employees may be required to swipe an ID card (first factor), enter a password (second factor), and provide a fingerprint (third factor) to access the network.
+
+4. Cloud Services: Providers like Google Drive, Dropbox, and iCloud use multi-factor authentication to protect users' files. This usually involves entering a password and then providing a second factor, such as a fingerprint or a code sent to a trusted device.
+
+5. VPN Access: Virtual Private Networks (VPNs) often use multi-factor authentication to ensure only authorized users can access them. This could involve a combination of passwords, security tokens, and biometric data.
+
+6. E-commerce Websites: To protect customers' financial information, many e-commerce sites use multi-factor authentication. This could involve entering a password and then providing a second factor, such as a code sent via text or email.
+
+7. Health Services: Hospitals and clinics may use multi-factor authentication to protect patients' health records. This could involve a combination of ID cards, passwords, and biometric data like fingerprints or retinal scans. 
+
+8. Government Services: Government agencies often use multi-factor authentication to protect sensitive information and services. This could involve a combination of ID cards, passwords, and biometric data.
+
+LOST view: TVA-Governance Architecture Principles
+
+Identifier: http://data.europa.eu/dr8/egovera/Multi-FactorAuthenticationContract
+
+EIRA traceability: eira:TechnicalInteroperabilityAgreementContract
+
+ABB name: egovera:Multi-FactorAuthenticationContract
+
+EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2023-08-03
+
+dct:identifier: http://data.europa.eu/dr8/egovera/Multi-FactorAuthenticationContract
+
+dct:title: Multi-Factor Authentication Contract
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/Multi-FactorAuthenticationContract</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:TechnicalInteroperabilityAgreementContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-03</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/Multi-FactorAuthenticationContract</td></tr><tr><td>dct:type</td><td class="convertlinks no-margin" style="white-space:pre-wrap">egovera:Multi-FactorAuthenticationContract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Multi-Factor Authentication Contract</td></tr><tr><td>skos:definition</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Multi-Factor Authentication (MFA) is a security measure that requires users to provide two or more verification factors to gain access to a resource such as an application, online account, or a VPN. It is designed to provide an additional layer of protection, minimizing the risk of security breaches and data theft. The factors used in MFA could include something you know (like a password), something you have (like a hardware token or a smartphone), or something you are (like a fingerprint or other biometric method).</td></tr><tr><td>eira:definitionSource</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>eira:definitionSourceReference</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">1. Online Banking: Many banks require multi-factor authentication for online banking. This often involves entering a username and password (first factor), then receiving a text message or email with a one-time code (second factor) that must be entered to gain access.
+
+								2. Social Media Accounts: Platforms like Facebook, Instagram, and Twitter offer multi-factor authentication to protect users' accounts. After entering the password, the user may be required to enter a code sent to their mobile device or email.
+
+								3. Corporate Networks: Companies often use multi-factor authentication to protect sensitive data. Employees may be required to swipe an ID card (first factor), enter a password (second factor), and provide a fingerprint (third factor) to access the network.
+
+								4. Cloud Services: Providers like Google Drive, Dropbox, and iCloud use multi-factor authentication to protect users' files. This usually involves entering a password and then providing a second factor, such as a fingerprint or a code sent to a trusted device.
+
+								5. VPN Access: Virtual Private Networks (VPNs) often use multi-factor authentication to ensure only authorized users can access them. This could involve a combination of passwords, security tokens, and biometric data.
+
+								6. E-commerce Websites: To protect customers' financial information, many e-commerce sites use multi-factor authentication. This could involve entering a password and then providing a second factor, such as a code sent via text or email.
+
+								7. Health Services: Hospitals and clinics may use multi-factor authentication to protect patients' health records. This could involve a combination of ID cards, passwords, and biometric data like fingerprints or retinal scans. 
+
+								8. Government Services: Government agencies often use multi-factor authentication to protect sensitive information and services. This could involve a combination of ID cards, passwords, and biometric data.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:ArchitectureBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Multi-Factor Authentication (MFA) is a security system that requires more than one method of authentication from independent categories of credentials to verify the user's identity for a login or other transaction. It is designed to provide an additional layer of protection, making it harder for unauthorized users to gain access to a person's devices or online accounts because knowing the victim's password alone is not enough to pass the authentication check.
+
+								MFA works by requiring any two or more of the following authentication methods:
+
+								1. Something you know (knowledge), such as a password or PIN.
+								2. Something you have (possession), such as a badge, smartphone, or token.
+								3. Something you are (inherence), such as biometrics like fingerprints, voice recognition, or retinal scans.
+
+								In practice, this might mean entering a password (something you know) and then receiving a text message with a code to enter (something you have). Or it could involve scanning a fingerprint (something you are) and entering a PIN (something you know). 
+
+								The goal of MFA is to create a layered defense system. If an attacker can compromise one method, such as guessing a password, they would still need to compromise the second or third method, which is significantly more difficult. 
+
+								MFA is increasingly being used in areas beyond the traditional use of securing access to sensitive systems or data. It is now often used in everyday situations such as online banking, accessing work emails, or even social media accounts. 
+
+								While MFA significantly improves security, it is not foolproof. For example, if a user loses their physical device used for authentication, an attacker could potentially gain access to it. However, the benefits of MFA in preventing unauthorized access generally outweigh the potential drawbacks.</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TVA-Governance Architecture Principles</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TVI-Governance Architecture Principles</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

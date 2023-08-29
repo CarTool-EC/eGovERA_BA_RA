@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Hawk Authentication</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Hawk Authentication</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Contract"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Contract" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: Hawk Authentication is a protocol for making HTTP requests that are authenticated by using a Message Authentication Code (MAC) algorithm. It provides a mechanism for making these requests in a simple and standardized way, without the need for complex cryptographic protocols. Hawk Authentication ensures that the data transmitted between the client and server remains confidential and unaltered, providing a high level of security. It is often used in RESTful APIs and web applications.
+
+Additional information: Hawk Authentication is a HTTP authentication scheme that provides a method for making authenticated HTTP requests with partial cryptographic verification of the request and response, covering the HTTP method, request URI, host, and optionally the request payload. It is a widely used protocol for securing APIs and web resources.
+
+The Hawk Authentication scheme is based on the concept of a shared symmetric key between the client and the server. This shared key is never transmitted over the network, providing a significant increase in security over basic authentication methods that transmit the password in plaintext or encoded in Base64.
+
+Hawk Authentication uses a set of server-generated credentials, including an identifier (id), a key, and an algorithm. The client uses these credentials to generate a request MAC (Message Authentication Code), which is included in the Authorization header of the HTTP request. The server, upon receiving the request, generates its own MAC using the same credentials and compares it to the client's MAC. If they match, the request is considered authentic.
+
+In addition to the request MAC, Hawk Authentication also provides options for payload validation and response validation. Payload validation ensures the integrity of the request body by including a hash of the payload in the MAC calculation. Response validation provides a way for the client to verify the authenticity of the server's response.
+
+Hawk Authentication also includes a mechanism for handling replay attacks. Each request includes a timestamp and a nonce value that are included in the MAC calculation. The server keeps track of these values and rejects any request with a duplicate nonce or a timestamp that is too far in the past.
+
+Overall, Hawk Authentication provides a robust and secure method for authenticating HTTP requests, protecting against a variety of common attacks and ensuring the integrity of both the request and response.
+
+Example: Hawk Authentication is a widely used HTTP authentication scheme that involves creating a MAC (Message Authentication Code) for HTTP requests. Here are some examples of applying the Hawk Authentication:
+
+1. Web Application: Hawk Authentication can be used in a web application where the client and server need to communicate securely. The client creates a MAC using its credentials and sends it along with the HTTP request. The server then verifies the MAC to authenticate the client.
+
+2. API Authentication: Hawk Authentication can be used for securing APIs. The client application creates a MAC using its API key and sends it along with the API request. The server then verifies the MAC to authenticate the API request.
+
+3. Mobile Application: Hawk Authentication can be used in a mobile application where the mobile app needs to communicate with a server. The mobile app creates a MAC using its credentials and sends it along with the HTTP request. The server then verifies the MAC to authenticate the mobile app.
+
+4. IoT Devices: Hawk Authentication can be used in IoT devices where the device needs to communicate with a server. The device creates a MAC using its credentials and sends it along with the HTTP request. The server then verifies the MAC to authenticate the device.
+
+5. Microservices: In a microservices architecture, Hawk Authentication can be used to secure communication between different services. Each service creates a MAC using its credentials and sends it along with the HTTP request. The receiving service then verifies the MAC to authenticate the request.
+
+Publisher: EIRA team
+
+LOST view: TV-Technical Agreements
+
+Identifier: http://data.europa.eu/dr8/egovera/HawkAuthenticationContract
+
+EIRA traceability: eira:TechnicalInteroperabilityAgreementContract
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-08-03
+
+dct:identifier: http://data.europa.eu/dr8/egovera/HawkAuthenticationContract
+
+dct:title: Hawk Authentication Contract
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/HawkAuthenticationContract</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:TechnicalInteroperabilityAgreementContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-03</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/HawkAuthenticationContract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Hawk Authentication Contract</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Hawk Authentication is a widely used HTTP authentication scheme that involves creating a MAC (Message Authentication Code) for HTTP requests. Here are some examples of applying the Hawk Authentication:
+
+								1. Web Application: Hawk Authentication can be used in a web application where the client and server need to communicate securely. The client creates a MAC using its credentials and sends it along with the HTTP request. The server then verifies the MAC to authenticate the client.
+
+								2. API Authentication: Hawk Authentication can be used for securing APIs. The client application creates a MAC using its API key and sends it along with the API request. The server then verifies the MAC to authenticate the API request.
+
+								3. Mobile Application: Hawk Authentication can be used in a mobile application where the mobile app needs to communicate with a server. The mobile app creates a MAC using its credentials and sends it along with the HTTP request. The server then verifies the MAC to authenticate the mobile app.
+
+								4. IoT Devices: Hawk Authentication can be used in IoT devices where the device needs to communicate with a server. The device creates a MAC using its credentials and sends it along with the HTTP request. The server then verifies the MAC to authenticate the device.
+
+								5. Microservices: In a microservices architecture, Hawk Authentication can be used to secure communication between different services. Each service creates a MAC using its credentials and sends it along with the HTTP request. The receiving service then verifies the MAC to authenticate the request.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Hawk Authentication is a HTTP authentication scheme that provides a method for making authenticated HTTP requests with partial cryptographic verification of the request and response, covering the HTTP method, request URI, host, and optionally the request payload. It is a widely used protocol for securing APIs and web resources.
+
+								The Hawk Authentication scheme is based on the concept of a shared symmetric key between the client and the server. This shared key is never transmitted over the network, providing a significant increase in security over basic authentication methods that transmit the password in plaintext or encoded in Base64.
+
+								Hawk Authentication uses a set of server-generated credentials, including an identifier (id), a key, and an algorithm. The client uses these credentials to generate a request MAC (Message Authentication Code), which is included in the Authorization header of the HTTP request. The server, upon receiving the request, generates its own MAC using the same credentials and compares it to the client's MAC. If they match, the request is considered authentic.
+
+								In addition to the request MAC, Hawk Authentication also provides options for payload validation and response validation. Payload validation ensures the integrity of the request body by including a hash of the payload in the MAC calculation. Response validation provides a way for the client to verify the authenticity of the server's response.
+
+								Hawk Authentication also includes a mechanism for handling replay attacks. Each request includes a timestamp and a nonce value that are included in the MAC calculation. The server keeps track of these values and rejects any request with a duplicate nonce or a timestamp that is too far in the past.
+
+								Overall, Hawk Authentication provides a robust and secure method for authenticating HTTP requests, protecting against a variety of common attacks and ensuring the integrity of both the request and response.</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Hawk Authentication is a protocol for making HTTP requests that are authenticated by using a Message Authentication Code (MAC) algorithm. It provides a mechanism for making these requests in a simple and standardized way, without the need for complex cryptographic protocols. Hawk Authentication ensures that the data transmitted between the client and server remains confidential and unaltered, providing a high level of security. It is often used in RESTful APIs and web applications.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

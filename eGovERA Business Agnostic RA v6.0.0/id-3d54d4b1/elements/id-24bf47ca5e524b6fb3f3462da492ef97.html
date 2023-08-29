@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Basic Auth</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Basic Auth</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Contract"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Contract" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: Basic Auth, short for Basic Authentication, is a simple authentication scheme built into the HTTP protocol. It is a method for a web browser or application to provide a user name and password when making a request. The client sends the user name and password as unencrypted base64 encoded text. Because it is unencrypted, Basic Auth is typically used in conjunction with HTTPS to ensure the credentials cannot be viewed in transit. It is considered less secure than other forms of authentication and is often used as a simple barrier rather than a robust method of user verification.
+
+Additional information: Basic Auth, short for Basic Authentication, is a simple authentication scheme built into the HTTP protocol. It is a method for an HTTP user agent (like a web browser) to provide a user name and password when making a request. 
+
+The Basic Auth process works as follows: when a client sends a request to a server, the server sends back a response asking for authentication. The client then sends the username and password, encoded in Base64, in the Authorization header. The server decodes the Base64 string and checks if the credentials are valid. If they are, the server fulfills the request; if they aren't, it returns a 401 Unauthorized response.
+
+The main advantage of Basic Auth is its simplicity. It is easy to implement and use, and it doesn't require cookies, session identifiers, or login pages. However, it also has significant security flaws. The most important one is that the credentials are not encrypted but merely encoded, which means they can be easily decoded by anyone who intercepts the HTTP request. Therefore, Basic Auth should always be used over HTTPS, which provides the necessary encryption to protect the credentials.
+
+Another limitation of Basic Auth is that it doesn't provide features like password resets, account lockouts, or multi-factor authentication. It also doesn't provide any way to log out; the only way to "log out" is to close the browser or to send a request with incorrect credentials.
+
+In summary, Basic Auth is a simple and easy-to-use method for authentication, but it has significant security limitations and should be used with caution. It is best suited for quick-and-dirty implementations or for internal applications where security is not a major concern. For any application exposed to the internet or handling sensitive data, a more secure authentication method should be used.
+
+Example: Basic Auth (Basic Authentication) is a simple authentication scheme built into the HTTP protocol. It is a method for an HTTP user agent (like a web browser) to provide a user name and password when making a request.
+
+1. Accessing a Protected Resource: A common example of using Basic Auth is when you try to access a protected resource on a website. The server will respond with a 401 Unauthorized status and a WWW-Authenticate header. Your browser will then prompt you to enter your username and password. This information is encoded with Base64 and included in the Authorization header in the subsequent request to the server.
+
+2. API Authentication: Basic Auth is often used when interacting with APIs. For example, you might use Basic Auth to authenticate with the Twitter API. You would provide your API key as the username and your API secret key as the password. These would be Base64 encoded and included in the Authorization header in your API requests.
+
+3. FTP Servers: Basic Auth is also commonly used when connecting to FTP servers. When you connect to the server, it will ask for your username and password. This information is sent to the server in plain text (unless you're using a secure connection), and the server uses it to authenticate your session.
+
+4. Proxy Authentication: In some cases, you might need to use Basic Auth to authenticate with a proxy server. This works similarly to the other examples &#8211; your username and password are Base64 encoded and included in the Proxy-Authorization header in your HTTP requests.
+
+5. Admin Panels: Basic Auth is often used to protect admin panels or other sensitive areas of a website. When you try to access the admin panel, your browser will prompt you for a username and password. This information is sent to the server, which checks it against its list of authorized users. If you're authorized, the server will let you access the admin panel.
+
+Publisher: EIRA team
+
+LOST view: TV-Technical Agreements
+
+Identifier: http://data.europa.eu/dr8/egovera/BasicAuthContract
+
+EIRA traceability: eira:TechnicalInteroperabilityAgreementContract
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-08-03
+
+dct:identifier: http://data.europa.eu/dr8/egovera/BasicAuthContract
+
+dct:title: Basic Auth Contract
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/BasicAuthContract</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:TechnicalInteroperabilityAgreementContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-03</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/BasicAuthContract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Basic Auth Contract</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Basic Auth (Basic Authentication) is a simple authentication scheme built into the HTTP protocol. It is a method for an HTTP user agent (like a web browser) to provide a user name and password when making a request.
+
+								1. Accessing a Protected Resource: A common example of using Basic Auth is when you try to access a protected resource on a website. The server will respond with a 401 Unauthorized status and a WWW-Authenticate header. Your browser will then prompt you to enter your username and password. This information is encoded with Base64 and included in the Authorization header in the subsequent request to the server.
+
+								2. API Authentication: Basic Auth is often used when interacting with APIs. For example, you might use Basic Auth to authenticate with the Twitter API. You would provide your API key as the username and your API secret key as the password. These would be Base64 encoded and included in the Authorization header in your API requests.
+
+								3. FTP Servers: Basic Auth is also commonly used when connecting to FTP servers. When you connect to the server, it will ask for your username and password. This information is sent to the server in plain text (unless you're using a secure connection), and the server uses it to authenticate your session.
+
+								4. Proxy Authentication: In some cases, you might need to use Basic Auth to authenticate with a proxy server. This works similarly to the other examples &#8211; your username and password are Base64 encoded and included in the Proxy-Authorization header in your HTTP requests.
+
+								5. Admin Panels: Basic Auth is often used to protect admin panels or other sensitive areas of a website. When you try to access the admin panel, your browser will prompt you for a username and password. This information is sent to the server, which checks it against its list of authorized users. If you're authorized, the server will let you access the admin panel.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Basic Auth, short for Basic Authentication, is a simple authentication scheme built into the HTTP protocol. It is a method for an HTTP user agent (like a web browser) to provide a user name and password when making a request. 
+
+								The Basic Auth process works as follows: when a client sends a request to a server, the server sends back a response asking for authentication. The client then sends the username and password, encoded in Base64, in the Authorization header. The server decodes the Base64 string and checks if the credentials are valid. If they are, the server fulfills the request; if they aren't, it returns a 401 Unauthorized response.
+
+								The main advantage of Basic Auth is its simplicity. It is easy to implement and use, and it doesn't require cookies, session identifiers, or login pages. However, it also has significant security flaws. The most important one is that the credentials are not encrypted but merely encoded, which means they can be easily decoded by anyone who intercepts the HTTP request. Therefore, Basic Auth should always be used over HTTPS, which provides the necessary encryption to protect the credentials.
+
+								Another limitation of Basic Auth is that it doesn't provide features like password resets, account lockouts, or multi-factor authentication. It also doesn't provide any way to log out; the only way to "log out" is to close the browser or to send a request with incorrect credentials.
+
+								In summary, Basic Auth is a simple and easy-to-use method for authentication, but it has significant security limitations and should be used with caution. It is best suited for quick-and-dirty implementations or for internal applications where security is not a major concern. For any application exposed to the internet or handling sensitive data, a more secure authentication method should be used.</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Basic Auth, short for Basic Authentication, is a simple authentication scheme built into the HTTP protocol. It is a method for a web browser or application to provide a user name and password when making a request. The client sends the user name and password as unencrypted base64 encoded text. Because it is unencrypted, Basic Auth is typically used in conjunction with HTTPS to ensure the credentials cannot be viewed in transit. It is considered less secure than other forms of authentication and is often used as a simple barrier rather than a robust method of user verification.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

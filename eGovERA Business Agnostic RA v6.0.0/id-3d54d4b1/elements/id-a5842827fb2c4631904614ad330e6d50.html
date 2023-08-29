@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Docker Compose</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Docker Compose</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-ApplicationService"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-ApplicationService" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: Docker Compose is a tool that allows defining and running multi-container Docker applications. It uses a YAML file to configure the services, networks, and volumes required for the application, enabling easy deployment and management of complex containerized environments.
+
+Additional information: Docker Compose simplifies the process of orchestrating multiple Docker containers by providing a declarative way to define the desired state of the application stack. The YAML file specifies the services, their dependencies, network connections, and storage volumes required for the application. Docker Compose then takes care of creating and managing the necessary containers, networks, and volumes, ensuring the defined services can communicate with each other. It allows developers to define the entire application stack as code, making it easy to reproduce and share the environment across different development stages or deployment environments. Docker Compose is particularly useful for development and testing scenarios where multiple services need to work together.
+
+Example: An example of using Docker Compose is a web application that consists of a frontend service, a backend API service, and a database service. The Docker Compose file would define these services along with their configurations, dependencies, and network connections. By running a single command, Docker Compose would create and manage the necessary containers, networks, and volumes, setting up the complete application stack. This allows developers to easily spin up the entire environment on their local machines for development or testing purposes, ensuring all services are properly connected and functioning as expected.
+
+Publisher: Docker Documentation
+
+Source: https://docs.docker.com/compose/
+
+LOST view: TVA-Containerization Enablers [Motivation]
+
+Identifier: http://data.europa.eu/dr8/egovera/DockerComposeApplicationService
+
+EIRA traceability: eira:DigitalSolutionApplicationService
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-07-20
+
+dct:identifier: http://data.europa.eu/dr8/egovera/DockerComposeApplicationService
+
+dct:title: Docker Compose Application Service
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/DockerComposeApplicationService</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:DigitalSolutionApplicationService</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-07-20</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/DockerComposeApplicationService</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Docker Compose Application Service</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">An example of using Docker Compose is a web application that consists of a frontend service, a backend API service, and a database service. The Docker Compose file would define these services along with their configurations, dependencies, and network connections. By running a single command, Docker Compose would create and manage the necessary containers, networks, and volumes, setting up the complete application stack. This allows developers to easily spin up the entire environment on their local machines for development or testing purposes, ensuring all services are properly connected and functioning as expected.</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Docker Compose simplifies the process of orchestrating multiple Docker containers by providing a declarative way to define the desired state of the application stack. The YAML file specifies the services, their dependencies, network connections, and storage volumes required for the application. Docker Compose then takes care of creating and managing the necessary containers, networks, and volumes, ensuring the defined services can communicate with each other. It allows developers to define the entire application stack as code, making it easy to reproduce and share the environment across different development stages or deployment environments. Docker Compose is particularly useful for development and testing scenarios where multiple services need to work together.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Docker Compose is a tool that allows defining and running multi-container Docker applications. It uses a YAML file to configure the services, networks, and volumes required for the application, enabling easy deployment and management of complex containerized environments.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Docker Documentation</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap">https://docs.docker.com/compose/</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TVA-Containerization Enablers [Motivation]</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

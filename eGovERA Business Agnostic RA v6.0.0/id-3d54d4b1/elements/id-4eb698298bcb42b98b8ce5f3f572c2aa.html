@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>OpenID</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>OpenID</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Contract"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Contract" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Description: OpenID is an open standard and decentralized authentication protocol that allows users to be authenticated by certain co-operating sites (known as Relying Parties or RP) using a third-party service. This eliminates the need for webmasters to provide their own ad hoc login systems, and allows users to log into multiple unrelated websites without having to have a separate identity and password for each. Users create accounts by selecting an OpenID identity provider, and then use those accounts to sign onto any website which accepts OpenID authentication.
+
+Additional information: OpenID is an open standard and decentralized authentication protocol that allows users to be authenticated by certain co-operating sites (known as Relying Parties or RP) using a third-party service. This eliminates the need for webmasters to provide their own ad hoc login systems, and allows users to log into multiple unrelated websites without having to have a separate identity and password for each.
+
+The protocol was developed by the OpenID Foundation, a non-profit organization that promotes and protects the technology. It was first launched in 2005 and has since been adopted by many large digital companies, including Google, Yahoo, and Microsoft.
+
+OpenID works by using the user's existing account to verify their identity. The user's credentials are not shared with the RP, but instead, the user is authenticated directly with the OpenID Provider (OP). The OP then sends the RP a claim that the user controls a specified Identifier (usually a URL or an XRI). The RP can then use this claim to provide the user with access to its services.
+
+The OpenID protocol supports multiple types of user Identifiers, including XRIs (Extensible Resource Identifiers), URLs, and even email addresses. This flexibility allows users to choose the Identifier that best suits their needs.
+
+OpenID also supports extensions for additional features, such as fetching user details from the OP (via the Simple Registration Extension or the Attribute Exchange Extension), or establishing two-way communications between the RP and the OP (via the OAuth Extension).
+
+One of the main benefits of OpenID is that it allows users to consolidate their digital identities, reducing the number of usernames and passwords they need to remember. It also provides a higher level of security than traditional password-based authentication, as the user's credentials are never shared with the RP.
+
+However, OpenID also has some potential drawbacks. For example, if a user's OpenID account is compromised, all sites that rely on that account for authentication are potentially at risk. Additionally, while OpenID is designed to be decentralized, in practice many users choose to use large, centralized OPs, which can create a single point of failure.
+
+Example: 1. Logging into Google Services: Google uses OpenID to allow users to log into their various services. When you sign up for a Google account, you are essentially creating an OpenID that can be used across Google's services like Gmail, YouTube, Google Drive, etc.
+
+2. Social Media Login: Many websites allow users to log in using their social media accounts, such as Facebook, Twitter, or LinkedIn. This is an application of OpenID, where the website trusts the social media platform to authenticate the user.
+
+3. E-commerce Websites: Many e-commerce websites like Amazon and eBay use OpenID to simplify the login process. Instead of creating a new account, users can log in using an existing account from a trusted provider.
+
+4. Online Forums and Blogs: Websites like WordPress and Blogger use OpenID to allow users to comment on posts. Instead of creating a new account just to leave a comment, users can authenticate themselves using an existing OpenID.
+
+5. Online Gaming: Many online gaming platforms, like Steam, use OpenID to authenticate users. This allows users to have a single identity across multiple games.
+
+6. Corporate Applications: Some companies use OpenID to provide a single sign-on solution for their employees. This allows employees to access multiple applications and services with a single set of credentials.
+
+7. Educational Institutions: Some universities and schools use OpenID to provide students and staff with access to various online resources, like library databases and course management systems.
+
+Publisher: EIRA team
+
+LOST view: TV-Technical Agreements
+
+Identifier: http://data.europa.eu/dr8/egovera/OpenIDContract
+
+EIRA traceability: eira:TechnicalInteroperabilityAgreementContract
+
+EIRA concept: eira:SolutionBuildingBlock
+
+Last modification: 2023-08-03
+
+dct:identifier: http://data.europa.eu/dr8/egovera/OpenIDContract
+
+dct:title: OpenID Contract
+
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/OpenIDContract</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:TechnicalInteroperabilityAgreementContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-03</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/OpenIDContract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OpenID Contract</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">1. Logging into Google Services: Google uses OpenID to allow users to log into their various services. When you sign up for a Google account, you are essentially creating an OpenID that can be used across Google's services like Gmail, YouTube, Google Drive, etc.
+
+								2. Social Media Login: Many websites allow users to log in using their social media accounts, such as Facebook, Twitter, or LinkedIn. This is an application of OpenID, where the website trusts the social media platform to authenticate the user.
+
+								3. E-commerce Websites: Many e-commerce websites like Amazon and eBay use OpenID to simplify the login process. Instead of creating a new account, users can log in using an existing account from a trusted provider.
+
+								4. Online Forums and Blogs: Websites like WordPress and Blogger use OpenID to allow users to comment on posts. Instead of creating a new account just to leave a comment, users can authenticate themselves using an existing OpenID.
+
+								5. Online Gaming: Many online gaming platforms, like Steam, use OpenID to authenticate users. This allows users to have a single identity across multiple games.
+
+								6. Corporate Applications: Some companies use OpenID to provide a single sign-on solution for their employees. This allows employees to access multiple applications and services with a single set of credentials.
+
+								7. Educational Institutions: Some universities and schools use OpenID to provide students and staff with access to various online resources, like library databases and course management systems.</td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:SolutionBuildingBlock</td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OpenID is an open standard and decentralized authentication protocol that allows users to be authenticated by certain co-operating sites (known as Relying Parties or RP) using a third-party service. This eliminates the need for webmasters to provide their own ad hoc login systems, and allows users to log into multiple unrelated websites without having to have a separate identity and password for each.
+
+								The protocol was developed by the OpenID Foundation, a non-profit organization that promotes and protects the technology. It was first launched in 2005 and has since been adopted by many large digital companies, including Google, Yahoo, and Microsoft.
+
+								OpenID works by using the user's existing account to verify their identity. The user's credentials are not shared with the RP, but instead, the user is authenticated directly with the OpenID Provider (OP). The OP then sends the RP a claim that the user controls a specified Identifier (usually a URL or an XRI). The RP can then use this claim to provide the user with access to its services.
+
+								The OpenID protocol supports multiple types of user Identifiers, including XRIs (Extensible Resource Identifiers), URLs, and even email addresses. This flexibility allows users to choose the Identifier that best suits their needs.
+
+								OpenID also supports extensions for additional features, such as fetching user details from the OP (via the Simple Registration Extension or the Attribute Exchange Extension), or establishing two-way communications between the RP and the OP (via the OAuth Extension).
+
+								One of the main benefits of OpenID is that it allows users to consolidate their digital identities, reducing the number of usernames and passwords they need to remember. It also provides a higher level of security than traditional password-based authentication, as the user's credentials are never shared with the RP.
+
+								However, OpenID also has some potential drawbacks. For example, if a user's OpenID account is compromised, all sites that rely on that account for authentication are potentially at risk. Additionally, while OpenID is designed to be decentralized, in practice many users choose to use large, centralized OPs, which can create a single point of failure.</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">OpenID is an open standard and decentralized authentication protocol that allows users to be authenticated by certain co-operating sites (known as Relying Parties or RP) using a third-party service. This eliminates the need for webmasters to provide their own ad hoc login systems, and allows users to log into multiple unrelated websites without having to have a separate identity and password for each. Users create accounts by selecting an OpenID identity provider, and then use those accounts to sign onto any website which accepts OpenID authentication.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
