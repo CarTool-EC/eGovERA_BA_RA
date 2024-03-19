@@ -40,6 +40,9 @@
                     <!-- Properties -->
                     <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
 
+                    <!-- Analysis -->
+                    	<li role="presentation"><a href="#analysis" aria-controls="analysis" role="tab" data-toggle="tab" class="i18n-analysis"></a></li>
+
 				</ul>
 
 				<!-- Tab panes -->
@@ -96,7 +99,7 @@ dct:title: Basic Auth Contract
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/BasicAuthContract</td></tr><tr><td>eira:ABB</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:TechnicalInteroperabilityAgreementContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-08-03</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/BasicAuthContract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Basic Auth Contract</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Basic Auth (Basic Authentication) is a simple authentication scheme built into the HTTP protocol. It is a method for an HTTP user agent (like a web browser) to provide a user name and password when making a request.
+								<tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/BasicAuthContract</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2024-01-28</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/egovera/BasicAuthContract</td></tr><tr><td>dct:title</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Basic Auth Contract</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Basic Auth (Basic Authentication) is a simple authentication scheme built into the HTTP protocol. It is a method for an HTTP user agent (like a web browser) to provide a user name and password when making a request.
 
 								1. Accessing a Protected Resource: A common example of using Basic Auth is when you try to access a protected resource on a website. The server will respond with a 401 Unauthorized status and a WWW-Authenticate header. Your browser will then prompt you to enter your username and password. This information is encoded with Base64 and included in the Authorization header in the subsequent request to the server.
 
@@ -114,7 +117,43 @@ dct:title: Basic Auth Contract
 
 								Another limitation of Basic Auth is that it doesn't provide features like password resets, account lockouts, or multi-factor authentication. It also doesn't provide any way to log out; the only way to "log out" is to close the browser or to send a request with incorrect credentials.
 
-								In summary, Basic Auth is a simple and easy-to-use method for authentication, but it has significant security limitations and should be used with caution. It is best suited for quick-and-dirty implementations or for internal applications where security is not a major concern. For any application exposed to the internet or handling sensitive data, a more secure authentication method should be used.</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Basic Auth, short for Basic Authentication, is a simple authentication scheme built into the HTTP protocol. It is a method for a web browser or application to provide a user name and password when making a request. The client sends the user name and password as unencrypted base64 encoded text. Because it is unencrypted, Basic Auth is typically used in conjunction with HTTPS to ensure the credentials cannot be viewed in transit. It is considered less secure than other forms of authentication and is often used as a simple barrier rather than a robust method of user verification.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr>
+								In summary, Basic Auth is a simple and easy-to-use method for authentication, but it has significant security limitations and should be used with caution. It is best suited for quick-and-dirty implementations or for internal applications where security is not a major concern. For any application exposed to the internet or handling sensitive data, a more secure authentication method should be used.</td></tr><tr><td>dct:description</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Basic Auth, short for Basic Authentication, is a simple authentication scheme built into the HTTP protocol. It is a method for a web browser or application to provide a user name and password when making a request. The client sends the user name and password as unencrypted base64 encoded text. Because it is unencrypted, Basic Auth is typically used in conjunction with HTTPS to ensure the credentials cannot be viewed in transit. It is considered less secure than other forms of authentication and is often used as a simple barrier rather than a robust method of user verification.</td></tr><tr><td>dct:publisher</td><td class="convertlinks no-margin" style="white-space:pre-wrap">EIRA team</td></tr><tr><td>dct:source</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TV-Technical Agreements</td></tr><tr><td>eira:eifLayer</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Technical</td></tr><tr><td>eira:implementedBy</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/TechnicalInteroperabilityAgreementContract</td></tr>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="used-in-views-id-ccf2de87df7b4f14ae9ce08c17b2b543">
+																	<td><a href="../views/id-ccf2de87df7b4f14ae9ce08c17b2b543.html" target="view" title="TV-Technical Agreements"> TV-Technical Agreements </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+									<tr>
+											<td><a href="../elements/id-03a140ed90c14bb5be3044d4dbbd3cc4.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-df1c0f0259a14fb0a72af7ef3e9a9b86.html" target="element"> Business Agnostic Identity and Access Management Technical Interoperability Agreement Solutions</a></td>
+											<td><a href="../elements/id-24bf47ca5e524b6fb3f3462da492ef97.html" target="element"> Basic Auth</a></td>
+										</tr>
 							</tbody>
 						</table>
 					</div>

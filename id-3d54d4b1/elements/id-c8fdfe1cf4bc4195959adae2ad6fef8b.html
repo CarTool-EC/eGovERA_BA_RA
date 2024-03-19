@@ -40,6 +40,9 @@
                     <!-- Properties -->
                     <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
 
+                    <!-- Analysis -->
+                    	<li role="presentation"><a href="#analysis" aria-controls="analysis" role="tab" data-toggle="tab" class="i18n-analysis"></a></li>
+
 				</ul>
 
 				<!-- Tab panes -->
@@ -53,21 +56,19 @@ Source reference: https://commission.europa.eu/publications/data-governance-and-
 
 Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Context Broker as a CEF Building Block. https://ec.europa.eu/digital-building-blocks/wikis/download/attachments/82773424/Context%20Broker%20Brochure.pdf?version=1&amp;modificationDate=1558016168498&amp;api=v2
 
-eira:iopDimension: Structural IoP
+IoP Dimension: Structural IoP, Behavioral IoP
 
-LOST view: TVA-Data Management Enablers [Motivation]
+LOST view: Technical view - application
 
-eira:iopSaliency: The Data Management Enablers Grouping ABB is salient for technical interoperability because it comprises the tools, components and services related to data management. Data Management Enablers are relevant as they support effective and efficient data management, ensuring that interoperability can be achieved between digital public services. 
+Interoperability saliency: The Data Management Enablers Grouping ABB is salient for technical interoperability because it comprises the tools, components and services related to data management. Data Management Enablers are relevant as they support effective and efficient data management, ensuring that interoperability can be achieved between digital public services. 
 
-Identifier: http://data.europa.eu/dr8/DataManagementEnablersGrouping
+eira:ID: http://data.europa.eu/dr8/DataManagementEnablersGrouping
 
 ABB name: eira:DataManagementEnablersGrouping
 
 EIRA concept: eira:ArchitectureBuildingBlock
 
-Last modification: 2023-05-25
-
-dct:identifier: http://data.europa.eu/dr8/DataManagementEnablersGrouping
+eiraPURI: http://data.europa.eu/dr8/DataManagementEnablersGrouping
 
 </div>
 					</div>
@@ -80,7 +81,312 @@ dct:identifier: http://data.europa.eu/dr8/DataManagementEnablersGrouping
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td>dct:type</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:DataManagementEnablersGrouping</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2023-05-25</td></tr><tr><td>eira:synonym</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>skos:definition</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Data Management Enablers ABB is a Grouping that refers to components and services that support effective data management practices and procedures.</td></tr><tr><td>eira:definitionSource</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Inspired in European Comision- Data Governance and data policies at the European Comission</td></tr><tr><td>eira:definitionSourceReference</td><td class="convertlinks no-margin" style="white-space:pre-wrap">https://commission.europa.eu/publications/data-governance-and-data-policies-european-commission_en</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Context Broker as a CEF Building Block. https://ec.europa.eu/digital-building-blocks/wikis/download/attachments/82773424/Context%20Broker%20Brochure.pdf?version=1&amp;modificationDate=1558016168498&amp;api=v2</td></tr><tr><td>eira:iopSaliency</td><td class="convertlinks no-margin" style="white-space:pre-wrap">The Data Management Enablers Grouping ABB is salient for technical interoperability because it comprises the tools, components and services related to data management. Data Management Enablers are relevant as they support effective and efficient data management, ensuring that interoperability can be achieved between digital public services. </td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:ArchitectureBuildingBlock</td></tr><tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/DataManagementEnablersGrouping</td></tr><tr><td>eira:iopDimension</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Structural IoP</td></tr><tr><td>eira:iopDimension</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Behavioral IoP</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/DataManagementEnablersGrouping</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TVA-Data Management Enablers [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TVA-Functional Architecture Principles</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TVI-Data Management and Knowledge Discovery Infrastructure Enablers [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TVI-Computing Infrastructure Enablers [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TVI-Networking Infrastructure Enablers [Motivation]</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Technical view - application</td></tr>
+								<tr><td>dct:type</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:DataManagementEnablersGrouping</td></tr><tr><td>dct:modified</td><td class="convertlinks no-margin" style="white-space:pre-wrap">2024-01-28</td></tr><tr><td>eira:synonym</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>skos:definition</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Data Management Enablers ABB is a Grouping that refers to components and services that support effective data management practices and procedures.</td></tr><tr><td>eira:definitionSource</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Inspired in European Comision- Data Governance and data policies at the European Comission</td></tr><tr><td>eira:definitionSourceReference</td><td class="convertlinks no-margin" style="white-space:pre-wrap">https://commission.europa.eu/publications/data-governance-and-data-policies-european-commission_en</td></tr><tr><td>skos:example</td><td class="convertlinks no-margin" style="white-space:pre-wrap">The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Context Broker as a CEF Building Block. https://ec.europa.eu/digital-building-blocks/wikis/download/attachments/82773424/Context%20Broker%20Brochure.pdf?version=1&amp;modificationDate=1558016168498&amp;api=v2</td></tr><tr><td>eira:iopSaliency</td><td class="convertlinks no-margin" style="white-space:pre-wrap">The Data Management Enablers Grouping ABB is salient for technical interoperability because it comprises the tools, components and services related to data management. Data Management Enablers are relevant as they support effective and efficient data management, ensuring that interoperability can be achieved between digital public services. </td></tr><tr><td>skos:note</td><td class="convertlinks no-margin" style="white-space:pre-wrap"></td></tr><tr><td>eira:concept</td><td class="convertlinks no-margin" style="white-space:pre-wrap">eira:ArchitectureBuildingBlock</td></tr><tr><td>eira:PURI</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/DataManagementEnablersGrouping</td></tr><tr><td>eira:iopDimension</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Structural IoP</td></tr><tr><td>eira:iopDimension</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Behavioral IoP</td></tr><tr><td>eira:view</td><td class="convertlinks no-margin" style="white-space:pre-wrap">Technical view - application</td></tr><tr><td>dct:identifier</td><td class="convertlinks no-margin" style="white-space:pre-wrap">http://data.europa.eu/dr8/DataManagementEnablersGrouping</td></tr><tr><td>eira:eifLayer</td><td class="convertlinks no-margin" style="white-space:pre-wrap">TechnicalApplication</td></tr>
+							</tbody>
+						</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="used-in-views-id-c83836449bfa40299f07db29e53218b4">
+																	<td><a href="../views/id-c83836449bfa40299f07db29e53218b4.html" target="view" title="TVI-Computing Infrastructure Enablers [Traceability]"> TVI-Computing Infrastructure Enablers [Traceability] </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-eb2121bbf6eb454db86eb4317888b12c">
+																	<td><a href="../views/id-eb2121bbf6eb454db86eb4317888b12c.html" target="view" title="Technical view - application"> Technical view - application </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-d77e4c1b9a6a45489d65221083f91668">
+																	<td><a href="../views/id-d77e4c1b9a6a45489d65221083f91668.html" target="view" title="TVI-Networking Infrastructure Enablers [Traceability]"> TVI-Networking Infrastructure Enablers [Traceability] </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-4540e9fc5ad1403f86c11637c69d753a">
+																	<td><a href="../views/id-4540e9fc5ad1403f86c11637c69d753a.html" target="view" title="TVI-Data Management and Knowledge Discovery Infrastructure Enablers [Traceability]"> TVI-Data Management and Knowledge Discovery Infrastructure Enablers [Traceability] </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-2a41dcee6b1c4d4b9b80eb7da60310eb">
+																	<td><a href="../views/id-2a41dcee6b1c4d4b9b80eb7da60310eb.html" target="view" title="TVA-Data Management Enablers [Traceability]"> TVA-Data Management Enablers [Traceability] </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-19250f6d5ce540aca55fa76f48a76d14">
+																	<td><a href="../views/id-19250f6d5ce540aca55fa76f48a76d14.html" target="view" title="TVA-Functional Architecture Principles viewpoint"> TVA-Functional Architecture Principles viewpoint </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-36fa0154086f42dd8e7b62c0b8820e9c">
+																	<td><a href="../views/id-36fa0154086f42dd8e7b62c0b8820e9c.html" target="view" title="Data management"> Data management </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+									<tr>
+											<td><a href="../elements/id-1e0f11ae446742a3bbbf0c49113b9780.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-7594cb341d66490c9f8c138121951d6d.html" target="element"> Data Management</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-1fd6d0fab13549c28b044cabe39f7c6c.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-36ab528098ff44c598e7729ec9114eb7.html" target="element"> Data Virtualization</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-2ada8582c2ad4d5b8e288777820066c9.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-a79120ffdef94ff9965abfedfa42757e.html" target="element"> Data Integration</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-37d5905091574521aecb7cec57631081.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-ef194b3d3b0845dc984eed483afa69fa.html" target="element"> Dataset Catalogue</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-5294800ce81d401fbc630099d24e25ac.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-9bf560ada5d842b582e6969e89208a07.html" target="element"> Data Virtualization</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-9912c3bb7c8243d98e038d75444928bd.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-310e6940b6164f28a6c9637fc2393e01.html" target="element"> Data Policy Engine</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-9a41418e4f7449818cc16ccb93471b67.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-3dac25a1213f4d7ea0dd74e251db25f2.html" target="element"> Data Governance</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-ae9ca418ac5346c99327a17c2c9463a3.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-9cc135e9c82149e98a1eb02fdccd2b5a.html" target="element"> Data Policy</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-d4e3dc1a45dd4579a9e0386603f57f55.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-93599cf994fa454bb4b82eafd5f9f08d.html" target="element"> Federated Data Catalogue Management</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-d5b0380f03414d999578520a09a08d36.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-c66cd4a50ada4357b7bb23da5d4ec019.html" target="element"> Data Contract</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-ebcf7b5ac0844bf498dc75e4df6fd14e.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-1340f87c600e44c0821275d8f1367822.html" target="element"> Data Integration</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-f5486564ed134a228d4aea8c90422fdd.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-573fb878be7b4dfbb893041c498901c9.html" target="element"> Data Catalogue Management</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-fa23d5be6ffc46dcab4bae100021f088.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-fdf0dc9ed001449988e7809af27181bd.html" target="element"> Data Integration Plugins Manager</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-21b10ff4cbd04584a61a97ec7de5bee4.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AssignmentRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-f3d6666c82544276a19a22648ba6e5e8.html" target="element"> Computing Infrastructure Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-262e7cb8614043c18b096f67927d4ce4.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AssignmentRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-fc9502e644c64092b86b8fd3eea46c2c.html" target="element"> Database Infrastructure Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-627da584dcc843d484b5b1f87d48fd5d.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AssignmentRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-7e8edfaa980840ae95de9adfe5cac448.html" target="element"> Data Lake Infrastructure Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-1447e58540f8495c89ffe7510dd58067.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-fb17e068d30046e787a340a3ec68c83d.html" target="element"> Data Extraction, Transformation and Loading</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-1af8933da03249c29b65b459b5a0caed.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-729400b830ed4d7292df97decbd144a8.html" target="element"> Service Metadata Publisher</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-37b05c6c1f274fd1b41a749edb90ff83.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-9727881fe7e940d18c853b09f60957cf.html" target="element"> Trusted Digital Repositories</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-48ff2c8066074a9b9a8e368a21306a0b.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-fbfbe375317e40beb245e37eaf074602.html" target="element"> Data Quality</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-4c8e6bbac12b4ff2852ec52277ac5615.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-3cb286b5181f4858aeb48acde5be80a6.html" target="element"> Data Persistence</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-4eae02dbaf044f23abcfde1d7ae539cf.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-cdfca818f5194b939a5fab01bb922762.html" target="element"> Service Metadata Locator</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-5d4cd146a3784befba60abdb5cac74bd.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-807989c9afec4c83bbcad8f8c7c34fb3.html" target="element"> CRM</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-5fc17d1d0f8c423fa99fbdc292843590.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-f668ece175f042f7ab635978e4a063d4.html" target="element"> eFiles Management</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-66ee9d0fc47c4011916eeacefa592909.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-6ddc5e7204dc41248e20fce155e0aa11.html" target="element"> Submission Service</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-6d05a8a7d0444dc189387d590fb1df15.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-afb5c7a3633645a1899c5f0bca78f1d0.html" target="element"> Contact Management</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-94a37bb1be6d4e6599da6d69ac214147.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-1ac30d14d99c471ebf55f03d45726625.html" target="element"> Data Extraction, Transformation, and Loading</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-9b845a626d0741f0908a4ea6b6c79bc6.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-6f29f9cf148e4f69aa21ff9c88d1ae6d.html" target="element"> Transaction Management</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-c0be161bf50c45e9a4fb6149a36797e9.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-328255dd1b8c44a29620666f38e8f019.html" target="element"> Open Data Management</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-cfe842013cfd45e6ba1590e734782385.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-a67894e529ad440b8ea33c6d636d9402.html" target="element"> Multimedia distribution</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-db3a75cb8a6d4e4b8880fb5166be0902.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-fdb063997e984c86b0ad42d4ac75c481.html" target="element"> Data Quality</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-ee8fa9263b00440b950fe334483d307c.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-c300da087c624ee2b573bca6289aa62f.html" target="element"> Data Persistence</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-f77f78bd73f942f68159d56eddbadba0.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+											<td><a href="../elements/id-c63a13113a22481183f3e33aec661456.html" target="element"> Archival Information Packages</a></td>
+										</tr>
+									<tr>
+											<td><a href="../elements/id-194c22eeaab54d089db6f59dbccb25d0.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AssociationRelationship" /></td>
+											<td><a href="../elements/id-542bffd72c1f405d96dff33f5a39c916.html" target="element"> Content Management</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-65ac04ca246c41c2b136006cfdae780a.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AssociationRelationship" /></td>
+											<td><a href="../elements/id-6278c6414fee4427a50b82f0264b5f90.html" target="element"> Open Data Management</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-a4362df9925c46a08abc09b543d2a9af.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AssociationRelationship" /></td>
+											<td><a href="../elements/id-173da3c093814ef4bfb91aeb433adcad.html" target="element"> Storage Infrastructure Enablers</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-d60ca4136ec9476ca6f0c548c082fde8.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AssociationRelationship" /></td>
+											<td><a href="../elements/id-865d367d94df43a6b18d6e6cdb0dd0e4.html" target="element"> Data Analytics</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-f4db05064fea4bed9e14d56667c83402.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-AssociationRelationship" /></td>
+											<td><a href="../elements/id-2be5eb5382054619922ba9d71324f48b.html" target="element"> Data Extraction, Transformation and Loading</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-1c29ca5235b149eb97c4adce84f0dd6d.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-0cef956dfbb14678993b9823e0229599.html" target="element"> Shared Platform</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-20d31451438f43729d4de9bb0bf81afa.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-InfluenceRelationship" /></td>
+											<td><a href="../elements/id-56e0d4768c73478dafb1413f59bd8e5f.html" target="element"> Privacy</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-28c95acb167146b590f7fbedd2e0e4e8.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-InfluenceRelationship" /></td>
+											<td><a href="../elements/id-e9d79628b1d44dbbaae91e90bc58f12c.html" target="element"> Data Reusability</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-45c17f2d2a1e474cb7b8df398e1090e9.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-InfluenceRelationship" /></td>
+											<td><a href="../elements/id-0f3bc869aab6436e95f6d7b7c7e399b0.html" target="element"> Transparency of internal information systems</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-46e5a446fa104028a934ea1c37328661.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-InfluenceRelationship" /></td>
+											<td><a href="../elements/id-f6157270140640c98017ff52e7c1588d.html" target="element"> User-centricity</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-4ee70618c6644c7396e2b892996d0797.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-InfluenceRelationship" /></td>
+											<td><a href="../elements/id-ac2ede8d46314392a2621af657fc0728.html" target="element"> Data Interoperability</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-639a68ab60b44fe7b26ec7d848dbf63e.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-InfluenceRelationship" /></td>
+											<td><a href="../elements/id-75ee9df4537e432bb9c0e5f8af8c3739.html" target="element"> Openness</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-6be2537751f047ac930480f0c40818ac.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-InfluenceRelationship" /></td>
+											<td><a href="../elements/id-c34c619a7acb48b883ad7e5e44b5ad4b.html" target="element"> Trust</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-798dc850aa6542a9a4e0cc72dc35cf84.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-InfluenceRelationship" /></td>
+											<td><a href="../elements/id-901229d923ec460587b00441749c4848.html" target="element"> Data Portability</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-b4c26025ba094263a24648652cd8ee2e.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-InfluenceRelationship" /></td>
+											<td><a href="../elements/id-bf86c39d9ac0428abb1874b98af632f5.html" target="element"> Data Findability</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-e30dd42d2f9349b993560b11d680d9d5.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-InfluenceRelationship" /></td>
+											<td><a href="../elements/id-1cb45cb5c81044428dac33e75c101437.html" target="element"> Data Accessibility</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-e75d7b74d17441b3a5ab4caaa94e51db.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-InfluenceRelationship" /></td>
+											<td><a href="../elements/id-5774bce6313d41ebb754f03e62534b93.html" target="element"> Multilingualism</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-f5ff32ee62454efeabc17af3f939be36.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-InfluenceRelationship" /></td>
+											<td><a href="../elements/id-58ee7a4f1e03458686c717fb34d551c0.html" target="element"> Preservation of information</a></td>
+											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
+										</tr>
 							</tbody>
 						</table>
 					</div>
