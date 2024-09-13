@@ -54,31 +54,31 @@ Source: Architectural Decision Records
 
 Source reference: https://adr.github.io/
 
-IoP Dimension: Governance IoP
+Interoperability Dimension: Governance IoP
 
 LOST view: Interoperability Motivation View
 
 Identifier: http://data.europa.eu/dr8/DigitalSolutionArchitectureDecisionGoal
 
-eira:ID: http://data.europa.eu/dr8/DigitalSolutionArchitectureDecisionGoal
+ABB name: eira:DigitalSolutionArchitectureDecisionGoal
 
 EIRA concept: eira:ArchitectureBuildingBlock
 
-Last modification: 24-04-2023
+Last modification: 2024-01-28
 
-dct:identifier: A unique increasing number and date that usually follows the ADR-nnnn pattern to help sort them from old to new (ADR-20230412180800). The format to use is ADR-[YYYYMMDDHHmmSS].
+Identifier: http://data.europa.eu/dr8/DigitalSolutionArchitectureDecisionGoal
 
-dct:title: The title contains a short phrase describing the architectural decisions.
+Name: The title contains a short phrase describing the architectural decisions.
 
-dct:description: The description contains a full description of the architectural decisions.
+eira:adr_context: The context explains why we need to make a decision. It also describes the alternatives along with the pros and cons.
 
-adr:context: The context explains why we need to make a decision. It also describes the alternatives along with the pros and cons.
+eira:adr_decision: The decision describes the justification for why the particular solution was accepted. It has more emphasis on the why rather than the how.
 
-adr:decision: The decision describes the justification for why the particular solution was accepted. It has more emphasis on the why rather than the how.
+eira:adr_status: [Proposed (under review)|Accepted (approved and ready for implementation)|Superseded (superseded by another decision)]
 
-adr:status: [Proposed (under review)|Accepted (approved and ready for implementation)|Superseded (superseded by another decision)]
+eira:adr_consecuences: The consequences section contains information about the overall impact of an architectural decision. Every decision has trade-offs. That&#8217;s why it&#8217;s crucial to include the analysis to provide a clear picture.
 
-adr:consecuences: The consequences section contains information about the overall impact of an architectural decision. Every decision has trade-offs. That&#8217;s why it&#8217;s crucial to include the analysis to provide a clear picture.
+Interoperability Layer: N/A
 
 </div>
 					</div>
@@ -105,11 +105,11 @@ adr:consecuences: The consequences section contains information about the overal
 								</tr>
 							</thead>
 							<tbody>
-								<tr id="used-in-views-id-8acf6ec7de9943848836992568bf8622">
-																	<td><a href="../views/id-8acf6ec7de9943848836992568bf8622.html" target="view" title="Digital Solution Architecture Decisions Catalogue viewpoint"> Digital Solution Architecture Decisions Catalogue viewpoint </a></td>
-																	<td><span class="i18n-viewpoint-" /></td>
-																</tr><tr id="used-in-views-id-f55b83fbca114b7186b2b512c6f92f6b">
+								<tr id="used-in-views-id-f55b83fbca114b7186b2b512c6f92f6b">
 																	<td><a href="../views/id-f55b83fbca114b7186b2b512c6f92f6b.html" target="view" title="Enterprise Architecture Framework alignment guidelines viewpoint"> Enterprise Architecture Framework alignment guidelines viewpoint </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-8acf6ec7de9943848836992568bf8622">
+																	<td><a href="../views/id-8acf6ec7de9943848836992568bf8622.html" target="view" title="Digital Solution Architecture Decisions Catalogue viewpoint"> Digital Solution Architecture Decisions Catalogue viewpoint </a></td>
 																	<td><span class="i18n-viewpoint-" /></td>
 																</tr>
 							</tbody>
@@ -126,14 +126,14 @@ adr:consecuences: The consequences section contains information about the overal
 							</thead>
 							<tbody>
 									<tr>
-											<td><a href="../elements/id-3fda44f2f1894ceaa5c3ca49ee2a8e93.html" target="element" title=""></a></td>
-											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
-											<td><a href="../elements/id-1461d8a168a443d4bba1a343f65c5958.html" target="element"> Constraints, Assumptions and Decisions</a></td>
-											<td><a href="../elements/id-617b0e5989d943518af192af19a167a6.html" target="element"> Digital Solution Architecture Decision</a></td>
-										</tr><tr>
 											<td><a href="../elements/id-8209b7cb33134f188bb6b3b4eeb71109.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
 											<td><a href="../elements/id-c04fe039a2164ca8b462038c76b314fb.html" target="element"> Digital Solution Architecture Decision Catalogue</a></td>
+											<td><a href="../elements/id-617b0e5989d943518af192af19a167a6.html" target="element"> Digital Solution Architecture Decision</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-3b866e0f9a804171a7a5d9c9ebd25690.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
+											<td><a href="../elements/id-852bda9569f145589bd1a8f9295e8115.html" target="element"> Enterprise Architecture Framework (EAF) alignment guidelines</a></td>
 											<td><a href="../elements/id-617b0e5989d943518af192af19a167a6.html" target="element"> Digital Solution Architecture Decision</a></td>
 										</tr><tr>
 											<td><a href="../elements/id-07a92ca115fc464195bd241bfc933c28.html" target="element" title=""></a></td>

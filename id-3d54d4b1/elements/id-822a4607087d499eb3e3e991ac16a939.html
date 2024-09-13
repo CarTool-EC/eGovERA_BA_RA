@@ -58,17 +58,23 @@ Additional information:
 
 Example: The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): Project QUAY, Quay is a container image registry that enables you to build, organize, distribute, and deploy containers. Quay gives you security over your repositories with image vulnerability scanning and robust access controls. Project Quay provides a scalable open source platform to host container images across any size organization. https://www.projectquay.io/
 
-LOST view: Technical view - Infrastructure
+Interoperability Dimension: Structural IoP
 
-Interoperability saliency: Container Registry ABB is salient for semantic interoperability due to it establishing a catalogue of registries of virtual public services and tools to be deployed and executed.
+LOST view: Technical view - infrastructure
+
+Interoperability Saliency: Container Registry ABB is salient for semantic interoperability due to it establishing a catalogue of registries of virtual public services and tools to be deployed and executed.
 
 Identifier: http://data.europa.eu/dr8/ContainerRegistryTechnologyService
-
-eira:ID: http://data.europa.eu/dr8/ContainerRegistryTechnologyService
 
 ABB name: eira:ContainerRegistryTechnologyService
 
 EIRA concept: eira:ArchitectureBuildingBlock
+
+Last modification: 2024-01-28
+
+Identifier: http://data.europa.eu/dr8/ContainerRegistryTechnologyService
+
+Interoperability Layer: TechnicalInfrastructure
 
 </div>
 					</div>
@@ -95,14 +101,17 @@ EIRA concept: eira:ArchitectureBuildingBlock
 								</tr>
 							</thead>
 							<tbody>
-								<tr id="used-in-views-id-b3cf40f97aa84404ab544e44ac562a4a">
-																	<td><a href="../views/id-b3cf40f97aa84404ab544e44ac562a4a.html" target="view" title="TVI-Functional Architecture Principles viewpoint"> TVI-Functional Architecture Principles viewpoint </a></td>
+								<tr id="used-in-views-id-ce5136aa00fb4c639f173e62f5a0cd4e">
+																	<td><a href="../views/id-ce5136aa00fb4c639f173e62f5a0cd4e.html" target="view" title="TVI-Deployment model [Traceability]"> TVI-Deployment model [Traceability] </a></td>
 																	<td><span class="i18n-viewpoint-" /></td>
 																</tr><tr id="used-in-views-id-c3b8127a92a545398d5f2222d186726a">
 																	<td><a href="../views/id-c3b8127a92a545398d5f2222d186726a.html" target="view" title="TVI-Workflow Orchestration and Containers Infrastructure Enablers [Traceability]"> TVI-Workflow Orchestration and Containers Infrastructure Enablers [Traceability] </a></td>
 																	<td><span class="i18n-viewpoint-" /></td>
 																</tr><tr id="used-in-views-id-206c762dcd5f46a5aac54fe5d645c08c">
 																	<td><a href="../views/id-206c762dcd5f46a5aac54fe5d645c08c.html" target="view" title="Technical view - infrastructure"> Technical view - infrastructure </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-b3cf40f97aa84404ab544e44ac562a4a">
+																	<td><a href="../views/id-b3cf40f97aa84404ab544e44ac562a4a.html" target="view" title="TVI-Functional Architecture Principles viewpoint"> TVI-Functional Architecture Principles viewpoint </a></td>
 																	<td><span class="i18n-viewpoint-" /></td>
 																</tr>
 							</tbody>
@@ -128,11 +137,21 @@ EIRA concept: eira:ArchitectureBuildingBlock
 											<td><span class="i18n-elementtype-AssociationRelationship" /></td>
 											<td><a href="../elements/id-822a4607087d499eb3e3e991ac16a939.html" target="element"> Container Registry</a></td>
 											<td><a href="../elements/id-39d20564974e4bfb81df74ee030106d4.html" target="element"> Containers Manager</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-2781440531e049fba9e33fdb6696170a.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-ServingRelationship" /></td>
+											<td><a href="../elements/id-822a4607087d499eb3e3e991ac16a939.html" target="element"> Container Registry</a></td>
+											<td><a href="../elements/id-7f933f8dcd09425d96ec90b2ca674481.html" target="element"> Container Images</a></td>
 										</tr>
 									<tr>
 											<td><a href="../elements/id-7e19641181f14482944de8012c6c9938.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-AggregationRelationship" /></td>
 											<td><a href="../elements/id-6eb3de50b960434ca85607ba1923f396.html" target="element"> Containers Infrastructure Enablers</a></td>
+											<td><a href="../elements/id-822a4607087d499eb3e3e991ac16a939.html" target="element"> Container Registry</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-073443f5287e48c1ac911497dde162f9.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-ServingRelationship" /></td>
+											<td><a href="../elements/id-898c74f3c5634ad992ee69efa0f18012.html" target="element"> PaaS</a></td>
 											<td><a href="../elements/id-822a4607087d499eb3e3e991ac16a939.html" target="element"> Container Registry</a></td>
 										</tr>
 							</tbody>

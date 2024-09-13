@@ -48,17 +48,35 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">LOST view: TVA-Functional Architecture Principles
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Definition: A Service Metadata Locator is a digital service that enables the discovery and retrieval of metadata about other services within a distributed system or across the internet.
+
+Source: Techopedia
+
+Source reference: https://www.techopedia.com/definition/24559/service-metadata-locator
+
+Additional information: The Service Metadata Locator is a crucial component in service-oriented architectures (SOA) and microservices architectures, where services are loosely coupled and can be dynamically discovered and integrated. It acts as a directory or registry that holds information about the services available within a system, such as service endpoints, interfaces, protocols, and policies. This information is essential for service consumers to understand how to interact with the services. The locator often provides an API or interface through which services can register their metadata and through which consumers can query for services that meet certain criteria. This enables automation in service discovery and integration, which is vital for scalability and flexibility in complex systems.
+
+Example: Web Services Discovery
+In a web services environment, a Service Metadata Locator can be used to store and provide access to WSDL (Web Services Description Language) files. Clients can query the locator to find the appropriate WSDL for a web service they wish to consume, enabling them to dynamically generate client stubs and interact with the service.
+
+Microservices Architecture
+In a microservices architecture, a Service Metadata Locator can be used by individual microservices to register their availability and by others to discover these services. For example, when a new microservice is deployed, it registers its metadata with the locator. Other microservices or service gateways can query the locator to route requests or compose services.
 
 Identifier: http://data.europa.eu/dr8/egovera/ServiceMetadataLocatorApplicationService
-
-EIRA traceability: eira:DigitalSolutionApplicationService
 
 ABB name: egovera:ServiceMetadataLocatorApplicationService
 
 EIRA concept: eira:ArchitectureBuildingBlock
 
-Last modification: 2022-18-01
+Last modification: 2023-11-20
+
+Identifier: http://data.europa.eu/dr8/egovera/ServiceMetadataLocatorApplicationService
+
+Name: Service Metadata Locator Application Service
+
+Interoperability Layer: TechnicalApplication
+
+Specialises: http://data.europa.eu/dr8/DigitalSolutionApplicationService
 
 </div>
 					</div>
@@ -89,14 +107,14 @@ Last modification: 2022-18-01
 								</tr>
 							</thead>
 							<tbody>
-								<tr id="used-in-views-id-4540e9fc5ad1403f86c11637c69d753a">
+								<tr id="used-in-views-id-36fa0154086f42dd8e7b62c0b8820e9c">
+																	<td><a href="../views/id-36fa0154086f42dd8e7b62c0b8820e9c.html" target="view" title="Data management"> Data management </a></td>
+																	<td><span class="i18n-viewpoint-" /></td>
+																</tr><tr id="used-in-views-id-4540e9fc5ad1403f86c11637c69d753a">
 																	<td><a href="../views/id-4540e9fc5ad1403f86c11637c69d753a.html" target="view" title="TVI-Data Management and Knowledge Discovery Infrastructure Enablers [Traceability]"> TVI-Data Management and Knowledge Discovery Infrastructure Enablers [Traceability] </a></td>
 																	<td><span class="i18n-viewpoint-" /></td>
 																</tr><tr id="used-in-views-id-c83836449bfa40299f07db29e53218b4">
 																	<td><a href="../views/id-c83836449bfa40299f07db29e53218b4.html" target="view" title="TVI-Computing Infrastructure Enablers [Traceability]"> TVI-Computing Infrastructure Enablers [Traceability] </a></td>
-																	<td><span class="i18n-viewpoint-" /></td>
-																</tr><tr id="used-in-views-id-36fa0154086f42dd8e7b62c0b8820e9c">
-																	<td><a href="../views/id-36fa0154086f42dd8e7b62c0b8820e9c.html" target="view" title="Data management"> Data management </a></td>
 																	<td><span class="i18n-viewpoint-" /></td>
 																</tr><tr id="used-in-views-id-19250f6d5ce540aca55fa76f48a76d14">
 																	<td><a href="../views/id-19250f6d5ce540aca55fa76f48a76d14.html" target="view" title="TVA-Functional Architecture Principles viewpoint"> TVA-Functional Architecture Principles viewpoint </a></td>
@@ -119,19 +137,30 @@ Last modification: 2022-18-01
 							</thead>
 							<tbody>
 									<tr>
+											<td><a href="../elements/id-0ebeef18714648488bf12908e5173273.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-ServingRelationship" /></td>
+											<td><a href="../elements/id-cdfca818f5194b939a5fab01bb922762.html" target="element"> Service Metadata Locator</a></td>
+											<td><a href="../elements/id-55f286af3d1c42d1899bf20d341c616d.html" target="element"> Data Management</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-29f6e13df067493eadc77ef83ea795c9.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-ServingRelationship" /></td>
+											<td><a href="../elements/id-cdfca818f5194b939a5fab01bb922762.html" target="element"> Service Metadata Locator</a></td>
+											<td><a href="../elements/id-55f286af3d1c42d1899bf20d341c616d.html" target="element"> Data Management</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-7333454eeab142efb5da2bb762f33379.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-ServingRelationship" /></td>
+											<td><a href="../elements/id-cdfca818f5194b939a5fab01bb922762.html" target="element"> Service Metadata Locator</a></td>
+											<td><a href="../elements/id-edd319b3a8694b08ba4fee152ed5021c.html" target="element"> Metadata Management</a></td>
+										</tr><tr>
+											<td><a href="../elements/id-b216f54c49d24f9dbf974ad4a1b246e0.html" target="element" title=""></a></td>
+											<td><span class="i18n-elementtype-ServingRelationship" /></td>
+											<td><a href="../elements/id-cdfca818f5194b939a5fab01bb922762.html" target="element"> Service Metadata Locator</a></td>
+											<td><a href="../elements/id-edd319b3a8694b08ba4fee152ed5021c.html" target="element"> Metadata Management</a></td>
+										</tr>
+									<tr>
 											<td><a href="../elements/id-4eae02dbaf044f23abcfde1d7ae539cf.html" target="element" title=""></a></td>
 											<td><span class="i18n-elementtype-CompositionRelationship" /></td>
 											<td><a href="../elements/id-c8fdfe1cf4bc4195959adae2ad6fef8b.html" target="element"> Data Management Enablers</a></td>
-											<td><a href="../elements/id-cdfca818f5194b939a5fab01bb922762.html" target="element"> Service Metadata Locator</a></td>
-										</tr><tr>
-											<td><a href="../elements/id-0c2d36a52e164a779fd5508f825ad547.html" target="element" title=""></a></td>
-											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
-											<td><a href="../elements/id-55f286af3d1c42d1899bf20d341c616d.html" target="element"> Data Management</a></td>
-											<td><a href="../elements/id-cdfca818f5194b939a5fab01bb922762.html" target="element"> Service Metadata Locator</a></td>
-										</tr><tr>
-											<td><a href="../elements/id-21d6bc1a695242578d2c83db9d57e787.html" target="element" title=""></a></td>
-											<td><span class="i18n-elementtype-RealizationRelationship" /></td>
-											<td><a href="../elements/id-edd319b3a8694b08ba4fee152ed5021c.html" target="element"> Metadata Management</a></td>
 											<td><a href="../elements/id-cdfca818f5194b939a5fab01bb922762.html" target="element"> Service Metadata Locator</a></td>
 										</tr>
 							</tbody>
