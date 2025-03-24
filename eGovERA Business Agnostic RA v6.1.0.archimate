@@ -77952,12 +77952,7 @@ These different Architecture Building Blocks define the [Technical Infrastructur
       <property key="eira:concept" value="eira:None"/>
       <property key="dct:modified" value="2023-11-19"/>
     </element>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="[A] How to read the model" id="id-2eaee0cf235b4ef4a9dbc4f2b8a7b501">
-      <child xsi:type="archimate:Note" id="id-9e81c3f343e2455aadf371732eb0ff6e" font="1|Segoe UI Black|16.0|0|WINDOWS|1|-32|0|0|0|0|0|0|0|0|3|2|1|34|Segoe UI Black" textAlignment="1" fillColor="#ffffb5">
-        <bounds x="24" y="24" width="2515" height="61"/>
-        <feature name="gradient" value="0"/>
-        <content>HOW TO ACCESS/READ eGOVERA REFERENCE ARCHITECTURES AND MODELS BASED ON THEM</content>
-      </child>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Areas of concern per role" id="id-2eaee0cf235b4ef4a9dbc4f2b8a7b501">
       <child xsi:type="archimate:DiagramObject" id="id-bc132462589a4f0e84290d97b4d9b978" targetConnections="id-b1f71e54900649049de47dd58ffac465" font="1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI" archimateElement="id-3fd40d1e6a4a4afd967ff5bf52254dbb">
         <bounds x="24" y="288" width="529" height="973"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-6a885ea9938048d28d7a1a3ae8609597" source="id-bc132462589a4f0e84290d97b4d9b978" target="id-9f9883512a5d4b8bb4686bf35e39765f" archimateRelationship="id-7a0ef7b22cd34a40abe43ed3bef65f2e"/>

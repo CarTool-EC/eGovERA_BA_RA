@@ -163837,7 +163837,7 @@ Where is Location?</label>
         </connection>
       </view>
       <view identifier="id-2eaee0cf235b4ef4a9dbc4f2b8a7b501" xsi:type="Diagram">
-        <name xml:lang="es">[A] How to read the model</name>
+        <name xml:lang="es">Areas of concern per role</name>
         <documentation xml:lang="es">The EIRA© Highlevel viewpoint models an introductory overview of the focal Architecture Building Blocks of each view.&#xD;
 &#xD;
 The ABBs included in the high-level viewpoint represent the points that link the EIRA©’s views enabling traceability between their different Architecture Building Blocks. They are not necessarily mandatory but should always be considered by a user of the EIRA© when executing one of its use cases.&#xD;
@@ -163861,16 +163861,6 @@ Narrative: This viewpoint selects Architecture Building Blocks from the five dif
             <value xml:lang="es">Integrated Public Service Governance viewpoint</value>
           </property>
         </properties>
-        <node identifier="id-9e81c3f343e2455aadf371732eb0ff6e" xsi:type="Label" x="24" y="24" w="2515" h="61">
-          <label xml:lang="es">HOW TO ACCESS/READ eGOVERA REFERENCE ARCHITECTURES AND MODELS BASED ON THEM</label>
-          <style>
-            <fillColor r="255" g="255" b="181" a="100" />
-            <lineColor r="92" g="92" b="92" a="100" />
-            <font name="Segoe UI Black" size="16">
-              <color r="0" g="0" b="0" />
-            </font>
-          </style>
-        </node>
         <node identifier="id-bc132462589a4f0e84290d97b4d9b978" elementRef="id-3fd40d1e6a4a4afd967ff5bf52254dbb" xsi:type="Element" x="24" y="288" w="529" h="973">
           <style>
             <fillColor r="255" g="255" b="181" a="100" />
